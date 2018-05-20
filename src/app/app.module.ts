@@ -21,8 +21,9 @@ import {MicroOrganismsModule} from './micro-organisms/micro-organisms.module';
 import { MicroOneItemComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-one-item/micro-one-item.component';
 import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-organism-listing.component';
 import {CookingMethodsModule} from './cooking-methods/cooking-methods.module';
-import { CookingMethodItemComponent } from './cooking-methods/cooking-method-item/cooking-method-item.component';
+import { CookingMethodListingComponent } from 'src/app/cooking-methods/cooking-method-listing/cooking-method-listing.component';
 import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
+import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-method-item/cooking-method-item.component';
 
 
 
@@ -31,24 +32,22 @@ import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listi
     AppComponent,
     HeaderComponent,
     CuttingMethodItemComponent,
-
     MicroOneItemComponent,
     MicroOrganismListingComponent,
-    CookingMethodItemComponent,
     MicroOrganismItemComponent,
     ToolItemComponent,
     MicroOneItemComponent,
     MicroOrganismListingComponent,
-    CookingMethodItemComponent,
+    CookingMethodListingComponent,
     IngredientListingComponent,
-    CuttingMethodItemComponent
+    CookingMethodItemComponent
 
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'cookingMethodeListing' , component:CookingMethodItemComponent}
+     {path:'cookingMethodeListing' , component:CookingMethodListingComponent}
     ])
   ],
   providers: [],
