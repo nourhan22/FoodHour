@@ -1,0 +1,23 @@
+ul.nav-pills > li.active > a {
+    background-color: #ff530a;
+}
+a {
+    color: rgb(114, 114, 114) ;
+}
+ul > li.dropdown .dropdown-menu {
+    border-top-color: #ff530a !important;
+}
+.icons{
+    color: rgb(114, 114, 114) ;
+}
+li:hover > a {
+    background-color: #ff530a !important;
+}
+@media (min-width: 992px){
+#header .header-nav-main nav > ul > li > a.dropdown-toggle:after {
+    border-color: #ff530a transparent transparent transparent;
+}}
+@media (min-width: 992px){
+#header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.dropdown-submenu > a:after {
+    border-color: transparent transparent transparent #ff530a;
+}}
