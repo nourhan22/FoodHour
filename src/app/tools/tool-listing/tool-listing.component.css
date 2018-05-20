@@ -1,0 +1,39 @@
+.sort-destination-loader.sort-destination-loader-loaded {
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+}
+
+.sort-destination-loader {
+    height: auto;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+ul.image-gallery {
+    list-style: none;
+    list-style-type: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.sort-destination {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}

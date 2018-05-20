@@ -3,12 +3,9 @@ import { NgModule } from '@angular/core';
 import {CuttingMethodsModule} from './cutting-methods/cutting-methods.module';
 import {CuttingMethodItemComponent} from './cutting-methods/cutting-method-item/cutting-method-item.component';
 import {ToolsModule} from './tools/tools.module';
-import {ToolItemComponent} from'./tools/tool-item/tool-item.component';
+import {ToolItemComponent} from './tools/tool-item/tool-item.component';
+import {ToolListingComponent} from './tools/tool-listing/tool-listing.component';
 import { AppComponent } from './app.component';
-
-
-
-
 import {RouterModule} from '@angular/router'
 import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 import { from } from 'rxjs/internal/observable/from';
@@ -24,12 +21,12 @@ import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listi
   declarations: [
     AppComponent,
     CuttingMethodItemComponent,
-
     MicroOneItemComponent,
     MicroOrganismListingComponent,
     CookingMethodItemComponent,
     MicroOrganismItemComponent,
     ToolItemComponent,
+    ToolListingComponent,
     MicroOneItemComponent,
     MicroOrganismListingComponent,
     CookingMethodItemComponent,
@@ -41,7 +38,10 @@ import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listi
     BrowserModule,
     RouterModule.forRoot([
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'cookingMethodeListing' , component:CookingMethodItemComponent}
+     {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
+     {path:'ToolItem' , component:ToolItemComponent},
+     {path:'ToolListing' , component:ToolListingComponent}  
+     
     ])
   ],
   providers: [],
