@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IcookingMethod } from 'src/shared/models/interfaces/icooking-method';
+import { Input } from '@angular/core';
+import { IcookingMethod } from 'src/app/shared/models/interfaces/icooking-method';
 //import {IcookingMethod} from './src/shared/models/interfaces/icooking-method';
 @Component({
   selector: 'app-cooking-method-item',
@@ -8,9 +9,9 @@ import { IcookingMethod } from 'src/shared/models/interfaces/icooking-method';
 })
 
 export class CookingMethodItemComponent implements OnInit {
-public IcookingMethod :IcookingMethod[];
+@Input() public item :IcookingMethod;
   constructor() { 
-    
+
   }
   ngOnInit() {
   }
