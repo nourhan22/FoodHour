@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { MicroOneItemComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-one-item/micro-one-item.component';
 import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-organism-listing.component';
 import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-method-item/cooking-method-item.component';
-
+import {RouterModule} from '@angular/router'
+import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 
 
 @NgModule({
@@ -16,10 +17,15 @@ import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-meth
     CuttingMethodItemComponent,
     MicroOneItemComponent,
     MicroOrganismListingComponent,
-    CookingMethodItemComponent
+    CookingMethodItemComponent,
+    MicroOrganismItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+     {path:'microOrganismListing', component:MicroOrganismListingComponent},
+     {path:'cookingMethodeListing' , component:CookingMethodItemComponent}
+    ])
   ],
   providers: [],
  
