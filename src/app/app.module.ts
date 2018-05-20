@@ -1,3 +1,4 @@
+import { IngredientListingComponent } from './ingredients/ingredient-listing/ingredient-listing.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {CuttingMethodsModule} from './cutting-methods/cutting-methods.module';
@@ -19,7 +20,8 @@ import { MicroOneItemComponent } from 'src/app/micro-organisms/micro-organism-li
 import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-organism-listing.component';
 import {CookingMethodsModule} from './cooking-methods/cooking-methods.module';
 import { CookingMethodItemComponent } from './cooking-methods/cooking-method-item/cooking-method-item.component';
-import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
+//import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
+import {IngredientsModule} from './ingredients/ingredients.module'
 
 
 
