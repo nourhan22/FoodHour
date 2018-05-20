@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
+import { ISmallMicro } from 'src/app/shared/models/interfaces/ISmallMicro';
+
 
 @Component({
   selector: 'app-micro-organism-item',
@@ -6,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./micro-organism-item.component.css']
 })
 export class MicroOrganismItemComponent implements OnInit {
-
+  @Input() public item:ISmallMicro;
   constructor() { }
 
   ngOnInit() {

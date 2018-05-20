@@ -39,7 +39,7 @@ import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listi
     RouterModule.forRoot([
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
-     {path:'ToolItem' , component:ToolItemComponent},
+     {path:'ToolListing' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  
      
     ])
