@@ -1,19 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {CuttingMethodsModule} from './cutting-methods/cutting-methods.module';
+<<<<<<< HEAD
 import {CuttingMethodItemComponent} from './cutting-methods/cutting-method-item/cutting-method-item.component';
 import {MicroOrganismsModule} from './micro-organisms/micro-organisms.module'
 import { AppComponent } from './app.component';
 
 import { MicroOneItemComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-one-item/micro-one-item.component';
 import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-organism-listing.component';
+=======
+
+import {CuttingMethodItemComponent} from './cutting-methods/cutting-method-item/cutting-method-item.component';
+import { CookingMethodItemComponent } from './cooking-methods/cooking-method-item/cooking-method-item.component';
+import { AppComponent } from './app.component';
+
+>>>>>>> ac56b5e156eedb8275f1791621d5f469aacff10e
 
 @NgModule({
   declarations: [
     AppComponent,
     CuttingMethodItemComponent,
+<<<<<<< HEAD
     MicroOneItemComponent,
     MicroOrganismListingComponent
+=======
+    CookingMethodItemComponent
+>>>>>>> ac56b5e156eedb8275f1791621d5f469aacff10e
   ],
   imports: [
     BrowserModule
