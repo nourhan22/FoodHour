@@ -47,12 +47,11 @@ import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listi
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-     {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'cookingMethodeListing' , component:CookingMethodItemComponent}
+     {path: 'microOrganismListing', component: MicroOrganismListingComponent},
+     {path: 'cookingMethodeListing' , component: CookingMethodItemComponent}
     ])
   ],
   providers: [],
- 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
