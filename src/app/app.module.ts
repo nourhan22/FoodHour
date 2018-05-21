@@ -12,7 +12,6 @@ import {RouterModule} from '@angular/router';
 import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 import { from } from 'rxjs/internal/observable/from';
 import {MicroOrganismsModule} from './micro-organisms/micro-organisms.module';
-import { MicroOneItemComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-one-item/micro-one-item.component';
 import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-organism-listing.component';
 import {CookingMethodsModule} from './cooking-methods/cooking-methods.module';
 import { CookingMethodListingComponent } from 'src/app/cooking-methods/cooking-method-listing/cooking-method-listing.component';
@@ -25,6 +24,7 @@ import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-meth
 
 import {IngredientsModule} from './ingredients/ingredients.module';
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
+import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
 
 
 @NgModule({
@@ -32,11 +32,9 @@ import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-met
     AppComponent,
     HeaderComponent,
     CuttingMethodItemComponent,
-    MicroOneItemComponent,
     MicroOrganismListingComponent,
     MicroOrganismItemComponent,
     ToolItemComponent,
-    MicroOneItemComponent,
     MicroOrganismListingComponent,
     CookingMethodListingComponent,
     IngredientListingComponent,
@@ -44,7 +42,8 @@ import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-met
 
     CuttingMethodListingComponent,
 
-    CookingMethodDetailsComponent
+    CookingMethodDetailsComponent,
+    SmallHeaderComponent
 
 
   ],
