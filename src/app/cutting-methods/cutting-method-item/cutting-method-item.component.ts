@@ -7,7 +7,7 @@ import { ICuttingMethods } from 'src/app/shared/models/interfaces/iCuttingMethod
   styleUrls: ['./cutting-method-item.component.css']
 })
 export class CuttingMethodItemComponent implements OnInit {
-  @Input()  public ele: ICuttingMethods;
+  @Input()  public item: ICuttingMethods;
   constructor() { }
 
   ngOnInit() {
