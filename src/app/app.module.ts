@@ -10,8 +10,6 @@ import {ToolsModule} from './tools/tools.module';
 import {ToolItemComponent} from './tools/tool-item/tool-item.component';
 import {ToolListingComponent} from './tools/tool-listing/tool-listing.component';
 import { AppComponent } from './app.component';
-
-
 import {RouterModule} from '@angular/router';
 import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 import { from } from 'rxjs/internal/observable/from';
@@ -54,7 +52,7 @@ import {IngredientsModule} from './ingredients/ingredients.module';
 
 
      {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
-     {path:'ToolListing' , component:ToolItemComponent},
+     {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
      
      {path:'cookingMethodeListing' , component:CookingMethodListingComponent}
