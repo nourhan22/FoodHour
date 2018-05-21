@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ICuttingMethods } from 'src/app/shared/models/interfaces/iCuttingMethods';
 
 @Component({
   selector: 'app-cutting-method-item',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cutting-method-item.component.css']
 })
 export class CuttingMethodItemComponent implements OnInit {
-
+  @Input()  public ele: ICuttingMethods;
   constructor() { }
 
   ngOnInit() {
