@@ -16,17 +16,17 @@ export class MicroOrganismListingComponent implements OnInit {
       {
         name:'AAAAAA',
         type:'bacteria',
-        img:'img/projects/project.jpg'
+        img:'./assets/images/26a.jpg'
       },
       {
         name:'BBBBBBBBB',
         type:'virus',
-        img:'img/projects/project.jpg'
+        img:'./assets/images/26a.jpg'
       },
       {
         name:'CCCCCCC',
         type:'virus',
-        img:'img/projects/project.jpg'
+        img:'./assets/images/26a.jpg'
       },
     ]
   }
