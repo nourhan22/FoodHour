@@ -10,18 +10,15 @@ import { AppComponent } from './app.component';
 import {RouterModule} from '@angular/router';
 import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 import { from } from 'rxjs/internal/observable/from';
-
 import {MicroOrganismsModule} from './micro-organisms/micro-organisms.module';
 import { MicroOneItemComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-one-item/micro-one-item.component';
 import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-organism-listing/micro-organism-listing.component';
 import {CookingMethodsModule} from './cooking-methods/cooking-methods.module';
 import { CookingMethodListingComponent } from 'src/app/cooking-methods/cooking-method-listing/cooking-method-listing.component';
-
 import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-method-item/cooking-method-item.component';
-
 //import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
 import {IngredientsModule} from './ingredients/ingredients.module';
-
+import {CookingMethodDetailsComponent}from'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
 
 
 @NgModule({
@@ -37,19 +34,16 @@ import {IngredientsModule} from './ingredients/ingredients.module';
     MicroOrganismListingComponent,
     CookingMethodListingComponent,
     IngredientListingComponent,
-    CookingMethodItemComponent
+    CookingMethodItemComponent,
+    CookingMethodDetailsComponent
 
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-<<<<<<< HEAD
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
-     {path: 'cookingMethodeListing' , component: CookingMethodItemComponent}
-=======
-     {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'cookingMethodeListing' , component:CookingMethodListingComponent}
->>>>>>> 151128dbbb59dd85cdb613adf3b731db1e4a5bad
+     {path:'cookingMethodListing' , component:CookingMethodListingComponent},
+     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent}
     ])
   ],
   providers: [],
