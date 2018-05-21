@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { IIngredient } from './../../shared/models/interfaces/IIngredient';
+import { Component, OnInit,Input  } from '@angular/core';
 
 @Component({
   selector: 'app-ingredient-item',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ingredient-item.component.css']
 })
 export class IngredientItemComponent implements OnInit {
-
+  @Input() public item:IIngredient;
   constructor() { }
 
   ngOnInit() {

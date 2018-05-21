@@ -1,0 +1,66 @@
+#fav{
+    padding: 15px 15px;
+    border-radius: 100%;
+    font-size: 25px;
+    background-color: #ff530a !important;
+}
+.fa-share-alt , div.share-icons{
+    background-color: #ff530a !important;
+}
+#photographyPagination ul li .btn{
+    background-color: #ff530a !important; 
+    border-color:  #ff530a; 
+}
+
+/*mostPopular slider*/
+#slider #fav{
+    padding: 10px 15px;
+    font-size: 20px;
+}
+#slider h3 {
+    font-size: 36px;
+}
+
+/***how we are*****/
+#who-we-are h2{
+color:#ff530a;
+}
+
+ .box-content {
+    border-top-color: #ff530a !important;
+ 
+ }
+
+ .box-content  h4 ,.box-content  a{
+    color:#ff530a !important;
+ }
+ .box-content img
+ {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.04);
+ }
+ .box-content p
+ {
+    color: #191818;
+ }
+ 
+/*#slider .owl-nav
+{
+    display: block;
+    
+}
+#slider .owl-prev ,#slider .owl-next
+{
+    background-color:  #ff723a  !important;  
+    width: 45px;
+    line-height: 30px!important;
+    top:-130px;
+}
+#slider .owl-prev{
+    left: -35px;
+}
+#slider .owl-prev ,#slider .owl-next:hover
+{
+    color:white !important;
+   
+}*/
+

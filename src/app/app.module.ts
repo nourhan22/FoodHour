@@ -50,7 +50,8 @@ import {IngredientsModule} from './ingredients/ingredients.module'
     BrowserModule,
     RouterModule.forRoot([
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'cookingMethodeListing' , component:CookingMethodItemComponent}
+     {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
+     {path:'IngredientListing' , component:IngredientListingComponent},
     ])
   ],
   providers: [],
