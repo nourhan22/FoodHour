@@ -7,11 +7,12 @@ import { ISmallMicro } from 'src/app/shared/models/interfaces/ISmallMicro';
   styleUrls: ['./micro-organism-listing.component.css']
 })
 export class MicroOrganismListingComponent implements OnInit {
-
+  public headertitle:string;
   public Micros:ISmallMicro[];
   constructor() { }
 
   ngOnInit() {
+    this.headertitle = 'MicroOrganisms'
     this.Micros = [
       {
         name:'AAAAAA',
