@@ -7,21 +7,20 @@ import { IcookingMethod } from 'src/app/shared/models/interfaces/icooking-method
   styleUrls: ['./cooking-method-listing.component.css']
 })
 export class CookingMethodListingComponent implements OnInit {
-public IcookingMethod:IcookingMethod[];
+public IcookingMethod: IcookingMethod[];
   constructor() { }
 
   ngOnInit() {
-    this.IcookingMethod=[
+    this.IcookingMethod = [
       {
-      title:"hhhh",
-      imageUrl:"../../../assets/images/cooking method/grill.jpg"
+      title: 'hhhh',
+      imageUrl: '../../../assets/images/cooking method/grill.jpg'
     }
   ,
   {
-    title:"hhhh",
-    imageUrl:"../../../assets/images/cooking method/grill.jpg"
-  }
-]
+    title: 'hhhh',
+    imageUrl: '../../../assets/images/cooking method/grill.jpg'
+  }];
   }
 
 }

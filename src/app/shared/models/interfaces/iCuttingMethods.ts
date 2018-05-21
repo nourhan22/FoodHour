@@ -1,4 +1,4 @@
-export interface IcookingMethod {
+export interface ICuttingMethods {
     title: string;
     imageUrl: string;
 }
