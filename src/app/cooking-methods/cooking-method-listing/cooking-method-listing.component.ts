@@ -20,7 +20,28 @@ public IcookingMethod: IcookingMethod[];
   {
     title: 'hhhh',
     imageUrl: '../../../assets/images/cooking method/grill.jpg'
-  }];
+  },
+
+    {  title:'Grill',
+      imageUrl:'../../../assets/images/cooking method/grill.jpg'
+    }
+  ,
+  {
+    title:'Steam',
+    imageUrl:'../../../assets/images/cooking method/steam.jpg'
+  }
+  ,
+  {
+    title:'Simmer',
+    imageUrl:'../../../assets/images/cooking method/simmer.jpg'
+  }
+  ,
+  {
+    title:'Sear',
+    imageUrl:'../../../assets/images/cooking method/sear.jpg'
+  }
+];
+
   }
 
 }
