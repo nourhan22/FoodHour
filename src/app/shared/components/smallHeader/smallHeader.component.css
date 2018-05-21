@@ -1,0 +1,43 @@
+#cookingsearch .form-control {
+    border-radius: 20px;
+    font-size: 0.9em;
+    height: 34px;
+    margin: 0;
+    padding: 6px 12px;
+    width: 400px;
+}
+#cookingsearch .input-group-btn .btn-default {
+    background: transparent;
+    border: 0 none;
+    color: #CCC;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+/*--------------------*/
+ .page-header {
+    background-color:#171717d1 ;
+    border-bottom: 5px solid #CCC;
+    border-top: 5px solid #384045;
+    margin: 0 0 35px 0;
+    min-height: 50px;
+    padding: 20px 0;
+    position: relative;
+    text-align: left;}
+    
+   
+    .page-header h1 {
+        border-bottom: 5px solid #CCC;
+        color: #fff;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 32px;
+        margin: 0 0 -25px;
+        padding: 0 0 25px;
+        position: relative;
+    }
+    .page-header h1 {
+        border-bottom-color: #ff530a;
+    }

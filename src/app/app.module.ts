@@ -25,6 +25,7 @@ import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-meth
 
 import {IngredientsModule} from './ingredients/ingredients.module';
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
+import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-met
 
     CuttingMethodListingComponent,
 
-    CookingMethodDetailsComponent
+    CookingMethodDetailsComponent,
+    SmallHeaderComponent
 
 
   ],
