@@ -1,5 +1,6 @@
  export interface ISmallMicro{
-   name:string;
+  id:number; 
+  name:string;
    type:string;
    img:string;
  }

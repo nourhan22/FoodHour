@@ -1,0 +1,14 @@
+#plus {
+    color: white;
+    background-color: #ff530a;
+    padding: 7px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.fa.pull-right {
+    margin-left: .3em;
+}
+.pull-right {
+    float: right !important;
+}
