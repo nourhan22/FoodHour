@@ -1,0 +1,30 @@
+
+
+<!-- <app-tabs [MicroDetail]='MicroDetail'></app-tabs>
+<app-micro-item-description [Micro] = 'MicroItem'></app-micro-item-description> -->
+
+<div class="container">
+        <div class="row">
+      
+          <div class="col-md-9">
+                <app-micro-item-description [Micro] = 'MicroItem'></app-micro-item-description>
+                <app-tabs [MicroDetail]='MicroItem'></app-tabs>
+          </div>
+      
+          <div class="col-md-3">
+            <aside class="sidebar">
+              <app-search></app-search>
+              <hr>
+              <h5 class="" style="color:#ff530a;">Top Rated topics</h5>
+               <ul class="simple-post-list">
+                
+                  <app-relatedtopic [topic]="x"  *ngFor="let x of relatedTopics"></app-relatedtopic>
+                
+              </ul> 
+      
+            </aside>
+          </div>
+        </div>
+      
+      
+      </div>

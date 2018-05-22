@@ -1,7 +1,7 @@
 
 <li class="col-md-3 col-sm-6 col-xs-12">
   <div class="image-gallery-item">
-    <a href="" class="lightbox-portfolio">
+    <a [routerLink] = "['details',item.id]" class="lightbox-portfolio">
       <span class="thumb-info">
         <span class="thumb-info-wrapper">
           <img src="{{item.img}}" id="small-tool-img" class="img-responsive" alt="">
