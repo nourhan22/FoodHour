@@ -1,0 +1,24 @@
+
+<div class="row">
+
+  <div class="col-md-12">
+      <div class="tabs tabs-product">
+          
+          <ul class="nav nav-tabs">
+              <li class="" [ngClass]="{'active':i == currentIndex}" *ngFor="let x of sources; let i = index">
+                  <a  data-toggle="tab" (click)="onTabClicked(i)">{{x}}</a>
+              </li>
+          </ul>
+
+          <div class="tab-content">
+              <div class="tab-pane" [ngClass]="{'active':i == currentIndex}" *ngFor="let x of sources; let i = index" [id]="x">
+                  <p>
+                    {{MicroDetail[x]}}
+                  </p>
+              </div>
+          
+          </div>
+
+      </div>
+  </div>
+</div>

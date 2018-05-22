@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ISmallMicro } from 'src/app/shared/models/interfaces/ISmallMicro';
+import { IMicroDetail } from 'src/app/shared/models/interfaces/IMicroDetail';
+import { MicroService } from 'src/app/shared/services/Micro.service';
+import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 
 @Component({
   selector: 'app-micro-organism-listing',
@@ -8,28 +10,14 @@ import { ISmallMicro } from 'src/app/shared/models/interfaces/ISmallMicro';
 })
 export class MicroOrganismListingComponent implements OnInit {
   public headertitle:string;
-  public Micros:ISmallMicro[];
-  constructor() { }
+  public Micros:IMicroItem[];
+  
+  constructor(private MicroService:MicroService) { }
 
   ngOnInit() {
+   
     this.headertitle = 'MicroOrganisms'
-    this.Micros = [
-      {
-        name:'AAAAAA',
-        type:'bacteria',
-        img:'./assets/images/26a.jpg'
-      },
-      {
-        name:'BBBBBBBBB',
-        type:'virus',
-        img:'./assets/images/26a.jpg'
-      },
-      {
-        name:'CCCCCCC',
-        type:'virus',
-        img:'./assets/images/26a.jpg'
-      },
-    ]
+    this.Micros = this.MicroService.GetAllMicros();
   }
 
 }
