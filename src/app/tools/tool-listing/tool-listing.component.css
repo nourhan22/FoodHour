@@ -1,39 +1,63 @@
-/* .sort-destination-loader.sort-destination-loader-loaded {
-    overflow: visible;
-    overflow-x: visible;
-    overflow-y: visible;
+#plus {
+    color: white;
+    background-color: #ff530a;
+    padding: 7px;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }
-
-.sort-destination-loader {
-    height: auto;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: relative;
+.fa.pull-right {
+    margin-left: .3em;
 }
-ul.image-gallery {
-    list-style: none;
-    list-style-type: none;
-    list-style-position: initial;
-    list-style-image: initial;
+.pull-right {
+    float: right !important;
+}
+/*--------------*/
+#cookingsearch .form-control {
+    border-radius: 20px;
+    font-size: 0.9em;
+    height: 34px;
     margin: 0;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: 0;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    padding: 6px 12px;
+    width: 400px;
 }
-
-.sort-destination {
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+#cookingsearch .input-group-btn .btn-default {
+    background: transparent;
+    border: 0 none;
+    color: #CCC;
+    position: absolute;
+    right: 0;
+    top: 6;
+    z-index: 3;
 }
-ol, ul {
-    margin-top: 0;
-    margin-bottom: 10px;
-} */
+/*--------------------*/
+ .page-header {
+    background-color:#171717d1 ;
+    border-bottom: 5px solid #CCC;
+    border-top: 5px solid #384045;
+    margin: 0 0 35px 0;
+    min-height: 50px;
+    padding: 20px 0;
+    position: relative;
+    text-align: left;}
+    
+   
+    .page-header h1 {
+        border-bottom: 5px solid #CCC;
+        color: #fff;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 200;
+        line-height: 32px;
+        margin: 0 0 -25px;
+        padding: 0 0 25px;
+        position: relative;
+    }
+    .page-header h1 {
+        border-bottom-color: #ff530a;
+    }
+    /*----------------*/
+    .image-gallery-item{
+        width:400px;
+        height: 400px;
+    }

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {HeaderComponent} from './shared/components/header/header.component';
-
+import {FooterComponent} from './shared/components/footer/footer.component';
 import {CuttingMethodsModule} from './cutting-methods/cutting-methods.module';
 import {CuttingMethodItemComponent} from './cutting-methods/cutting-method-item/cutting-method-item.component';
 import {CuttingMethodListingComponent} from './cutting-methods/cutting-method-listing/cutting-method-listing.component';
@@ -31,6 +31,7 @@ import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-met
 
 @NgModule({
   declarations: [
+    HeaderComponent,
     AppComponent,
     CuttingMethodItemComponent,
     MicroOneItemComponent,
@@ -43,9 +44,8 @@ import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-met
     CookingMethodListingComponent,
     IngredientListingComponent,
     CookingMethodItemComponent,
-
+    FooterComponent,
     CuttingMethodListingComponent,
-
     CookingMethodDetailsComponent
 
 

@@ -14,17 +14,41 @@ export class ToolListingComponent implements OnInit {
     debugger;
     this.Tools = [
       {
-        name:'AAAAAA',
+        name:'Cooker',
         img:'./assets/images/cooker3.jpg'
       },
       {
-        name:'BBBBBBBBB',
+        name:'Cooker',
         img:'./assets/images/cooker3.jpg'
       },
       {
-        name:'CCCCCCC',
+        name:'Cooker',
         img:'./assets/images/cooker3.jpg'
       },
+      {
+        name:'Cooker',
+        img:'./assets/images/cooker3.jpg'
+      },
+      {
+        name:'Cooker',
+        img:'./assets/images/cooker3.jpg'
+      },
+      {
+        name:'Cooker',
+        img:'./assets/images/cooker3.jpg'
+      },
+      {
+        name:'Cooker',
+        img:'./assets/images/cooker3.jpg'
+      },
+      {
+        name:'Cooker',
+        img:'./assets/images/cooker3.jpg'
+      },
+      {
+        name:'Cooker',
+        img:'./assets/images/cooker3.jpg'
+      }
     ]
   }
 
