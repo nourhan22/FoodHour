@@ -28,7 +28,6 @@ import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-meth
 import {IngredientsModule} from './ingredients/ingredients.module';
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
 import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
-<<<<<<< HEAD
 import { TabsComponent } from 'src/app/micro-organisms/tabs/tabs.component';
 import { MicroOrganismDetailsComponent } from 'src/app/micro-organisms/micro-organism-details/micro-organism-details.component';
 import { MicroItemDescriptionComponent } from 'src/app/micro-organisms/micro-item-description/micro-item-description.component';
@@ -36,8 +35,7 @@ import { SearchComponent } from 'src/app/shared/components/search/search.compone
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 import {ActivatedRoute} from '@angular/router'
-=======
->>>>>>> 40c9476a7c8bef0d03c19aa845908dd82c6c40ae
+
 
 @NgModule({
   declarations: [
