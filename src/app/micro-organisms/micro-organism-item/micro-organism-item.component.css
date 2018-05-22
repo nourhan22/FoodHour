@@ -97,7 +97,8 @@ li {
     transition: all 0.3s ease;
     border-radius: 3px;
     position: relative;
-    width: 100%;
+    width: 330px;
+    height: 220px;
 }
 .thumb-info:hover .thumb-info-wrapper:after {
 	opacity: 1;

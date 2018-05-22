@@ -21,9 +21,11 @@ private id :number;
 
   ngOnInit() {
     
+this.ActivatedRoute.url.subscribe((data)=>{console.log(data[0].path);});
+
     this.ActivatedRoute.params.subscribe(
      
-      (params)=>{ debugger; this.id = params['id'];}
+      (params)=>{  this.id = params['id'];}
     )
 
    this.MicroItem = this.microService.GetbyId(this.id);
