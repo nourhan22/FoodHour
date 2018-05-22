@@ -14,20 +14,23 @@ export class IngredientListingComponent implements OnInit {
   ngOnInit() {
     this.ingredients = [
       {
+        id:1,
         name:'Tomato',
         desc:'tomato is very useful',
         img:'../../assets/images/o.jpg'
       },
       {
+        id:2,
         name:'Botato',
         desc:'botato is very useful',
         img:'../../assets/images/o.jpg'
       },
       {
+        id:3,
         name:'Carrot',
         desc:'Carrot is very useful',
         img:'../../assets/images/o.jpg'
-      },
+      }
     ]
   }
 

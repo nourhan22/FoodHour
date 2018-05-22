@@ -1,5 +1,5 @@
 import { IIngredient } from './../../shared/models/interfaces/IIngredient';
-import { Component, OnInit,Input  } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-ingredient-item',

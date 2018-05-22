@@ -1,0 +1,66 @@
+h3 {
+    color: #ff530a ;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+body {
+    background-color: #FFF;
+    color: #777;
+    font-family: "Open Sans", Arial, sans-serif !important;
+    font-size: 14px;
+    line-height: 32px;
+}
+.toggle.toggle-simple .toggle.active > label {
+    background: transparent;
+    color: #1d2127;
+}
+.toggle.toggle-simple .toggle > label {
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    color: #777;
+    padding-left: 32px;
+    margin-bottom: -10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #1d2127;
+}
+.toggle.toggle-simple .toggle > label:before {
+    border: 0;
+    left: 7px;
+    right: auto;
+    margin-top: 0;
+    top: 12px;
+    font-family: FontAwesome;
+    content: "\f067";
+    z-index: 2;
+    color: #FFF;
+    font-size: 13px;
+}
+.toggle.active > label:before {
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    margin-top: -3px;
+    right: 10px;
+}
+.toggle > label:before {
+    border: 6px solid transparent;
+    border-left-color: inherit;
+    content: '';
+    margin-top: -6px;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+}
+html .toggle-primary.toggle-simple .toggle > label:after {
+    background-color: #ff530a;
+}
+
