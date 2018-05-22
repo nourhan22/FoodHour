@@ -35,7 +35,7 @@ import { SearchComponent } from 'src/app/shared/components/search/search.compone
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 import {ActivatedRoute} from '@angular/router'
-
+import {FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -65,7 +65,7 @@ import {ActivatedRoute} from '@angular/router'
 
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,FormsModule,
     RouterModule.forRoot([
 
 

@@ -21,7 +21,7 @@ private id :number;
 
   ngOnInit() {
     
-this.ActivatedRoute.url.subscribe((data)=>{console.log(data[0].path);});
+// this.ActivatedRoute.url.subscribe((data)=>{console.log(data[0].path);});
 
     this.ActivatedRoute.params.subscribe(
      
@@ -32,8 +32,18 @@ this.ActivatedRoute.url.subscribe((data)=>{console.log(data[0].path);});
 
 
 
-    this.relatedTopics = this.microService.GetRelatedTopics(this.id);
+    this.relatedTopics = this.microService.GetRelatedTopics(this.id,4);
   
+  }
+
+  onTxtChange(txtSearch:string)
+  {
+    console.log(txtSearch);
+    this.relatedTopics = this.microService.GetRelatedTopics(this.id,4);
+    if(txtSearch!='')
+    {
+      this.relatedTopics = this.microService.SearchInTopics(txtSearch,4);
+    }
   }
 
 }

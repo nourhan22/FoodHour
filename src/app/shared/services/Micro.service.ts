@@ -7,6 +7,7 @@ import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 })
 export class MicroService {
 
+  private allTopics:IMicroItem[];
   private allMicros:IMicroItem[] = [
     {
       id:1,
@@ -20,7 +21,7 @@ export class MicroService {
     },
     {
       id:2,      
-      name:'mmmmmm',
+      name:'mmmvirus',
       type:'virus',
       img:'./assets/images/micro/bacteria2.jpg',
       description:'description description description2',
@@ -47,6 +48,36 @@ export class MicroService {
       FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved4',
       Source:'Source Source Source',
       Prevention:'Prevention Prevention Prevention',
+    },
+    {
+      id:5,
+      name:'virusName',
+      type:'virus',
+      img:'./assets/images/micro/bacteria1.jpg',
+      description:'description description description1',
+      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved5',
+      Source:'Source Source Source',
+      Prevention:'Prevention Prevention Prevention',
+    },
+    {
+      id:6,
+      name:'bacteriaaaaa',
+      type:'bacteria',
+      img:'./assets/images/micro/bacteria4.jpg',
+      description:'description description description1',
+      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved6',
+      Source:'Source Source Source',
+      Prevention:'Prevention Prevention Prevention',
+    },
+    {
+      id:7,
+      name:'bac',
+      type:'bacteria',
+      img:'./assets/images/micro/bacteria4.jpg',
+      description:'description description description7',
+      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved6',
+      Source:'Source Source Source',
+      Prevention:'Prevention Prevention Prevention',
     }
   ] ;
 constructor() { 
@@ -65,13 +96,37 @@ GetbyId(id : number)
   })
 }
 
-GetRelatedTopics(id:number)
+GetRelatedTopics(id:number,no)
 {
    let item = this.GetbyId(id);
-
-   return this.allMicros.filter(function(ele){
+   
+   this.allTopics =  this.allMicros.filter(function(ele){
      return ele.type == item.type && ele.id != item.id;
    })
+
+   return this.allTopics.slice(0,no);
 }
 
+ SearchInMicros(txtSearch:string)
+ {
+    let filteredArr = this.allMicros.filter(function(ele){
+      return ele.type.toLowerCase().includes(txtSearch.toLowerCase()) || 
+         ele.name.toLowerCase().includes(txtSearch.toLowerCase());
+    })
+
+    return filteredArr;
+ }
+
+ SearchInTopics(txtSearch:string,no)
+ {
+   let newArr;
+   if(txtSearch!=null)
+   {
+    newArr = this.allTopics.filter(function(ele){
+      return ele.name.toLowerCase().includes(txtSearch.toLowerCase());
+    });
+
+    return newArr.slice(0,no);
+   }
+ }
 }

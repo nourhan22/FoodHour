@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, OnInit,Output,Input } from '@angular/core';
+
+import { ActivatedRoute } from '@angular/router';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-smallHeader',
@@ -8,9 +10,26 @@ import { Input } from '@angular/core';
 })
 export class SmallHeaderComponent implements OnInit {
 @Input() public title;
-  constructor() { }
+ 
+@Output() MicroSearch: EventEmitter<any> = new EventEmitter();
+public txtSearch : string;
+
+  constructor(private ActivatedRoute : ActivatedRoute) { }
 
   ngOnInit() {
   }
-
+  onChange()
+  {
+    let segmentUrl ;
+    this.ActivatedRoute.url.subscribe(
+      (data)=>{
+      debugger;
+        segmentUrl = data[0].path; 
+    
+        if(segmentUrl == 'microOrganismListing')
+        {
+          this.MicroSearch.emit(this.txtSearch);
+        }
+      });
+  }
 }

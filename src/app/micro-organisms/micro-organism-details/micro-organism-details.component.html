@@ -13,9 +13,9 @@
       
           <div class="col-md-3">
             <aside class="sidebar">
-              <app-search></app-search>
+              <app-search (TxtChange) = 'onTxtChange($event)'></app-search>
               <hr>
-              <h5 class="" style="color:#ff530a;">Top Rated topics</h5>
+              <h5 class="" style="color:#ff530a;">Other {{MicroItem.type}}</h5>
                <ul class="simple-post-list">
                 
                   <app-relatedtopic [topic]="x"  *ngFor="let x of relatedTopics"></app-relatedtopic>
