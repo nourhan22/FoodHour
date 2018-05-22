@@ -1,9 +1,57 @@
+/* cutting details */
+.owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #ff530a;
+}
+p{
+    font-size: 17px;
+}
+
+.thumb-info .thumb-info-type {
+    background-color: #ff530a;
+}
+.thumb-info .thumb-info-wrapper:after {
+    content: "";
+    background: rgba(172, 167, 167, 0.5);
+}
+/*************************************************/
+/* select all cutting */
+.custom-divider {
+    height: 56px;
+    /*background: transparent url(../images/custom-divider-1.png) no-repeat center center;*/
+}
+
+/* footer style */
+.social-icons li a {
+    color: #ff530a !important;
+   
+}
+#footer .footer-ribbon:before {
+    border-right-color: #ff530a;
+    border-left-color: #ff530a;
+}
+#footer .footer-ribbon {
+    background: #ff530a;
+}
+#footer.light h1, #footer.light h2, #footer.light h3, #footer.light h4, #footer.light a {
+    color: #ff530a;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    /*margin-left: 27px;*/
+}
+/**********************************************************************/
+/* New Header  */
 ul.nav-pills > li.active > a {
     background-color: #ff530a;
 }
+/* .header-nav-main nav > ul > li:hover > a {
+    background: #fe7c26;
+} */
 a {
     color: rgb(114, 114, 114) ;
 }
+/* a:hover {
+    color: #fe7c26;
+} */
 ul > li.dropdown .dropdown-menu {
     border-top-color: #ff530a !important;
 }
@@ -11,7 +59,7 @@ ul > li.dropdown .dropdown-menu {
     color: rgb(114, 114, 114) ;
 }
 li:hover > a {
-    background-color: #ff530a !important;
+    background-color: #fe7c26 !important;
 }
 @media (min-width: 992px){
 #header .header-nav-main nav > ul > li > a.dropdown-toggle:after {
@@ -21,3 +69,8 @@ li:hover > a {
 #header .header-nav-main nav > ul > li.dropdown .dropdown-menu li.dropdown-submenu > a:after {
     border-color: transparent transparent transparent #ff530a;
 }}
+/********************************************************************/
+/* NewFlatService */
+.orange{
+    color: #ff530a !important;
+}

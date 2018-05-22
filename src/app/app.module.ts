@@ -63,7 +63,7 @@ import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smal
 
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
-     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent}
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
 
     ])
   ],
