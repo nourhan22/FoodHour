@@ -1,2 +1,14 @@
+<app-smallHeader [title] = 'headertitle'></app-smallHeader>
+<div class='container'>
+    <div class="row">
+        <i class="fa fa-plus pull-right" id="plus"></i>
+        <i class="fa fa-edit pull-right" id="plus"></i>
+        <i class="fa fa-trash pull-right" id="plus"></i>
+    </div>
+    
+    <app-micro-organism-item [item]='item' *ngFor='let item of Micros'></app-micro-organism-item>
+</div>
+
 
 <app-micro-organism-item [item]='item' *ngFor='let item of Micros'></app-micro-organism-item>
+
