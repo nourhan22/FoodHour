@@ -7,6 +7,7 @@ import {FooterComponent} from './shared/components/footer/footer.component';
 import {CuttingMethodsModule} from './cutting-methods/cutting-methods.module';
 import {CuttingMethodItemComponent} from './cutting-methods/cutting-method-item/cutting-method-item.component';
 import {CuttingMethodListingComponent} from './cutting-methods/cutting-method-listing/cutting-method-listing.component';
+import {CuttingMethodDetailsComponent} from './cutting-methods/cutting-method-details/cutting-method-details.component';
 import {ToolsModule} from './tools/tools.module';
 import {ToolItemComponent} from './tools/tool-item/tool-item.component';
 import {ToolListingComponent} from './tools/tool-listing/tool-listing.component';
@@ -52,16 +53,29 @@ import {FormsModule} from '@angular/forms'
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
-    CookingMethodDetailsComponent,
-    CookingMethodDetailsComponent,
 
+    CuttingMethodDetailsComponent,
+
+
+
+    CookingMethodDetailsComponent,
+    CookingMethodDetailsComponent,
+<<<<<<< HEAD
+
+=======
+>>>>>>> 448720c9989da8a7e09db61a61ddb1e6a8bdc5d9
     SmallHeaderComponent,
     TabsComponent,
     MicroOrganismDetailsComponent,
     MicroItemDescriptionComponent,
     SearchComponent,
-    RelatedtopicComponent
+    RelatedtopicComponent,
 
+
+<<<<<<< HEAD
+=======
+    SmallHeaderComponent
+>>>>>>> 448720c9989da8a7e09db61a61ddb1e6a8bdc5d9
 
   ],
   imports: [
@@ -87,10 +101,12 @@ import {FormsModule} from '@angular/forms'
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
+     {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
 
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
 
+<<<<<<< HEAD
     
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      
@@ -99,6 +115,14 @@ import {FormsModule} from '@angular/forms'
 
 
 
+=======
+     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
+     
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
+
+
+>>>>>>> 448720c9989da8a7e09db61a61ddb1e6a8bdc5d9
     ])
   ],
   providers: [MicroService],

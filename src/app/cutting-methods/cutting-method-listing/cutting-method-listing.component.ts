@@ -8,9 +8,11 @@ import { ICuttingMethods } from 'src/app/shared/models/interfaces/iCuttingMethod
 })
 export class CuttingMethodListingComponent implements OnInit {
   public cut: ICuttingMethods[];
+  public title:String;
   constructor() { }
 
   ngOnInit() {
+    this.title="Cutting Methods";
     this.cut =  [
       {imageUrl: '../../../assets/images/large dice.jpg',
       title: 'large dice'},

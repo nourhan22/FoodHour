@@ -4,6 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { EventEmitter } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'app-smallHeader',
   templateUrl: './smallHeader.component.html',
   styleUrls: ['./smallHeader.component.css']

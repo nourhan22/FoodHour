@@ -116,10 +116,10 @@ li {
 	transform: scale(1.1, 1.1);
 }
 
-.image-gallery-item{
+/*.image-gallery-item{
     width:340px;
     height: 200px;
-}
+}*/
 .iconColor:hover> a{
     background-color: #f16128 !important;
 }
