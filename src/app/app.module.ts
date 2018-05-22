@@ -56,7 +56,7 @@ import {ActivatedRoute} from '@angular/router'
     CuttingMethodListingComponent,
     CookingMethodDetailsComponent,
     CookingMethodDetailsComponent,
-<<<<<<< HEAD
+
     SmallHeaderComponent,
     TabsComponent,
     MicroOrganismDetailsComponent,
@@ -64,9 +64,7 @@ import {ActivatedRoute} from '@angular/router'
     SearchComponent,
     RelatedtopicComponent
 
-=======
-    SmallHeaderComponent
->>>>>>> 40c9476a7c8bef0d03c19aa845908dd82c6c40ae
+
   ],
   imports: [
     BrowserModule,
@@ -94,15 +92,15 @@ import {ActivatedRoute} from '@angular/router'
 
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
-<<<<<<< HEAD
-     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
-     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent}
+
+    
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      
-=======
+
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
 
 
->>>>>>> 40c9476a7c8bef0d03c19aa845908dd82c6c40ae
+
     ])
   ],
   providers: [MicroService],
