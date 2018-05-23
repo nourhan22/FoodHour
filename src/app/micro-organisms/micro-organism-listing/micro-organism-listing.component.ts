@@ -16,10 +16,8 @@ export class MicroOrganismListingComponent implements OnInit {
 
   ngOnInit() {
    
-    this.headertitle = 'MicroOrganisms';
-     this.MicroService.GetAllMicros().subscribe(
-     (data)=>{ this.Micros = data}
-    );
+    this.headertitle = 'MicroOrganisms'
+    this.Micros = this.MicroService.GetAllMicros();
   }
 
   onMicroSearch(txtSearch:string)
@@ -30,12 +28,6 @@ export class MicroOrganismListingComponent implements OnInit {
       this.Micros = this.MicroService.SearchInMicros(txtSearch);
     }
     
-  }
-
-  onDelete()
-  {
-    debugger;
-    this.MicroService.DeleteAll();
   }
 
 }

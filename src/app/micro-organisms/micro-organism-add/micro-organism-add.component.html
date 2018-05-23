@@ -1,6 +1,6 @@
 <div class="container">
-<!--  upload Image -->
-  <form (ngSubmit)="onSave(myform)" #myform="ngForm">
+<!-- type & upload Image -->
+  <form>
 
     <div class='row header'>
       <span class="text-muted">Add a New Contact</span>
@@ -20,16 +20,14 @@
 
     <div class="input-group col-xs-12">
       <input type="text" class="form-control" name='name' [(ngModel)]='newMicro.name'
-       placeholder="Name" aria-describedby="basic-addon1" required>
+       placeholder="Name" aria-describedby="basic-addon1">
     </div>
 
-
     <div class="input-group col-xs-12">
-        <select  class="form-control" name='type' [(ngModel)]="newMicro.type" required>
-          <option  value='Choose Type' required>Choose Type</option>
-          <option [value]="type.title" *ngFor='let type of microTypes'>{{type.title}}</option>
-        </select>
-      </div>
+      <input type="text" class="form-control" name='type' [(ngModel)]='newMicro.type'
+      placeholder="Type" aria-describedby="basic-addon1">
+    </div>
+
 
     <div class="input-group col-xs-12">
       <input type="text" class="form-control"name='source' [(ngModel)]='newMicro.Source'
@@ -52,7 +50,7 @@
     </div>
 
     <div class="row">
-      <button type="submit" class="btn  addbtn col-xs-7 "[disabled]="myform.invalid" >Add Contact</button>
+      <button type="button" class="btn  addbtn col-xs-7 " (click)='onSave()'>Add Contact</button>
     </div>
     <div class='row'>
       <button type="button" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>

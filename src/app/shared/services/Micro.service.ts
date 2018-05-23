@@ -1,39 +1,17 @@
 import { Injectable } from '@angular/core';
 import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
-import { Observable } from 'rxjs/internal/Observable';
-import { of } from 'rxjs';
-import { IMicroType } from 'src/app/shared/models/interfaces/IMicroType';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class MicroService {
-  private MicroTypes:IMicroType[]=[
-    {
-      id:1,
-      title:'Virus'
-    },
-    {
-      id:2,
-      title:'Bacteria'
-    },
-    {
-      id:3,
-      title:'Fungi'
-    },
-    {
-      id:4,
-      title:'Parasites'
-    },
-  ];
-  
   private allTopics:IMicroItem[];
   private allMicros:IMicroItem[] = [
     {
       id:1,
       name:'AAAAAA',
-      type:'Bacteria',
+      type:'bacteria',
       img:'./assets/images/micro/bacteria4.jpg',
       description:'description description description1',
       FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved1',
@@ -43,7 +21,7 @@ export class MicroService {
     {
       id:2,      
       name:'mmmvirus',
-      type:'Fungi',
+      type:'virus',
       img:'./assets/images/micro/bacteria2.jpg',
       description:'description description description2',
       FoodUsualyInvolved:'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved2',
@@ -53,7 +31,7 @@ export class MicroService {
     {
       id:3,
       name:'CCCCCCC',
-      type:'Parasites',
+      type:'virus',
       img:'./assets/images/micro/bacteria1.jpg',
       description:'description description description3',
       FoodUsualyInvolved:'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved3',
@@ -63,7 +41,7 @@ export class MicroService {
     {
       id:4,
       name:'BacteriaName',
-      type:'Bacteria',
+      type:'bacteria',
       img:'./assets/images/micro/bacteria5.jpg',
       description:'description description description1',
       FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved4',
@@ -73,7 +51,7 @@ export class MicroService {
     {
       id:5,
       name:'virusName',
-      type:'Virus',
+      type:'virus',
       img:'./assets/images/micro/bacteria1.jpg',
       description:'description description description1',
       FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved5',
@@ -82,8 +60,8 @@ export class MicroService {
     },
     {
       id:6,
-      name:'Fungi',
-      type:'Fungi',
+      name:'bacteriaaaaa',
+      type:'bacteria',
       img:'./assets/images/micro/bacteria4.jpg',
       description:'description description description1',
       FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved6',
@@ -93,7 +71,7 @@ export class MicroService {
     {
       id:7,
       name:'bac',
-      type:'Virus',
+      type:'bacteria',
       img:'./assets/images/micro/bacteria4.jpg',
       description:'description description description7',
       FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved6',
@@ -107,9 +85,9 @@ export class MicroService {
 constructor() { 
 }
 
-GetAllMicros() :Observable<IMicroItem[]>
+GetAllMicros()
 {
-  return of (this.allMicros);
+  return this.allMicros.slice();
 }
 
 GetbyId(id : number)
@@ -158,25 +136,5 @@ GetRelatedTopics(id:number,no)
  {
    debugger;
  this.allMicros.push(item);
- }
-
-  onDelete(id:number)
- {
-   debugger;
-   const index= this.allMicros.findIndex(a=>a.id === id);
-   if(index >-1)
-   {
-     this.allMicros.splice(index,1);
-   }
- }
-
- DeleteAll()
- {
-  let len = this.allMicros.length; 
-  this.allMicros.splice(0,len);
- }
- GetMicroTypes()
- {
-   return this.MicroTypes;
  }
 }

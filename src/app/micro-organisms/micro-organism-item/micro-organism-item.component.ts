@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 import { ISmallMicro } from 'src/app/shared/models/interfaces/ISmallMicro';
-import { MicroService } from 'src/app/shared/services/Micro.service';
 
 
 @Component({
@@ -11,13 +10,9 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
 })
 export class MicroOrganismItemComponent implements OnInit {
   @Input() public item:ISmallMicro;
-  constructor(private microService: MicroService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  onDelete(id:number)
-  {
-     this.microService.onDelete(id);
-  }
 }
