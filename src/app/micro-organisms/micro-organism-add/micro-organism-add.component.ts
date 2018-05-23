@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 import { MicroService } from 'src/app/shared/services/Micro.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-micro-organism-add',
@@ -9,7 +10,7 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
 })
 export class MicroOrganismAddComponent implements OnInit {
 public newMicro : IMicroItem;
-  constructor(private microService : MicroService) { }
+  constructor(private microService : MicroService ,private router:Router) { }
 
   ngOnInit() {
     this.newMicro = {
@@ -22,13 +23,22 @@ public newMicro : IMicroItem;
       description:'',
       id:0
       }
+
   }
 
   onSave()
   {
     if(this.newMicro!=null)
     {
-      this.microService.AddNewMicro(this.newMicro);      
+      this.newMicro.id = this.microService.lengthOfMicros+1;
+      this.newMicro.img = '../assets/images/default.png'
+      this.microService.AddNewMicro(this.newMicro);   
+      this.router.navigate(['microOrganismListing']) ;  
     }
+  }
+
+  onCancel()
+  {
+    this.router.navigate(['microOrganismListing']) ;      
   }
 }
