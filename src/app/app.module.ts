@@ -37,6 +37,7 @@ import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/rela
 import { MicroService } from 'src/app/shared/services/Micro.service';
 import {ActivatedRoute} from '@angular/router'
 import {FormsModule} from '@angular/forms'
+import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
 
 @NgModule({
   declarations: [
@@ -60,22 +61,14 @@ import {FormsModule} from '@angular/forms'
 
     CookingMethodDetailsComponent,
     CookingMethodDetailsComponent,
-<<<<<<< HEAD
-
-=======
->>>>>>> 448720c9989da8a7e09db61a61ddb1e6a8bdc5d9
     SmallHeaderComponent,
     TabsComponent,
     MicroOrganismDetailsComponent,
     MicroItemDescriptionComponent,
     SearchComponent,
     RelatedtopicComponent,
+    MicroOrganismAddComponent
 
-
-<<<<<<< HEAD
-=======
-    SmallHeaderComponent
->>>>>>> 448720c9989da8a7e09db61a61ddb1e6a8bdc5d9
 
   ],
   imports: [
@@ -106,23 +99,15 @@ import {FormsModule} from '@angular/forms'
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
 
-<<<<<<< HEAD
     
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      
 
-     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'microOrganism/add' , component:MicroOrganismAddComponent}
 
 
 
-=======
-     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
-     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
-     
-     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
-
-
->>>>>>> 448720c9989da8a7e09db61a61ddb1e6a8bdc5d9
     ])
   ],
   providers: [MicroService],
