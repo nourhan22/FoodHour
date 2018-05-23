@@ -19,7 +19,7 @@ import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-org
 import {CookingMethodsModule} from './cooking-methods/cooking-methods.module';
 import { CookingMethodListingComponent } from 'src/app/cooking-methods/cooking-method-listing/cooking-method-listing.component';
 import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-method-item/cooking-method-item.component';
-
+import {ToolDetailesComponent} from './tools/tool-detailes/tool-detailes.component';
 
 // import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
 
@@ -57,7 +57,7 @@ import {FormsModule} from '@angular/forms';
     CuttingMethodListingComponent,
     CuttingMethodDetailsComponent,
     CookingMethodDetailsComponent,
-    CookingMethodDetailsComponent,
+    ToolDetailesComponent,
     SmallHeaderComponent,
     TabsComponent,
     MicroOrganismDetailsComponent,
@@ -83,7 +83,6 @@ import {FormsModule} from '@angular/forms';
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
-     {path:'cookingMethodListing' , component:CookingMethodListingComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
@@ -91,8 +90,9 @@ import {FormsModule} from '@angular/forms';
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
-
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'ToolListing/details/:id',component:ToolDetailesComponent}
 
     ])
   ],
