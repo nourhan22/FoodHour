@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Output,EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-search',
@@ -9,7 +10,14 @@ export class SearchComponent implements OnInit {
 
   constructor() { }
 
+  public txtSearch:string;
+  @Output() TxtChange : EventEmitter<any> = new EventEmitter();
   ngOnInit() {
+  }
+
+  onChange()
+  {
+   this.TxtChange.emit(this.txtSearch);
   }
 
 }
