@@ -1,0 +1,12 @@
+/* ****cutting methods **** */
+html .btn-primary{
+    border-color: #ff530a #ff530a #c23b06 ;
+    background-color: #f04e0ef5;
+}
+
+html .btn-primary:hover {
+    border-color:  #c23b06 ;
+    background-color: #c23b06;
+}
+
+

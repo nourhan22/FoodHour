@@ -1,0 +1,62 @@
+
+.form-control {
+    display: block;
+    background-image: none;
+    border: 1px solid #ff530a;
+    border-radius: 5px !important; 
+}
+
+select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre ;
+    -webkit-rtl-ordering: logical;
+    color:#ff530a !important;
+    
+}
+ul.nav-pills > li.active > a:hover, ul.nav-pills > li.active > a:focus {
+    background-color:#ff530a !important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color:#ff530a !important;
+}
+.nav-pills>li>a {
+    border-radius:5px !important;
+}
+
+.sidebar h4 {
+
+    color: #ff530a !important;
+}
+.owl-carousel .owl-nav .owl-prev:before{
+
+    color: #ff530a !important;
+}
+
+.owl-carousel .owl-nav .owl-next:before {
+ 
+    color:#ff530a !important;
+}
+
+.sidebar.shop-sidebar .panel.panel-default .panel-heading a:before {
+    border: 1px solid #ff530a;
+    color: #ff530a;
+    background-color: #fff0;
+    font-size: 13px;
+}
+
+.sidebar.shop-sidebar .panel.panel-default .panel-heading a {
+    color: #ff530a;
+    border: 1px solid #ddd;
+}
+.sidebar.shop-sidebar .panel.panel-default .panel-heading a:hover:before {
+    background-color: #ff530a!important;
+    border-color: #ff530a!important;
+    color: #fff;
+}
+
+
+

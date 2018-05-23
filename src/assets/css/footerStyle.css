@@ -1,0 +1,17 @@
+.social-icons li a {
+    color: #ff530a !important;
+   
+}
+#footer .footer-ribbon:before {
+    border-right-color: #ff530a;
+    border-left-color: #ff530a;
+}
+#footer .footer-ribbon {
+    background: #ff530a;
+}
+#footer.light h1, #footer.light h2, #footer.light h3, #footer.light h4, #footer.light a {
+    color: #ff530a;
+}
+/* .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    margin-left: 27px;
+} */

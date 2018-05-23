@@ -1,3 +1,5 @@
+import { ActivatedRoute } from '@angular/router';
+import { IngredientService } from './../../shared/services/ingredient.service';
 import { IIngredient } from './../../shared/models/interfaces/IIngredient';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,19 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngredientDetailsComponent implements OnInit {
 
-  public ingredients:IIngredient[];
-  constructor() { }
-
-  ngOnInit() {
-    this.ingredients = [
-      {
-        id:1,
-        name:'Tomato',
-        desc:'tomato is very useful',
-        img:'../../assets/images/ctomato.jpg'
-      }
+  public Item : IIngredient;
+  private id :number;
+    constructor(private ActivatedRoute:ActivatedRoute, private ingredientservice:IngredientService) {
+  
+   
+     }
+  
+    ngOnInit() {
       
-    ]
-  }
+      this.ActivatedRoute.params.subscribe(
+       
+        (params)=>{ debugger; this.id = params['id'];}
+      )
+  
+     this.Item = this.ingredientservice.GetbyId(this.id);
+    }
+  
 
 }
