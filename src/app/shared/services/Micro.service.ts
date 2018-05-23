@@ -129,4 +129,10 @@ GetRelatedTopics(id:number,no)
     return newArr.slice(0,no);
    }
  }
+
+ AddNewMicro(item:IMicroItem)
+ {
+   debugger;
+ this.allMicros.push(item);
+ }
 }
