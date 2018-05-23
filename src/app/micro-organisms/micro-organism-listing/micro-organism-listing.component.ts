@@ -20,4 +20,14 @@ export class MicroOrganismListingComponent implements OnInit {
     this.Micros = this.MicroService.GetAllMicros();
   }
 
+  onMicroSearch(txtSearch:string)
+  {
+    if( txtSearch!=null)
+    {
+      this.Micros = this.MicroService.GetAllMicros();
+      this.Micros = this.MicroService.SearchInMicros(txtSearch);
+    }
+    
+  }
+
 }

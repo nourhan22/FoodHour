@@ -1,0 +1,31 @@
+.owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #ff530a;
+}
+p{
+    font-size: 17px;
+}
+
+.thumb-info .thumb-info-type {
+    background-color: #ff530a;
+}
+.thumb-info .thumb-info-wrapper:after {
+    content: "";
+    background: rgba(172, 167, 167, 0.5);
+}
+.h2{
+    color:#ff530a; 
+    font-weight:500;
+}
+ul>li>h4{
+    color:#ff530a; 
+    font-weight:500;
+}
+.owl-carousel .owl-nav [class*="owl-"],.owl-carousel .owl-nav [class*="owl-"]:hover {
+    color: #ffffff;
+    background-color: #ff530a;
+    border-color: #ff530a;
+}
+.owl-carousel .owl-nav [class*="owl-"]:active:hover {
+    background-color: #ff530a;
+    border-color: #ff530a;
+}
