@@ -20,11 +20,8 @@ import {CookingMethodsModule} from './cooking-methods/cooking-methods.module';
 import { CookingMethodListingComponent } from 'src/app/cooking-methods/cooking-method-listing/cooking-method-listing.component';
 import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-method-item/cooking-method-item.component';
 import {ToolDetailesComponent} from './tools/tool-detailes/tool-detailes.component';
-
 // import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
-
 //import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
-
 import {IngredientsModule} from './ingredients/ingredients.module';
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
 import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
@@ -37,9 +34,8 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
 import {ActivatedRoute} from '@angular/router'
 import {FormsModule} from '@angular/forms'
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
-
-
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
+import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
 
 
 
@@ -68,9 +64,8 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
     MicroItemDescriptionComponent,
     SearchComponent,
     RelatedtopicComponent,
-    MicroOrganismAddComponent
-
-
+    MicroOrganismAddComponent,
+    CookingMethodAddComponent
   ],
   imports: [
     BrowserModule,FormsModule,
@@ -89,12 +84,7 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
-
-    
-    
      {path:'microOrganism/add' , component:MicroOrganismAddComponent},
-
-
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
@@ -102,10 +92,9 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-     {path:'ToolListing/details/:id',component:ToolDetailesComponent}
-
+     {path:'ToolListing/details/:id',component:ToolDetailesComponent},
+     {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent}
+     
     ])
   ],
   providers: [MicroService,CookingMethodService],

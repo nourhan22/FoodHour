@@ -27,7 +27,6 @@ public cookingMethods: IcookingMethod[];
   {
     if( txtSearch!=null)
     {
-      //this.cookingMethods= this.cookingMethodService.getAll();
       this.cookingMethods = this.cookingMethodService.SearchInCookingMethods(txtSearch);
     }
     
