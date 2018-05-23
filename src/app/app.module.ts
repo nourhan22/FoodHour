@@ -28,16 +28,15 @@ import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-meth
 import {IngredientsModule} from './ingredients/ingredients.module';
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
 import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
-<<<<<<< HEAD
+
 import { TabsComponent } from 'src/app/micro-organisms/tabs/tabs.component';
 import { MicroOrganismDetailsComponent } from 'src/app/micro-organisms/micro-organism-details/micro-organism-details.component';
 import { MicroItemDescriptionComponent } from 'src/app/micro-organisms/micro-item-description/micro-item-description.component';
 import { SearchComponent } from 'src/app/shared/components/search/search.component';
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
-import {ActivatedRoute} from '@angular/router'
-=======
->>>>>>> 40c9476a7c8bef0d03c19aa845908dd82c6c40ae
+import {ActivatedRoute} from '@angular/router';
+import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 
 @NgModule({
   declarations: [
@@ -56,17 +55,16 @@ import {ActivatedRoute} from '@angular/router'
     CuttingMethodListingComponent,
     CookingMethodDetailsComponent,
     CookingMethodDetailsComponent,
-<<<<<<< HEAD
+
     SmallHeaderComponent,
     TabsComponent,
     MicroOrganismDetailsComponent,
     MicroItemDescriptionComponent,
     SearchComponent,
-    RelatedtopicComponent
+    RelatedtopicComponent,
 
-=======
+
     SmallHeaderComponent
->>>>>>> 40c9476a7c8bef0d03c19aa845908dd82c6c40ae
   ],
   imports: [
     BrowserModule,
@@ -94,18 +92,16 @@ import {ActivatedRoute} from '@angular/router'
 
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
-<<<<<<< HEAD
+
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
-     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent}
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      
-=======
+
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
 
-
->>>>>>> 40c9476a7c8bef0d03c19aa845908dd82c6c40ae
     ])
   ],
-  providers: [MicroService],
+  providers: [MicroService,CookingMethodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

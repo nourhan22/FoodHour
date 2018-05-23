@@ -53,8 +53,11 @@ public getAll()
 {
   return this.cookingMethods.slice();
 }
-public getByIndex(index: number)
+public getByIndex(id: number)
 {
-  return this.cookingMethods[index];
+  //return this.cookingMethods[index];
+    return this.cookingMethods.find(function(element){
+    return element.id == id;
+  })
 }
 }
