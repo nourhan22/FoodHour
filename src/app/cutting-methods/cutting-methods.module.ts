@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CuttingMethodAddComponent } from './cutting-method-add/cutting-method-add.component';

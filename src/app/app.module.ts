@@ -1,7 +1,6 @@
 import { IngredientListingComponent } from './ingredients/ingredient-listing/ingredient-listing.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import {HeaderComponent} from './shared/components/header/header.component';
 import {FooterComponent} from './shared/components/footer/footer.component';
 import {CuttingMethodsModule} from './cutting-methods/cutting-methods.module';
@@ -20,7 +19,7 @@ import { MicroOrganismListingComponent } from 'src/app/micro-organisms/micro-org
 import {CookingMethodsModule} from './cooking-methods/cooking-methods.module';
 import { CookingMethodListingComponent } from 'src/app/cooking-methods/cooking-method-listing/cooking-method-listing.component';
 import { CookingMethodItemComponent } from 'src/app/cooking-methods/cooking-method-item/cooking-method-item.component';
-
+import {ToolDetailesComponent} from './tools/tool-detailes/tool-detailes.component';
 
 // import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
 
@@ -35,9 +34,17 @@ import { MicroItemDescriptionComponent } from 'src/app/micro-organisms/micro-ite
 import { SearchComponent } from 'src/app/shared/components/search/search.component';
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
+<<<<<<< HEAD
 import {ActivatedRoute} from '@angular/router'
 import {FormsModule} from '@angular/forms'
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
+=======
+
+import {ActivatedRoute} from '@angular/router';
+import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
+
+import {FormsModule} from '@angular/forms';
+>>>>>>> 25be8141233ed6528c382b016e4f09e9ec87b934
 
 @NgModule({
   declarations: [
@@ -54,49 +61,44 @@ import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organis
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
-
     CuttingMethodDetailsComponent,
-
-
-
     CookingMethodDetailsComponent,
+<<<<<<< HEAD
     CookingMethodDetailsComponent,
+=======
+    ToolDetailesComponent,
+>>>>>>> 25be8141233ed6528c382b016e4f09e9ec87b934
     SmallHeaderComponent,
     TabsComponent,
     MicroOrganismDetailsComponent,
     MicroItemDescriptionComponent,
     SearchComponent,
     RelatedtopicComponent,
+<<<<<<< HEAD
     MicroOrganismAddComponent
 
+=======
+    SmallHeaderComponent,
+>>>>>>> 25be8141233ed6528c382b016e4f09e9ec87b934
 
   ],
   imports: [
     BrowserModule,FormsModule,
     RouterModule.forRoot([
-
-
-     
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
-
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
-
-
      {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
-     
      {path:'cookingMethodeListing' , component:CookingMethodListingComponent},
-
-
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
-
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
+<<<<<<< HEAD
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
 
     
@@ -107,10 +109,22 @@ import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organis
      {path:'microOrganism/add' , component:MicroOrganismAddComponent}
 
 
+=======
+     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'ToolListing/details/:id',component:ToolDetailesComponent}
+>>>>>>> 25be8141233ed6528c382b016e4f09e9ec87b934
 
     ])
   ],
-  providers: [MicroService],
+  providers: [MicroService,CookingMethodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
