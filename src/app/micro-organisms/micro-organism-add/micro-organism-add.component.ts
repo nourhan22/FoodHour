@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 import { Router } from '@angular/router';
+import { IMicroType } from 'src/app/shared/models/interfaces/IMicroType';
+import { NgForm } from '@angular/forms/src/directives/ng_form';
 
 @Component({
   selector: 'app-micro-organism-add',
@@ -10,12 +12,13 @@ import { Router } from '@angular/router';
 })
 export class MicroOrganismAddComponent implements OnInit {
 public newMicro : IMicroItem;
+public microTypes:IMicroType[];
   constructor(private microService : MicroService ,private router:Router) { }
 
   ngOnInit() {
     this.newMicro = {
       name:'',
-      type:'',
+      type:'Choose Type',
       Source:'',
       FoodUsualyInvolved:'',
       Prevention:'',
@@ -24,11 +27,14 @@ public newMicro : IMicroItem;
       id:0
       }
 
+      this.microTypes = this.microService.GetMicroTypes();
+     
   }
 
-  onSave()
+  onSave(myform:NgForm)
   {
-    if(this.newMicro!=null)
+    console.log(myform.value);
+    if(this.newMicro!=null && myform.valid)
     {
       this.newMicro.id = this.microService.lengthOfMicros+1;
       this.newMicro.img = '../assets/images/default.png'
