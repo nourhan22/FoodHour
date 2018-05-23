@@ -6,7 +6,6 @@ import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
   providedIn: 'root'
 })
 export class MicroService {
-
   private allTopics:IMicroItem[];
   private allMicros:IMicroItem[] = [
     {
@@ -80,6 +79,9 @@ export class MicroService {
       Prevention:'Prevention Prevention Prevention',
     }
   ] ;
+
+ public lengthOfMicros : number = this.allMicros.length;
+ 
 constructor() { 
 }
 
