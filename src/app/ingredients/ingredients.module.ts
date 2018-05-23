@@ -5,13 +5,14 @@ import { IngredientItemComponent } from './ingredient-item/ingredient-item.compo
 import { IngredientListingComponent } from './ingredient-listing/ingredient-listing.component';
 
 import { IngredientDetailsComponent } from './ingredient-details/ingredient-details.component';
+import { RouterLink } from '@angular/router';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink
   ],
   declarations: [IngredientAddComponent, IngredientItemComponent, IngredientListingComponent,
-
     IngredientDetailsComponent
 ]
 })

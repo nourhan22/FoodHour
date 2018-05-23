@@ -1,3 +1,6 @@
+import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
+import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
+import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
 import { IngredientListingComponent } from './ingredients/ingredient-listing/ingredient-listing.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -55,6 +58,9 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
     MicroOrganismListingComponent,
     CookingMethodListingComponent,
     IngredientListingComponent,
+    IngredientItemComponent,
+    IngredientDetailsComponent,
+    IngredientDescriptionComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -76,6 +82,9 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
     BrowserModule,FormsModule,
     RouterModule.forRoot([
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
+     {path:'IngredientListing', component:IngredientListingComponent},
+     {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
+     {path:'IngredientListing', component:IngredientListingComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
      {path:'ToolItem' , component:ToolItemComponent},
