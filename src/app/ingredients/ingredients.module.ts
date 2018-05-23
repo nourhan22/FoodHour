@@ -4,10 +4,12 @@ import { IngredientAddComponent } from './ingredient-add/ingredient-add.componen
 import { IngredientItemComponent } from './ingredient-item/ingredient-item.component';
 import { IngredientListingComponent } from './ingredient-listing/ingredient-listing.component';
 import { IngredientDetailsComponent } from './ingredient-details/ingredient-details.component';
+import { RouterLink } from '@angular/router/src/directives/router_link';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink
   ],
   declarations: [IngredientAddComponent, IngredientItemComponent, IngredientListingComponent,
     IngredientDetailsComponent
