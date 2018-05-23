@@ -81,21 +81,19 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
   imports: [
     BrowserModule,FormsModule,
     RouterModule.forRoot([
-     {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
+     
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
-     {path:'cookingMethodeListing' , component:CookingMethodListingComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
-     {path:'cookingMethodListing' , component:CookingMethodListingComponent},
+     
 
     
     
