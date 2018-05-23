@@ -70,48 +70,27 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,FormsModule,
     RouterModule.forRoot([
-
-
-     
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
-
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
-
-
      {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
-     
      {path:'cookingMethodeListing' , component:CookingMethodListingComponent},
-
-
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
-
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
-
-
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
-
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
-     
-
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-
-
-
-
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
-     
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent}
 
 

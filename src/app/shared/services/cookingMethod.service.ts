@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { IcookingMethod } from 'src/app/shared/models/interfaces/icooking-method';
+import { Observable } from 'rxjs/internal/Observable';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,51 +9,51 @@ import { IcookingMethod } from 'src/app/shared/models/interfaces/icooking-method
 export class CookingMethodService {
   public cookingMethods: IcookingMethod[]= [
     {
-    title: 'hhhh',
+    title: 'Broil',
     imageUrl: '../../../assets/images/cooking method/grill.jpg',
-     description:'Tournée (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
+     description:'Broil (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
      id:1
   }      
 ,
 {
-  title: 'hhhh',
+  title: 'Bake',
   imageUrl: '../../../assets/images/cooking method/grill.jpg',
-  description:'Tournée (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
+  description:'Bake (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
   id:2
 },
 
   {  title:'Grill',
     imageUrl:'../../../assets/images/cooking method/grill.jpg',
-    description:'Tournée (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
+    description:'Grill (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
     id:3
   }
 ,
 {
   title:'Steam',
   imageUrl:'../../../assets/images/cooking method/steam.jpg',
-  description:'Tournée (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
+  description:'Steam (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
   id:4
 }
 ,
 {
   title:'Simmer',
   imageUrl:'../../../assets/images/cooking method/simmer.jpg',
-  description:'Tournée (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
+  description:'Simmer (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
   id:5
 }
 ,
 {
   title:'Sear',
   imageUrl:'../../../assets/images/cooking method/sear.jpg',
-  description:'Tournée (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
+  description:'Sear (pronounced tour-nay) is French for the word "turned." The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes.',
   id:6
 }
 ];
   
 constructor() { }
-public getAll()
+public getAll() :Observable<IcookingMethod[]>
 {
-  return this.cookingMethods.slice();
+  return of (this.cookingMethods); 
 }
 public getByIndex(id: number)
 {
@@ -60,4 +62,22 @@ public getByIndex(id: number)
     return element.id == id;
   })
 }
+public onDelete(id:number)
+{
+  debugger;
+  const index= this.cookingMethods.findIndex(a=>a.id === id);
+  if(index >-1)
+  {
+    this.cookingMethods.splice(index,1);
+  }
+}
+SearchInCookingMethods(txtSearch:string)
+{
+   let filteredArr = this.cookingMethods.filter(function(ele){
+     return ele.title.toLowerCase().includes(txtSearch.toLowerCase());
+   })
+
+   return filteredArr;
+}
+
 }

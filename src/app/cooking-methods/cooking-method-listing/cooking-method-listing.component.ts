@@ -8,12 +8,29 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
   styleUrls: ['./cooking-method-listing.component.css']
 })
 export class CookingMethodListingComponent implements OnInit {
-public IcookingMethod: IcookingMethod[];
+public cookingMethods: IcookingMethod[];
+
   constructor(private cookingMethodService:CookingMethodService) { }
   headerTitle:string;
   ngOnInit() {
     this.headerTitle='cooking method';
-    this. IcookingMethod= this.cookingMethodService.getAll();
+    
+    this.cookingMethodService.getAll().subscribe(
+      (data)=>{
+        
+        this.cookingMethods= data;
+      }
+    );
+    
+  }
+  onCookingMethodsSearch(txtSearch:string)
+  {
+    if( txtSearch!=null)
+    {
+      //this.cookingMethods= this.cookingMethodService.getAll();
+      this.cookingMethods = this.cookingMethodService.SearchInCookingMethods(txtSearch);
+    }
+    
   }
 
 }

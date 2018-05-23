@@ -13,6 +13,7 @@ export class SmallHeaderComponent implements OnInit {
 @Input() public title;
  
 @Output() MicroSearch: EventEmitter<any> = new EventEmitter();
+@Output() CookingMethodSearch: EventEmitter<any> = new EventEmitter();
 public txtSearch : string;
 
   constructor(private ActivatedRoute : ActivatedRoute) { }
@@ -24,12 +25,15 @@ public txtSearch : string;
     let segmentUrl ;
     this.ActivatedRoute.url.subscribe(
       (data)=>{
-      debugger;
         segmentUrl = data[0].path; 
     
         if(segmentUrl == 'microOrganismListing')
         {
           this.MicroSearch.emit(this.txtSearch);
+        }
+        else if (segmentUrl == 'cookingMethodListing')
+        {
+          this.CookingMethodSearch.emit(this.txtSearch);
         }
       });
   }
