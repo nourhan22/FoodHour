@@ -1,12 +1,33 @@
 import { Injectable } from '@angular/core';
 import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
+import { IMicroType } from 'src/app/shared/models/interfaces/IMicroType ';
+import { Observable, of } from 'rxjs';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class MicroService {
+
   private allTopics:IMicroItem[];
+  private MicroTypes:IMicroType[]=[
+      {
+        id:1,
+        title:'Virus'
+      },
+      {
+        id:2,
+        title:'Bacteria'
+      },
+      {
+        id:3,
+        title:'Fungi'
+      },
+      {
+        id:4,
+        title:'Parasites'
+      },
+    ];
   private allMicros:IMicroItem[] = [
     {
       id:1,
@@ -31,7 +52,7 @@ export class MicroService {
     {
       id:3,
       name:'CCCCCCC',
-      type:'virus',
+      type:'Fungi',
       img:'./assets/images/micro/bacteria1.jpg',
       description:'description description description3',
       FoodUsualyInvolved:'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved3',
@@ -71,7 +92,7 @@ export class MicroService {
     {
       id:7,
       name:'bac',
-      type:'bacteria',
+      type:'Parasites',
       img:'./assets/images/micro/bacteria4.jpg',
       description:'description description description7',
       FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved6',
@@ -79,17 +100,14 @@ export class MicroService {
       Prevention:'Prevention Prevention Prevention',
     }
   ] ;
-
- public lengthOfMicros : number = this.allMicros.length;
- 
+  public lengthOfMicros : number = this.allMicros.length;
 constructor() { 
 }
 
-GetAllMicros()
+GetAllMicros():Observable<IMicroItem[]>
 {
-  return this.allMicros.slice();
+  return of (this.allMicros);
 }
-
 GetbyId(id : number)
 {
 
@@ -136,5 +154,27 @@ GetRelatedTopics(id:number,no)
  {
    debugger;
  this.allMicros.push(item);
+ }
+
+
+
+ onDelete(id:number)
+ {
+   debugger;
+   const index= this.allMicros.findIndex(a=>a.id === id);
+   if(index >-1)
+   {
+     this.allMicros.splice(index,1);
+   }
+ }
+
+ DeleteAll()
+ {
+  let len = this.allMicros.length; 
+  this.allMicros.splice(0,len);
+ }
+ GetMicroTypes()
+ {
+   return this.MicroTypes;
  }
 }
