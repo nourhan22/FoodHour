@@ -25,10 +25,6 @@ import {ToolDetailesComponent} from './tools/tool-detailes/tool-detailes.compone
 import {IngredientsModule} from './ingredients/ingredients.module';
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
 import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
-<<<<<<< HEAD
-
-=======
->>>>>>> b00e995491fcb0a6f9b74bc4e29d07d044db8d4f
 import { TabsComponent } from 'src/app/micro-organisms/tabs/tabs.component';
 import { MicroOrganismDetailsComponent } from 'src/app/micro-organisms/micro-organism-details/micro-organism-details.component';
 import { MicroItemDescriptionComponent } from 'src/app/micro-organisms/micro-item-description/micro-item-description.component';
@@ -36,14 +32,12 @@ import { SearchComponent } from 'src/app/shared/components/search/search.compone
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 import {ActivatedRoute} from '@angular/router'
-<<<<<<< HEAD
-=======
+
 import {FormsModule} from '@angular/forms'
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
 
->>>>>>> b00e995491fcb0a6f9b74bc4e29d07d044db8d4f
 
 
 @NgModule({
