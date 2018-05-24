@@ -73,6 +73,9 @@ li {
     padding: 2px 9px;
     text-transform: none;
     z-index: 2;
+    margin-left: -12px !important;
+    width: 65px;
+    text-align: center;
 }
 .thumb-info:hover .thumb-info-action-icon {
     right: 0;
