@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 import { MicroService } from 'src/app/shared/services/Micro.service';
+import { IMicroType } from 'src/app/shared/models/interfaces/IMicroType ';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-micro-organism-add',
@@ -9,12 +12,13 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
 })
 export class MicroOrganismAddComponent implements OnInit {
 public newMicro : IMicroItem;
-  constructor(private microService : MicroService) { }
+public microTypes:IMicroType[];
+  constructor(private microService : MicroService,private router:Router) { }
 
   ngOnInit() {
     this.newMicro = {
       name:'',
-      type:'',
+      type:'Choose Type',
       Source:'',
       FoodUsualyInvolved:'',
       Prevention:'',
@@ -22,13 +26,23 @@ public newMicro : IMicroItem;
       description:'',
       id:0
       }
+
+      this.microTypes = this.microService.GetMicroTypes();
   }
 
-  onSave()
+  onSave(myform:NgForm)
   {
-    if(this.newMicro!=null)
+    if(this.newMicro!=null && myform.valid)
     {
-      this.microService.AddNewMicro(this.newMicro);      
+      this.newMicro.id = this.microService.lengthOfMicros+1;
+      this.newMicro.img = '../assets/images/default.png'
+      this.microService.AddNewMicro(this.newMicro);   
+      this.router.navigate(['microOrganismListing']) ;       
     }
+  }
+
+  onCancel()
+  {
+    this.router.navigate(['microOrganismListing']) ;      
   }
 }
