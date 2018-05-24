@@ -79,5 +79,9 @@ SearchInCookingMethods(txtSearch:string)
 
    return filteredArr;
 }
-
+AddNewCooKingMethod(item:IcookingMethod){
+  debugger;
+  this.cookingMethods.push(item);
+}
+public lengthOfCookingMethod :number=this.cookingMethods.length;
 }
