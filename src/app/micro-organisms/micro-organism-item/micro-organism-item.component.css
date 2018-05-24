@@ -124,3 +124,6 @@ ul.image-gallery .image-gallery-item {
 	margin-bottom: 35px;
 }
 
+.trash:hover{
+     cursor: pointer;
+}
