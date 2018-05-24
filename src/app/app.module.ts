@@ -84,17 +84,8 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
-<<<<<<< HEAD
      {path:'microOrganism/add' , component:MicroOrganismAddComponent},
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
-=======
-
-    
-    
-     {path:'microOrganism/add' , component:MicroOrganismAddComponent},
-
-
->>>>>>> parent of f9da574... 'ss'
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
