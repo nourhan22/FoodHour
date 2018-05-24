@@ -65,6 +65,7 @@ html .toggle-primary.toggle-simple .toggle > label:after {
 .thumb-info .thumb-info-type {
     background-color: #ff530a;
 }
+
 /*image gallery---------------------------*/
 .thumb-info .thumb-info-wrapper:after {
     content: "";

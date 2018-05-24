@@ -10,21 +10,20 @@ export class IngredientService {
     {
       id:1,
       name:'Tomato',
-      img:'./assets/images/ctomato.jpg',
-      desc:'Tomato is very useful'
+      desc:'tomato is very useful',
+      img:'../../assets/images/tomato.jpg'
     },
     {
-      id:2,      
-      name:'botato',
-      img:'./assets/images/ctomato.jpg',
-      desc:'botato is very useful',
-      
+      id:2,
+      name:'Potato',
+      desc:'potato is very useful',
+      img:'../../assets/images/potato3.jpg'
     },
     {
       id:3,
-      name:'carrot',
-      img:'./assets/images/26a.jpg',
-      desc:'carrot is very useful'
+      name:'Carrot',
+      desc:'Carrot is very useful',
+      img:'../../assets/images/storecarrots.jpg'
     }
 
   ] ;
@@ -42,6 +41,14 @@ GetbyId(id : number)
   return this.ingredients.find(function(element){
     return element.id == id;
   })
+}
+SearchInIngredients(txtSearch:string)
+{
+   let filteredArr = this.ingredients.filter(function(ele){
+     return ele.name.toLowerCase().includes(txtSearch.toLowerCase());
+   })
+
+   return filteredArr;
 }
 
 }

@@ -1,5 +1,7 @@
 import { IIngredient } from './../../shared/models/interfaces/IIngredient';
 import { Component, OnInit } from '@angular/core';
+import { IngredientService } from '../../shared/services/ingredient.service';
+
 
 @Component({
   selector: 'app-ingredient-listing',
@@ -7,31 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ingredient-listing.component.css']
 })
 export class IngredientListingComponent implements OnInit {
-
+  public headertitle:string;
   public ingredients:IIngredient[];
-  constructor() { }
+  constructor(private IngredientService:IngredientService) { }
 
   ngOnInit() {
-    this.ingredients = [
-      {
-        id:1,
-        name:'Tomato',
-        desc:'tomato is very useful',
-        img:'../../assets/images/o.jpg'
-      },
-      {
-        id:2,
-        name:'Botato',
-        desc:'botato is very useful',
-        img:'../../assets/images/o.jpg'
-      },
-      {
-        id:3,
-        name:'Carrot',
-        desc:'Carrot is very useful',
-        img:'../../assets/images/o.jpg'
-      }
-    ]
+    this.headertitle = 'Ingredients'
+    this.ingredients = this.IngredientService.GetAllIngredients();
   }
-
+  onIngredientSearch(txtSearch:string)
+  {
+    if( txtSearch!=null)
+    {
+      this.ingredients = this.IngredientService.SearchInIngredients(txtSearch);
+    }
+    
+  }
 }
