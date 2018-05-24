@@ -1,3 +1,6 @@
+import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
+import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
+import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
 import { IngredientListingComponent } from './ingredients/ingredient-listing/ingredient-listing.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -52,6 +55,9 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
     MicroOrganismListingComponent,
     CookingMethodListingComponent,
     IngredientListingComponent,
+    IngredientItemComponent,
+    IngredientDetailsComponent,
+    IngredientDescriptionComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -71,21 +77,26 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
   imports: [
     BrowserModule,FormsModule,
     RouterModule.forRoot([
-     {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
+     
+     {path:'IngredientListing', component:IngredientListingComponent},
+     {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
+     
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'cookingMethodeListing' , component:CookingMethodItemComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
-     {path:'cookingMethodeListing' , component:CookingMethodListingComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
-     {path: 'microOrganismListing', component: MicroOrganismListingComponent},
-     {path:'cookingMethodListing' , component:CookingMethodListingComponent},
-     {path:'microOrganism/add' , component:MicroOrganismAddComponent},
+
+     
+
+    
+    
+
+
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},

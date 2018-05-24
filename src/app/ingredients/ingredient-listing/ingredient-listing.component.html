@@ -1,50 +1,11 @@
 
  
-<!--listing items========-->
-<br>
-<br>
-<br>
-<ul id="ourBlog" class="p-none">
-  <li class="col-sm-4 col-md-3 isotope-item p-md">
-      <article class="our-blog-item">
-          <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
-              <span class="image-wrapper">
-                  <img src="../../../assets/images/o.jpg" alt="" class="img-responsive" />
-              </span>
-              <span class="category text-uppercase background-color-quaternary" id="fav">
-                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
-              </span>
-          </a>
-          <div class="post-infos">
-              <div class="share">
-                  <div class="share-icons background-color-quaternary">
-                      <a href="#" class="text-decoration-none" title="Share on Facebook">
-                          <i class="fa fa-facebook"></i>
-                      </a>
-                      <a href="#" class="text-decoration-none" title="Share on Twitter">
-                          <i class="fa fa-twitter"></i>
-                      </a>
-                      <a href="#" class="text-decoration-none" title="Share on Linkedin">
-                          <i class="fa fa-linkedin"></i>
-                      </a>
-                      <i class="fa fa-share-alt"></i>
-                  </div>
-              </div>
-              <span class="post-date">
-                  31 NOV 2016
-              </span>
-              <h1 class="font-weight-normal">
-                  <a href="demo-photography-3-blog-post.html" class="text-decoration-none">Incredible Places</a>
-              </h1>
-              <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur diam id urna...
-                  </p>
-              </a>
-          </div>
-      </article>
-  </li>
-</ul>
+    
 
+<!--listing items========-->
+<ul class="container listing">
+<app-ingredient-item  [item]='item' *ngFor='let item of ingredients'></app-ingredient-item>
+</ul>
 
 
 
