@@ -11,7 +11,7 @@ import {ToolsModule} from './tools/tools.module';
 import {ToolItemComponent} from './tools/tool-item/tool-item.component';
 import {ToolListingComponent} from './tools/tool-listing/tool-listing.component';
 import { AppComponent } from './app.component';
-import {RouterModule,Router} from '@angular/router';
+import {RouterModule} from '@angular/router';
 import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 import { from } from 'rxjs/internal/observable/from';
 import {MicroOrganismsModule} from './micro-organisms/micro-organisms.module';
@@ -78,12 +78,23 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
      {path:'cookingMethodeListing' , component:CookingMethodListingComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
+     {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
+     {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path:'cookingMethodListing' , component:CookingMethodListingComponent},
+<<<<<<< HEAD
      {path:'microOrganism/add' , component:MicroOrganismAddComponent},
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
+=======
+
+    
+    
+     {path:'microOrganism/add' , component:MicroOrganismAddComponent},
+
+
+>>>>>>> parent of f9da574... 'ss'
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
