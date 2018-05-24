@@ -1,9 +1,9 @@
 <app-smallHeader [title] = 'headertitle' (MicroSearch)='onMicroSearch($event)'></app-smallHeader>
 <div class='container'>
     <div class="row">
-        <a routerLink = 'add'><i class="fa fa-plus pull-right" id="plus"></i></a>
-        <i class="fa fa-edit pull-right" id="plus"></i>
-        <i class="fa fa-trash pull-right" id="plus"></i>
+            <a routerLink = 'add'><i class="fa fa-plus pull-right" id="plus"></i></a>
+        <!-- <i class="fa fa-edit pull-right" id="plus"></i> -->
+        <i class="fa fa-trash pull-right" id="plus" (click)="onDelete()"></i>
     </div>
     
     <app-micro-organism-item  [item]='item' *ngFor='let item of Micros'></app-micro-organism-item>
