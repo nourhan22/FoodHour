@@ -1,3 +1,59 @@
-<p>
-  micro-organism-add works!
-</p>
+<div class="container">
+<!-- type & upload Image -->
+  <form>
+
+    <div class='row header'>
+      <span class="text-muted">Add a New Contact</span>
+      <hr>
+    </div>
+    <div class="row img">
+        
+        <input style="display: none" 
+        type="file" (change)="onFileChanged($event)" #fileInput>
+     
+
+      <img src="../assets/images/default.png" 
+      (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle" />
+
+      <span class="text-muted">Add Photo</span>
+    </div>
+
+    <div class="input-group col-xs-12">
+      <input type="text" class="form-control" name='name' [(ngModel)]='newMicro.name'
+       placeholder="Name" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group col-xs-12">
+      <input type="text" class="form-control" name='type' [(ngModel)]='newMicro.type'
+      placeholder="Type" aria-describedby="basic-addon1">
+    </div>
+
+
+    <div class="input-group col-xs-12">
+      <input type="text" class="form-control"name='source' [(ngModel)]='newMicro.Source'
+       placeholder="Source" >
+    </div>
+
+    <div class="input-group col-xs-12">
+      <textarea class="form-control txtArea"name='prevention' [(ngModel)]='newMicro.Prevention'
+      placeholder="Prevention"></textarea>
+    </div>
+
+    <div class="input-group col-xs-12">
+      <textarea class="form-control txtArea"name='description' [(ngModel)]='newMicro.description'
+      placeholder="Description"></textarea>
+    </div>
+
+    <div class="input-group col-xs-12">
+      <textarea class="form-control txtArea"name='food' [(ngModel)]='newMicro.FoodUsualyInvolved'
+      placeholder="Food Usualy Involved"></textarea>
+    </div>
+
+    <div class="row">
+      <button type="button" class="btn  addbtn col-xs-7 " (click)='onSave()'>Add Contact</button>
+    </div>
+    <div class='row'>
+      <button type="button" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>
+    </div>
+  </form>
+</div>
