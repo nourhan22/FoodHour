@@ -1,7 +1,7 @@
 <form>
     <div class="input-group input-group-lg">
         <input class="form-control" placeholder="Search..." 
-        name="s" id="s" type="text" [(ngModel)]='txtSearch' (change)="onChange()">
+        name="s" id="s" type="text" [(ngModel)]='txtSearch' (keyup)="onChange()">
         <span class="input-group-btn" >
             <button type="submit" class="btn btn-primary btn-lg" id="btnsearch">
                 <i class="fa fa-search"></i>

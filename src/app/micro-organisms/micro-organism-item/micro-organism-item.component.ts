@@ -12,7 +12,6 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
 })
 export class MicroOrganismItemComponent implements OnInit {
   @Input() public item:IMicroItem;
-  
   constructor(private microService:MicroService ) { }
 
   ngOnInit() {

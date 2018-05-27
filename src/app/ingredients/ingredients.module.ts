@@ -6,6 +6,7 @@ import { IngredientListingComponent } from './ingredient-listing/ingredient-list
 
 import { IngredientDetailsComponent } from './ingredient-details/ingredient-details.component';
 import { RouterLink } from '@angular/router';
+import { IngredientDeleteComponent } from './Ingredient-delete/Ingredient-delete.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { RouterLink } from '@angular/router';
     RouterLink
   ],
   declarations: [IngredientAddComponent, IngredientItemComponent, IngredientListingComponent,
-    IngredientDetailsComponent
+    IngredientDetailsComponent,
+    IngredientDeleteComponent
 ]
 })
 export class IngredientsModule { }
