@@ -7,17 +7,28 @@
         </div>
         <div class="row img">
 
+<<<<<<< HEAD
             <input style="display: none" type="file" name="file" id="file" (change)="onFileChanged($event)" #fileInput>
 
 
             <img src="../assets/images/default.png" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
                 ng-click="add()" />
+=======
+            <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+
+
+            <img src="../assets/images/default.png" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
+            />
+>>>>>>> a134678c7297cef6a6da252bd5fd37664195dacc
 
             <span class="text-muted">Add Photo</span>
         </div>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> a134678c7297cef6a6da252bd5fd37664195dacc
         <div class="input-group col-xs-12">
             <input type="text" class="form-control" name='name' [(ngModel)]='newIngredient.name' placeholder="Ingredient Name" aria-describedby="basic-addon1"
                 required>
@@ -59,10 +70,16 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-12">
+<<<<<<< HEAD
                     <select class="form-control" name='type'>
                         <!--[(ngModel)]="newIngredient.type" required-->
                         <option value='Choose Type' required>Choose Type</option>
                         <option [value]="type.title" *ngFor='let type of nutiritionTypes'>{{type.title}}</option>
+=======
+                        <select  class="form-control" name='type'>  <!--[(ngModel)]="newIngredient.type" required-->
+                                <option  value='Choose Type' required>Choose Type</option>
+                            <option [value]="type.title" *ngFor='let type of nutiritionTypes'>{{type.title}}</option>
+>>>>>>> a134678c7297cef6a6da252bd5fd37664195dacc
                         <!-- <option value="Vitamin">Vitamin</option>
                         <option value="Mineral">Mineral</option>
                         <option value="Fat">Fat</option>
