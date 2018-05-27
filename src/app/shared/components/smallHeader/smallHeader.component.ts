@@ -11,7 +11,6 @@ import { EventEmitter } from '@angular/core';
 })
 export class SmallHeaderComponent implements OnInit {
 @Input() public title;
- 
 @Output() MicroSearch: EventEmitter<any> = new EventEmitter();
 @Output() CookingMethodSearch: EventEmitter<any> = new EventEmitter();
 @Output() IngredientSearch:EventEmitter<any> = new EventEmitter();

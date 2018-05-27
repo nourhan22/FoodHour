@@ -15,7 +15,9 @@ export class IngredientListingComponent implements OnInit {
 
   ngOnInit() {
     this.headertitle = 'Ingredients'
-    this.ingredients = this.IngredientService.GetAllIngredients();
+    this.IngredientService.GetAllIngredients().subscribe(
+      (data)=>{ this.ingredients = data}
+     );
   }
   onIngredientSearch(txtSearch:string)
   {

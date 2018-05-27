@@ -1,17 +1,44 @@
 import { IIngredient } from './../models/interfaces/IIngredient';
 import { Injectable } from '@angular/core';
+import { INutiritionType } from '../models/interfaces/INutiritionType';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class IngredientService {
-
+  private nutiritionTypes:INutiritionType[]=[
+    {
+      id:1,
+      title:'Vitamin'
+    },
+    {
+      id:2,
+      title:'Mineral'
+    },
+    {
+      id:3,
+      title:'Fat'
+    },
+    {
+      id:4,
+      title:'Fiber'
+    },
+    {
+      id:5,
+      title:'Protien'
+    },
+    {
+      id:6,
+      title:'Water'
+    },
+  ];
   private ingredients:IIngredient[] = [
     {
       id:1,
       name:'Tomato',
       desc:'tomato is very useful',
-      img:'../../assets/images/tomato.jpg'
+      img:'../../assets/images/tomato.jpg',
     },
     {
       id:2,
@@ -27,12 +54,13 @@ export class IngredientService {
     }
 
   ] ;
+  public lengthOfIngredients : number = this.ingredients.length;
 constructor() { 
 }
 
-GetAllIngredients()
+GetAllIngredients():Observable<IIngredient[]>
 {
-  return this.ingredients.slice();
+  return of (this.ingredients);
 }
 
 GetbyId(id : number)
@@ -49,6 +77,15 @@ SearchInIngredients(txtSearch:string)
    })
 
    return filteredArr;
+}
+AddNewIngredient(item:IIngredient)
+{
+  
+this.ingredients.push(item);
+}
+GetNutiritionTypes()
+{
+  return this.nutiritionTypes;
 }
 
 }

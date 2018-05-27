@@ -9,7 +9,7 @@
                   <form id="searchForm"  method="get">
                       <div class="input-group" id="cookingsearch">
                           <input type="text" class="form-control" name="q" id="q"
-                           placeholder="Search..." required (change)='onChange()' [(ngModel)]='txtSearch'>
+                           placeholder="Search..." required (keyup)='onChange()' [(ngModel)]='txtSearch'>
                           <span class="input-group-btn">
                               <button class="btn btn-default" type="submit">
                                   <i class="fa fa-search"></i>
