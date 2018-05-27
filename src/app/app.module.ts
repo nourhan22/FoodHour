@@ -42,6 +42,8 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
 import { RecipeDetailsComponent } from 'src/app/recipe/recipe-details/recipe-details.component';
 
+import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
+
 
 
 @NgModule({
@@ -59,6 +61,7 @@ import { RecipeDetailsComponent } from 'src/app/recipe/recipe-details/recipe-det
     IngredientItemComponent,
     IngredientDetailsComponent,
     IngredientDescriptionComponent,
+    IngredientAddComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -82,7 +85,7 @@ import { RecipeDetailsComponent } from 'src/app/recipe/recipe-details/recipe-det
      
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
-     
+     {path:'IngredientListing/add' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,

@@ -1,4 +1,4 @@
-/*form*/
+
 form{
     border:1px solid #dddddd;
     padding: 20px;
@@ -79,5 +79,11 @@ input:focus{
 .cancelbtn
 {
     background-color: #1d1d1dbd;
+}
+.form-control:focus {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #ff530a;
+    outline: 0;
 }
 

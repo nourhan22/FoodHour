@@ -65,6 +65,16 @@ html .toggle-primary.toggle-simple .toggle > label:after {
 .thumb-info .thumb-info-type {
     background-color: #ff530a;
 }
+.delete{
+    background-color: #ff530a;
+    margin-bottom: 18px;
+    border-radius: 100%;
+    color: white;
+    padding: 0.1px 4px;
+    margin-right: 8px;
+    margin-top: 9px;
+}
+
 /*image gallery---------------------------*/
 .thumb-info .thumb-info-wrapper:after {
     content: "";
