@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 import { ISmallTool } from 'src/app/shared/models/interfaces/ISmallTool';
+import {ToolService} from 'src/app/shared/services/tool.service';
 
 @Component({
   selector: 'app-tool-item',
@@ -9,10 +10,12 @@ import { ISmallTool } from 'src/app/shared/models/interfaces/ISmallTool';
 })
 export class ToolItemComponent implements OnInit {
   @Input() public item:ISmallTool;
-  constructor() { }
+  constructor(private toolservice:ToolService) { }
 
   ngOnInit() {
-    debugger;
   }
-
+  onDelete(id:number){
+  
+    this.toolservice.onDelete(id);
+  }
 }
