@@ -88,6 +88,8 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
      {path:'microOrganism/add' , component:MicroOrganismAddComponent},
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'cuttingMethodListing/details/:id', component:CuttingMethodDetailsComponent},
+     
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
