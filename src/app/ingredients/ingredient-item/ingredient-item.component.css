@@ -70,11 +70,7 @@ html .toggle-primary.toggle-simple .toggle > label:after {
     margin-bottom: 18px;
     border-radius: 100%;
     color: white;
-<<<<<<< HEAD
     padding: 0.1px 5px;
-=======
-    padding: 0.1px 4px;
->>>>>>> a134678c7297cef6a6da252bd5fd37664195dacc
     margin-right: 8px;
     margin-top: 9px;
 }
