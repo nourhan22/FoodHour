@@ -40,6 +40,7 @@ import {FormsModule} from '@angular/forms'
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
+import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
 
 
 
@@ -58,6 +59,7 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
     IngredientItemComponent,
     IngredientDetailsComponent,
     IngredientDescriptionComponent,
+    IngredientAddComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -80,14 +82,14 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
      
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
-     
+     {path:'IngredientListing/add' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
-     {path: 'cookingMethodeListing' , component: CookingMethodListingComponent},
+     {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
 
