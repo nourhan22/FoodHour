@@ -35,12 +35,13 @@ import { SearchComponent } from 'src/app/shared/components/search/search.compone
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 import {ActivatedRoute} from '@angular/router'
-
 import {FormsModule} from '@angular/forms'
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
 import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
+import { ToolAddComponent } from './tools/tool-add/tool-add.component';
+
 
 
 
@@ -74,7 +75,8 @@ import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-
     SearchComponent,
     RelatedtopicComponent,
     MicroOrganismAddComponent,
-    CookingMethodAddComponent
+    CookingMethodAddComponent,
+    ToolAddComponent
   ],
   imports: [
     BrowserModule,FormsModule,
@@ -93,12 +95,6 @@ import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
 
-     
-
-    
-    
-
-
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
@@ -108,8 +104,9 @@ import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
      {path:'ToolListing/details/:id',component:ToolDetailesComponent},
-     {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent}
-     
+     {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
+     {path:'ToolListing/add' , component:ToolAddComponent}
+    
     ])
   ],
   providers: [MicroService,CookingMethodService],

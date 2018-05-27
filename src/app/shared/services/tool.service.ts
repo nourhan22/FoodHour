@@ -85,11 +85,14 @@ SearchInCookingMethods(txtSearch:string)
 }
 public onDelete(id:number)
 {
-  debugger;
   const index= this.Tools.findIndex(a=>a.id === id);
   if(index >-1)
   {
     this.Tools.splice(index,1);
   }
 }
+AddNewTool(item:ISmallTool){
+  this.Tools.push(item);
+}
+public lengthOfTool :number=this.Tools.length;
 }
