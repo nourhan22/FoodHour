@@ -4,6 +4,7 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
 import { IMicroType } from 'src/app/shared/models/interfaces/IMicroType ';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-micro-organism-add',
@@ -13,7 +14,10 @@ import { Router } from '@angular/router';
 export class MicroOrganismAddComponent implements OnInit {
 public newMicro : IMicroItem;
 public microTypes:IMicroType[];
-  constructor(private microService : MicroService,private router:Router) { }
+public id:number;
+public isEdit :boolean = false;
+  constructor(private microService : MicroService,private router:Router 
+              ,private ActivatedRoute:ActivatedRoute) { }
 
   ngOnInit() {
     this.newMicro = {
@@ -28,17 +32,39 @@ public microTypes:IMicroType[];
       }
 
       this.microTypes = this.microService.GetMicroTypes();
+      this.ActivatedRoute.params.subscribe(
+        
+         (params)=>{ 
+           debugger;
+            this.id = params['id'];
+            if(this.id!=null)
+            {
+              debugger;
+             this.newMicro =  this.microService.GetbyId(this.id);
+             this.isEdit = true;
+            }
+          }
+       )
   }
 
   onSave(myform:NgForm)
   {
-    if(this.newMicro!=null && myform.valid)
+    
+
+    if(this.newMicro!=null && myform.valid && this.isEdit== false)
     {
       this.newMicro.id = this.microService.lengthOfMicros+1;
       this.newMicro.img = '../assets/images/default.png'
       this.microService.AddNewMicro(this.newMicro);   
-      this.router.navigate(['microOrganismListing']) ;       
+           
     }
+    else if(this.isEdit == true)
+    {
+      debugger;
+      this.microService.Edit(this.newMicro);
+    }
+
+    this.router.navigate(['microOrganismListing']) ; 
   }
 
   onCancel()

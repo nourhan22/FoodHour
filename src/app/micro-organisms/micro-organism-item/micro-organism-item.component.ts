@@ -20,4 +20,5 @@ export class MicroOrganismItemComponent implements OnInit {
     {
        this.microService.onDelete(id);
     }
+   
 }
