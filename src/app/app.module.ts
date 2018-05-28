@@ -98,6 +98,7 @@ import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-
     
     
 
+     {path:'microOrganismListing/edit/:id' , component:MicroOrganismAddComponent},
 
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
@@ -108,7 +109,8 @@ import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
      {path:'ToolListing/details/:id',component:ToolDetailesComponent},
-     {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent}
+     {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
+     
      
     ])
   ],
