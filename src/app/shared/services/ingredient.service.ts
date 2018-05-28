@@ -87,5 +87,18 @@ GetNutiritionTypes()
 {
   return this.nutiritionTypes;
 }
+public DeleteItem(id:Number)
+{
+  const index= this.ingredients.findIndex(a=>a.id === id);
+  if(index >-1)
+  {
+    this.ingredients.splice(index,1);
+  }
+}
+DeleteAll()
+{
+ let len = this.ingredients.length; 
+ this.ingredients.splice(0,len);
+}
 
 }
