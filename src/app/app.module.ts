@@ -94,6 +94,8 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'microOrganismListing/edit/:id' , component:MicroOrganismAddComponent},
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'cuttingMethodListing/details/:id', component:CuttingMethodDetailsComponent},
+     
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},

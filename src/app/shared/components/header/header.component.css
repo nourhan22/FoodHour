@@ -2099,7 +2099,7 @@ ul > li.dropdown .dropdown-menu {
     color: rgb(114, 114, 114) ;
 }
 li:hover > a {
-    background-color: #fe7c26 !important;
+    background-color: #ff530a !important;
 }
 #header .header-nav-main nav > ul > li > a.dropdown{
 	color: white;
