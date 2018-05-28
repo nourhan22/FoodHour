@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
 import { ISmallMicro } from 'src/app/shared/models/interfaces/ISmallMicro';
+import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 
 
@@ -10,8 +11,8 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
   styleUrls: ['./micro-organism-item.component.css']
 })
 export class MicroOrganismItemComponent implements OnInit {
-  @Input() public item:ISmallMicro;
-  constructor(private microService: MicroService) { }
+  @Input() public item:IMicroItem;
+  constructor(private microService:MicroService ) { }
 
   ngOnInit() {
   }
