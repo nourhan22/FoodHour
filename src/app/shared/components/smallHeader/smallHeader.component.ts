@@ -11,10 +11,11 @@ import { EventEmitter } from '@angular/core';
 })
 export class SmallHeaderComponent implements OnInit {
 @Input() public title;
- 
 @Output() MicroSearch: EventEmitter<any> = new EventEmitter();
 @Output() CookingMethodSearch: EventEmitter<any> = new EventEmitter();
 @Output() CuttingMethodSearch: EventEmitter<any> = new EventEmitter();
+@Output() IngredientSearch:EventEmitter<any> = new EventEmitter();
+@Output() ToolSearch:EventEmitter<any> = new EventEmitter();
 public txtSearch : string;
 
   constructor(private ActivatedRoute : ActivatedRoute) { }
@@ -39,6 +40,14 @@ public txtSearch : string;
         else if (segmentUrl == 'cuttingMethodListing')
         {
           this.CuttingMethodSearch.emit(this.txtSearch);
+        }
+        else if(segmentUrl == 'IngredientListing')
+        {
+          this.IngredientSearch.emit(this.txtSearch);
+        }
+        else if(segmentUrl == 'ToolListing')
+        {
+          this.ToolSearch.emit(this.txtSearch);
         }
       });
   }

@@ -1,0 +1,120 @@
+
+form{
+    border:1px solid #dddddd;
+    padding: 20px;
+    width: 65%;
+    margin: auto;
+    box-shadow: 5px 6px #f3f2f2cc;
+}
+.form-control{
+    margin-top: 20px;
+}
+/*header*/
+.header span{
+    margin-left: 5%;
+}
+ .text-muted{
+    color: #aea9a9;
+}
+
+hr{
+    border-top: 2px solid #ff530a;
+    margin-top: 8px;
+    width: 90%;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid rgb(221, 221, 221);
+}
+input:focus{
+    border-bottom-color: #ff530a;
+}
+/*img*/
+.img{
+    margin: auto;
+    max-width: 13%;
+}
+.img img{
+    margin-bottom: 10px;
+    border-color: #aea9a9;
+    border-width: 2px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.img img:hover{
+    cursor: pointer;
+}
+.img .text-muted {
+    margin-left: 14%;
+
+}
+/*txtArea*/
+.txtArea:focus{
+    border:2px solid #ff530a;
+}
+.txtArea{
+    border:2px solid rgb(221, 221, 221);
+    
+}
+
+/*button*/
+.addbtn{
+    background-color: #ff530a;
+}
+
+.btn{
+    border-radius: 2%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 50%;
+    color: white;
+}
+.cancelbtn
+{
+    background-color: #1d1d1dbd;
+}
+.form-control:focus {
+    color: #464a4c;
+    background-color: #fff;
+    border-color: #ff530a;
+    outline: 0;
+}
+/*table-------------------------*/
+
+        table {
+            table-layout: fixed;
+            word-break: break-all;
+        }
+
+        table td {
+            overflow: hidden;
+        }
+
+        .fa-times {
+            /* color: #0088cc; */
+            color: maroon;
+            font-size: 15px;
+        }
+
+        table {
+            counter-reset: tableCount;
+        }
+
+        .counterCell:before {
+            content: counter(tableCount);
+            counter-increment: tableCount;
+        }
+
+        #myDiv {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+        
+    
+

@@ -1,7 +1,7 @@
 
   <li class="col-md-3 col-sm-6 col-xs-12">
     <div class="image-gallery-item">
-      <a href="img/projects/project.jpg" class="lightbox-portfolio">
+      <!-- <a href="img/projects/project.jpg" class="lightbox-portfolio"> -->
         <span class="thumb-info">
           <span class="thumb-info-wrapper">
            <a routerLink="./details/{{item.id}}">            
@@ -10,14 +10,15 @@
               <span class="thumb-info-inner" id="tool-Name">{{item.name}}</span>
               <span class="thumb-info-type" id="tool-sp-more">See More</span>
             </span>
+          </a>
             <span class="thumb-info-action">
               <span class="thumb-info-action-icon">
-                <i class="fa fa-trash"></i>
+                <i class="fa fa-trash" (click)="onDelete(item.id)"></i>
               </span>
             </span>
-            </a>
+           
           </span>
         </span>
-      </a>
+      
     </div>
   </li>

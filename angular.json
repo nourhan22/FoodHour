@@ -25,9 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-            
-            ]
+
+            "scripts": []   
           },
           "configurations": {
             "production": {
@@ -76,7 +75,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [ "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"

@@ -1,3 +1,36 @@
-<p>
-  tool-add works!
-</p>
+<div class="container">
+  <form>
+    <div class='row header'>
+      <span class="text-muted">Add a New Tool</span>
+      <hr>
+    </div>
+    <div class="row img">
+        
+        <input style="display: none" 
+        type="file" (change)="onFileChanged($event)" #fileInput>
+     
+
+      <img src="../assets/images/default.png" 
+      (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle" />
+
+      <span class="text-muted">Add Photo</span>
+    </div>
+
+    <div class="input-group col-xs-12">
+      <input type="text" class="form-control" name='name' [(ngModel)]='newTool.name'
+       placeholder="Title" aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group col-xs-12">
+      <textarea class="form-control txtArea"name='description' [(ngModel)]='newTool.description'
+      placeholder="Description"></textarea>
+    </div>
+
+    <div class="row">
+      <button type="button" class="btn  addbtn col-xs-7 " (click)='onSave()'>Add Tool</button>
+    </div>
+    <div class='row'>
+      <button type="button" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>
+    </div>
+  </form>
+</div>
