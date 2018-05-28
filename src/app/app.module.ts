@@ -81,7 +81,6 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
   imports: [
     BrowserModule,FormsModule,
     RouterModule.forRoot([
-     
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
@@ -89,14 +88,14 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
-     {path: 'cookingMethodeListing' , component: CookingMethodItemComponent},
-     {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
-
+     {path:'microOrganismListing/edit/:id' , component:MicroOrganismAddComponent},
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'cuttingMethodListing/details/:id', component:CuttingMethodDetailsComponent},
+     
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
@@ -106,7 +105,6 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'ToolListing/details/:id',component:ToolDetailesComponent},
      {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
      {path:'ToolListing/add' , component:ToolAddComponent}
-    
     ])
   ],
   providers: [MicroService,CookingMethodService],

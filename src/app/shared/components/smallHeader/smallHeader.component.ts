@@ -13,6 +13,7 @@ export class SmallHeaderComponent implements OnInit {
 @Input() public title;
 @Output() MicroSearch: EventEmitter<any> = new EventEmitter();
 @Output() CookingMethodSearch: EventEmitter<any> = new EventEmitter();
+@Output() CuttingMethodSearch: EventEmitter<any> = new EventEmitter();
 @Output() IngredientSearch:EventEmitter<any> = new EventEmitter();
 @Output() ToolSearch:EventEmitter<any> = new EventEmitter();
 public txtSearch : string;
@@ -35,6 +36,10 @@ public txtSearch : string;
         else if (segmentUrl == 'cookingMethodListing')
         {
           this.CookingMethodSearch.emit(this.txtSearch);
+        }
+        else if (segmentUrl == 'cuttingMethodListing')
+        {
+          this.CuttingMethodSearch.emit(this.txtSearch);
         }
         else if(segmentUrl == 'IngredientListing')
         {

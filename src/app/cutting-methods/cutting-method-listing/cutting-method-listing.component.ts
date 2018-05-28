@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICuttingMethods } from 'src/app/shared/models/interfaces/iCuttingMethods';
+import { CuttingService } from 'src/app/shared/services/Cutting.service';
 
 @Component({
   selector: 'app-cutting-method-listing',
@@ -9,32 +10,22 @@ import { ICuttingMethods } from 'src/app/shared/models/interfaces/iCuttingMethod
 export class CuttingMethodListingComponent implements OnInit {
   public cut: ICuttingMethods[];
   public title:String;
-  constructor() { }
+  constructor(private cuttingServices:CuttingService) { }
 
   ngOnInit() {
     this.title="Cutting Methods";
-    this.cut =  [
-      {imageUrl: '../../../assets/images/large dice.jpg',
-      title: 'large dice'},
-      {imageUrl:'../../../assets/images/Medium dice.jpg',
-      title: 'Medium dice'},
-      {imageUrl:'../../../assets/images/Small dice.jpg',
-      title: 'Small dice'},
-      {imageUrl:'../../../assets/images/Brunoise.jpg',
-      title: 'Brunoise'},
-      {imageUrl:'../../../assets/images/Fine brunoise.jpg',
-      title: 'Fine brunoise'},
-      {imageUrl:'../../../assets/images/Batonnet.jpg',
-      title: 'Bâtonnet'},
-      {imageUrl:'../../../assets/images/Julienne.jpg',
-      title: 'Julienne'},
-      {imageUrl:'../../../assets/images/Fine julienne.jpg',
-      title: 'Fine julienne'},
-      {imageUrl:'../../../assets/images/Tourne.jpg',
-      title: 'Tourné'}
-
-
-    ];
+    this.cuttingServices.getAll().subscribe(
+      (data)=>{
+        this.cut=data;
+      });
+  }
+  onCuttingMethodsSearch(txtSearch:string)
+  {
+    if( txtSearch!=null)
+    {
+      this.cut = this.cuttingServices.SearchInCuttingMethods(txtSearch);
+    }
+    
   }
 
 }
