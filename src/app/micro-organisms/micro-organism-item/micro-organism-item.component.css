@@ -40,9 +40,12 @@ li {
     line-height: 50px;
     position: absolute;
     text-align: center;
-    width: 50px;
+    width: 80px;
     z-index: 2;
     background-color: #ff530a;
+}
+.thumb-info-action-icon i{
+margin: 3px;
 }
 .thumb-info .thumb-info-title {
     transition: all 0.3s;
@@ -73,6 +76,9 @@ li {
     padding: 2px 9px;
     text-transform: none;
     z-index: 2;
+    margin-left: -12px !important;
+    width: 65px;
+    text-align: center;
 }
 .thumb-info:hover .thumb-info-action-icon {
     right: 0;

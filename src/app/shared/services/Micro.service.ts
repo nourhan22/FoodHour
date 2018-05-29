@@ -173,8 +173,23 @@ GetRelatedTopics(id:number,no)
   let len = this.allMicros.length; 
   this.allMicros.splice(0,len);
  }
+
+ Edit(item:IMicroItem)
+ {
+  //  debugger;
+  //  let item = this.GetbyId(id);
+
+  const index= this.allMicros.findIndex(a=>a.id === item.id);
+  if(index >-1)
+  {
+    this.allMicros[index] = item;
+    return item;
+  }
+ }
  GetMicroTypes()
  {
    return this.MicroTypes;
  }
+
+
 }

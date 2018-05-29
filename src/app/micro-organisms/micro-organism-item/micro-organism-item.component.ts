@@ -11,17 +11,15 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
   styleUrls: ['./micro-organism-item.component.css']
 })
 export class MicroOrganismItemComponent implements OnInit {
-  @Input() public item:IMicroItem;
 
+  @Input() public item:IMicroItem;
   //@Input() public item:ISmallMicro;
   constructor(private microService: MicroService) { }
-
-
-
   ngOnInit() {
   }
   onDelete(id:number)
     {
        this.microService.onDelete(id);
     }
+   
 }
