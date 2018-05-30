@@ -88,6 +88,7 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
+     {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
