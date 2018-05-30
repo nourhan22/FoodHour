@@ -1,31 +1,9 @@
 
 <!--- -->
-<section id="pageheader" class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1>Cooking Method</h1>
-                </div>
-                <div class="col-md-6">
-                    <div class="header-search hidden-xs">
-                        <form id="searchForm" action="page-search-results.html" method="get">
-                            <div class="input-group" id="cookingsearch">
-                                <input type="text" class="form-control" name="q" id="q" placeholder="Search..." required>
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<app-smallHeader [title]='headerTitle' (ToolSearch)='onToolsSearch($event)'></app-smallHeader>
     <div class="container">
         <div class="row">
-            <i class="fa fa-plus pull-right" id="plus"></i>
+            <i class="fa fa-plus pull-right" id="plus" routerLink="./add"></i>
             <i class="fa fa-edit pull-right" id="plus"></i>
             <i class="fa fa-trash pull-right" id="plus"></i>
         </div>
