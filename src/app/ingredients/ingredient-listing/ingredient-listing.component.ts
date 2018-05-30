@@ -27,4 +27,9 @@ export class IngredientListingComponent implements OnInit {
     }
     
   }
+  onDelete()
+  {
+    
+    this.IngredientService.DeleteAll();
+  }
 }
