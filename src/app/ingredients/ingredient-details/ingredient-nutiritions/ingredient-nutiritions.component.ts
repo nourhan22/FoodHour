@@ -1,7 +1,6 @@
 
 import { IIngredientNutiritions } from './../../../shared/models/interfaces/IIngredientNutiritions';
-import { Component, OnInit } from '@angular/core';
-import { IngredientNutiritionService } from '../../../shared/services/ingredientNutirition.service';
+import { Component, OnInit, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ingredient-nutiritions',
@@ -9,14 +8,14 @@ import { IngredientNutiritionService } from '../../../shared/services/ingredient
   styleUrls: ['./ingredient-nutiritions.component.css']
 })
 export class IngredientNutiritionsComponent implements OnInit {
-public ingredientNutiritions: IIngredientNutiritions[];
-  constructor(private ingredientNutiritionService:IngredientNutiritionService )
+@Input() public ingredientNutiritions: IIngredientNutiritions[];
+  constructor( )
    { }
 
   ngOnInit() {
-    this.ingredientNutiritionService.GetAllNutiritions().subscribe(
-      (data)=>{ this.ingredientNutiritions = data}
-     );
+    // this.ingredientNutiritionService.GetAllNutiritions().subscribe(
+    //   (data)=>{ this.ingredientNutiritions = data}
+    //  );
   }
 
 }

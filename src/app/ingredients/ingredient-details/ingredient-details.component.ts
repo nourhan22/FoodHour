@@ -3,18 +3,16 @@ import { ActivatedRoute } from '@angular/router';
 import { IngredientService } from './../../shared/services/ingredient.service';
 import { IIngredient } from './../../shared/models/interfaces/IIngredient';
 import { Component, OnInit } from '@angular/core';
-import { IngredientNutiritionService } from '../../shared/services/ingredientNutirition.service';
-
 @Component({
   selector: 'app-ingredient-details',
   templateUrl: './ingredient-details.component.html',
   styleUrls: ['./ingredient-details.component.css']
 })
 export class IngredientDetailsComponent implements OnInit {
-  public Item2 : IIngredientNutiritions;
+  // public Item2 : IIngredientNutiritions;
   public Item : IIngredient;
   private id :number;
-    constructor(private ActivatedRoute:ActivatedRoute, private ingredientservice:IngredientService,private ingredientNutiritionService:IngredientNutiritionService) {
+    constructor(private ActivatedRoute:ActivatedRoute, private ingredientservice:IngredientService) {
   
    
      }

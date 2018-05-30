@@ -41,11 +41,8 @@ import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organis
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
 import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
-<<<<<<< HEAD
 import { IngredientNutiritionsComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutiritions.component';
 import { IngredientNutiritionItemComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutirition-Item/ingredient-nutirition-Item.component';
-=======
->>>>>>> a134678c7297cef6a6da252bd5fd37664195dacc
 
 
 
@@ -65,11 +62,8 @@ import { IngredientNutiritionItemComponent } from './ingredients/ingredient-deta
     IngredientDetailsComponent,
     IngredientDescriptionComponent,
     IngredientAddComponent,
-<<<<<<< HEAD
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
-=======
->>>>>>> a134678c7297cef6a6da252bd5fd37664195dacc
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
