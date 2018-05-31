@@ -108,7 +108,8 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
      {path:'ToolListing/details/:id',component:ToolDetailesComponent},
      {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
-     {path:'ToolListing/add' , component:ToolAddComponent}
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'ToolListing/edit/:id',component:ToolAddComponent}
     ])
   ],
   providers: [MicroService,CookingMethodService],
