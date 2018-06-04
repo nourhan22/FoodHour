@@ -40,11 +40,12 @@ import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organis
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
 import { RecipeDetailsComponent } from 'src/app/recipe/recipe-details/recipe-details.component';
-
+import {ShopListingComponent} from'./shopping-list/shop-listing/shop-listing.component';
 import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
 import { IngredientNutiritionsComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutiritions.component';
 import { IngredientNutiritionItemComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutirition-Item/ingredient-nutirition-Item.component';
 import { ToolAddComponent } from './tools/tool-add/tool-add.component';
+import { ShopItemComponent } from './shopping-list/shop-item/shop-item.component';
 
 
 
@@ -83,7 +84,9 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
     MicroOrganismAddComponent,
     CookingMethodAddComponent,
     RecipeDetailsComponent,
-    ToolAddComponent
+    ToolAddComponent,
+    ShopListingComponent,
+    ShopItemComponent
 
   ],
   imports: [
@@ -117,7 +120,9 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
 
      {path:'recipe/details',component:RecipeDetailsComponent},
-     {path:'ToolListing/add' , component:ToolAddComponent}
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'shoplisting',component:ShopListingComponent},
+     {path:'shopitem',component:ShopItemComponent}
 
     ])
   ],
