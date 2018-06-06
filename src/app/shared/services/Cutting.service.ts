@@ -1,11 +1,23 @@
 import { Injectable } from '@angular/core';
 import { ICuttingMethods } from 'src/app/shared/models/interfaces/iCuttingMethods';
 import { Observable, of } from 'rxjs';
+import { IUnitType } from 'src/app/shared/models/interfaces/IUnitType';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CuttingService {
+  public units:string[]=
+  ['cm','inshes'];
+  public unitType:IUnitType[]=[
+    {
+      id:1,
+      title:'Us'
+    },
+    {
+      id:2,
+      title:'Metric'
+    }]
   public cuttingMethods : ICuttingMethods[]=
   [
     {
@@ -13,63 +25,99 @@ export class CuttingService {
       title: 'large dice',
       id:1,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Medium dice.jpg',
       title: 'Medium dice',
       id:2,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Small dice.jpg',
       title: 'Small dice',
       id:3,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Brunoise.jpg',
       title: 'Brunoise',
       id:4,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Fine brunoise.jpg',
       title: 'Fine brunoise',
       id:5,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Batonnet.jpg',
       title: 'Bâtonnet',
       id:6,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Julienne.jpg',
       title: 'Julienne',
       id:7,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Fine julienne.jpg',
       title: 'Fine julienne',
       id:8,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     },
     {
       imageUrl:'../../../assets/images/Tourne.jpg',
       title: 'Tourné',
       id:9,
       Description:'tttttttttttttttttttttttttttttttttttttrj',
-      size:'5*5'
+      Length:5,
+      width:2,
+      height:1,
+      unitType:'us',
+      units:'cm'
     }
   ]
 constructor() { }
