@@ -1,18 +1,23 @@
+<!-- <link rel="stylesheet" src="../../../assets/css/owl.carousel.min.css">
+<link rel="stylesheet" src="../../../assets/css/owl.theme.default.min.css">
+<link rel="stylesheet" src="../../../assets/css/theme-elements.css"> -->
+
+
 <div class="container">
   <div class="row" style="padding-top:5%">
     <div class="col-md-5">
 
-      <div class="owl-carousel owl-theme" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': false, 'autoplayTimeout': 3000}">
+      <div class="thumb-info" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': false, 'autoplayTimeout': 3000}">
         <div>
-          <span class="img-thumbnail">
-            <img alt="" class="img-responsive" src="../../../assets/images/Tourne.jpg">
+          <span class="thumb-info-wrapper">
+            <img alt="" class="img-responsive" src="{{item.imageUrl}}">
           </span>
         </div>
-        <div>
+        <!-- <div>
           <span class="img-thumbnail">
             <img alt="" class="img-responsive" src="../../../assets/images/Tourne2.jpg">
           </span>
-        </div>
+        </div> -->
       </div>
 
     </div>
@@ -26,12 +31,17 @@
       <ul class="portfolio-details">
         <li>
           <h4 class="mt-sm mb-xs">Size</h4>
-          <p>{{item.size}}
+          <p>{{item.height}}*{{item.width}}*{{item.Length}}{{item.units}}
           </p>
         </li>
         <li>
           <h4 class="mt-sm mb-xs ">Tools</h4>
-          <div class="col-md-4  pl-xs ">
+
+          <app-cut-tool style="display:inline-block;"></app-cut-tool>
+          <app-cut-tool style="display:inline-block;"></app-cut-tool>
+
+
+          <!-- <div class="col-md-4  pl-xs ">
             <a href="portfolio-single-small-slider.html">
               <span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
                 <span class="thumb-info-wrapper">
@@ -56,18 +66,27 @@
                 </span>
               </span>
             </a>
-          </div>
+          </div>  -->
+
+
         </li>
       </ul>
     </div>
   </div>
 
-  <!-- <div class="row">
+  <div class="row">
     <div class="col-md-12">
       <hr class="tall">
       <h3>
         <strong>Most Recipes</strong>
       </h3>
     </div>
-  </div> -->
+  </div>
+  <app-cutting-slider></app-cutting-slider>  
 </div>
+
+
+<!-- <script src="../../../assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="../../../assets/js/theme.js" type="text/javascript"></script>
+<script src="../../../assets/js/theme.init.js" type="text/javascript"></script> -->

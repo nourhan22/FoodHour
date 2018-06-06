@@ -41,6 +41,9 @@ import { CookingMethodService } from 'src/app/shared/services/cookingMethod.serv
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
 import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
 import { ToolAddComponent } from './tools/tool-add/tool-add.component';
+import { CuttingMethodAddComponent } from 'src/app/cutting-methods/cutting-method-add/cutting-method-add.component';
+import { CutToolComponent } from 'src/app/shared/components/cutTool/cutTool.component';
+import { CuttingSliderComponent } from 'src/app/cutting-methods/cutting-slider/cutting-slider.component';
 
 
 
@@ -76,7 +79,11 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
     RelatedtopicComponent,
     MicroOrganismAddComponent,
     CookingMethodAddComponent,
-    ToolAddComponent
+    ToolAddComponent,
+    CuttingMethodAddComponent,
+    CutToolComponent,
+    CuttingSliderComponent
+
   ],
   imports: [
     BrowserModule,FormsModule,
@@ -104,6 +111,7 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
      {path:'ToolListing/details/:id',component:ToolDetailesComponent},
      {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
+     {path:'cuttingMethodListing/add' , component:CuttingMethodAddComponent},
      {path:'ToolListing/add' , component:ToolAddComponent}
     ])
   ],

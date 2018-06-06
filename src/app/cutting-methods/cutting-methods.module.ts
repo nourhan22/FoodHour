@@ -5,6 +5,7 @@ import { CuttingMethodItemComponent } from './cutting-method-item/cutting-method
 import { CuttingMethodListingComponent } from './cutting-method-listing/cutting-method-listing.component';
 
 import { CuttingMethodDetailsComponent } from './cutting-method-details/cutting-method-details.component';
+import { CuttingSliderComponent } from './cutting-slider/cutting-slider.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,10 @@ import { CuttingMethodDetailsComponent } from './cutting-method-details/cutting-
   declarations: [CuttingMethodAddComponent, CuttingMethodItemComponent, CuttingMethodListingComponent,
 ,
     CuttingMethodDetailsComponent
-]
+,
+    CuttingSliderComponent
+],
+    
+    exports:[CuttingSliderComponent]
 })
 export class CuttingMethodsModule { }

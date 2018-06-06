@@ -12,5 +12,6 @@ import { ToolDetailesComponent } from './tool-detailes/tool-detailes.component';
   declarations: [ToolListingComponent, ToolAddComponent, ToolItemComponent,
     ToolDetailesComponent
 ]
+  
 })
 export class ToolsModule { }
