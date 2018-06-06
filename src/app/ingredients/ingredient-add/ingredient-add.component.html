@@ -16,6 +16,7 @@
             <span class="text-muted">Add Photo</span>
         </div>
 
+
         <div class="input-group col-xs-12">
             <input type="text" class="form-control" name='name' [(ngModel)]='newIngredient.name' placeholder="Ingredient Name" aria-describedby="basic-addon1"
                 required>
@@ -57,7 +58,7 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-12">
-                        <select  class="form-control" name='type'>  <!--[(ngModel)]="newIngredient.type" required-->
+                        <select  class="form-control" name='type'  [(ngModel)]="newIngredient.nutiritions[0].nutiritionName" required > 
                                 <option  value='Choose Type' required>Choose Type</option>
                             <option [value]="type.title" *ngFor='let type of nutiritionTypes'>{{type.title}}</option>
                         <!-- <option value="Vitamin">Vitamin</option>
@@ -70,15 +71,14 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="input-group col-xs-12">
-            <input type="text" class="form-control" name='name' [(ngModel)]='newIngredientNutirions.nutiritionType' placeholder="Nutirition Type" aria-describedby="basic-addon1"
-                required>
+        <div class="input-group col-xs-12">
+            <input type="text" class="form-control" name='name' [(ngModel)]='newIngredient.nutiritions[0].nutiritionType' placeholder="Nutirition Type" aria-describedby="basic-addon1">
         </div>
 
         <div class="input-group col-xs-12">
-            <input type="text" class="form-control" name='name' [(ngModel)]='newIngredientNutiritions.percentage' placeholder="Percentage" aria-describedby="basic-addon1"
+            <input type="text" class="form-control" name='name' [(ngModel)]='newIngredient.nutiritions[0].percentage' placeholder="Percentage" aria-describedby="basic-addon1"
                 required>
-        </div> -->
+        </div>
         <!-- <div class="row">
             <div class="col-xs-10">
                 <button class="btn  mr-xs mb-sm" id="addType"> Add Type
