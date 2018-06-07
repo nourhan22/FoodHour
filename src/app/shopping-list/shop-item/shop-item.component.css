@@ -899,7 +899,8 @@ textarea {
 }
 
 select {
-    height: calc(1.65rem + 2px) !important ;
+	height: 33px;
+	width: 90px;
 	border: 1px solid #E5E7E9;
 	border-radius: 6px;
     outline: none;
@@ -3602,10 +3603,6 @@ hr.pattern:after, .divider.pattern:after {
 	top: 50%;
 	margin-top: -7px;
 	width: 100%;
-}
-
-hr.pattern.pattern-2:after, .divider.pattern.pattern-2:after {
-
 }
 
 /* Sort Source Wrapper */
@@ -12087,7 +12084,7 @@ label {
 
 .form-control {
 	border-radius: 6px;
-	height: 38px;
+	height: 33px;
 	padding-top: 8px;
 	padding-bottom: 8px;
 }

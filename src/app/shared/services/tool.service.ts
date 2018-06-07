@@ -16,25 +16,25 @@ export class ToolService {
     },
     {
       name:'Food Cutter',
-      img:'./assets/images/tool/Food Cutter.jpg',
+      img:'./assets/images/cooker3.jpg',
       id:2,
       description:'ghjgjgjhghjgjh'
     },
     {
       name:'Grill',
-      img:'./assets/images/tool/grill.jpg',
+      img:'./assets/images/cooker3.jpg',
       id:3,
       description:'ghjgjgjhghjgjh'
     },
     {
       name:'Knife',
-      img:'./assets/images/tool/knife.jpg',
+      img:'./assets/images/cooker3.jpg',
       id:4,
       description:'ghjgjgjhghjgjh'
     },
     {
       name:'Oven',
-      img:'./assets/images/tool/oven2.jpg',
+      img:'./assets/images/cooker3.jpg',
       id:5,
       description:'ghjgjgjhghjgjh'
     },
@@ -46,7 +46,7 @@ export class ToolService {
     },
     {
       name:'Rangetop',
-      img:'./assets/images/tool/rangetop.jpg',
+      img:'./assets/images/cooker3.jpg',
       id:7,
       description:'ghjgjgjhghjgjh'
     },
