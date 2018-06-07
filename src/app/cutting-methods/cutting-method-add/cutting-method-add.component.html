@@ -1,3 +1,77 @@
-<p>
-  cutting-method-add works!
-</p>
+<!--  upload Image -->
+<div class="container">
+  <form (ngSubmit)="onSave(myform)" #myform="ngForm">
+
+    <div class='row header'>
+      <span class="text-muted">Add a New Cutting Method</span>
+      <hr>
+    </div>
+    <div class="row img">
+      <!-- (change)="onFileChanged($event)" -->
+      <input style="display: none" type="file" #fileInput>
+
+
+      <img src="../assets/images/default.png" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
+      />
+
+      <span class="text-muted">Add Photo</span>
+    </div>
+
+    <div class="input-group col-xs-12">
+      <input type="text" class="form-control" name='name' [(ngModel)]='addCutting.title' placeholder="Cutting Title" aria-describedby="basic-addon1"
+        required>
+    </div>
+    <div class="input-group col-xs-12">
+      <!-- <span class="col-md-3">Description</span> -->
+      <textarea class="form-control txtArea " name='Description' [(ngModel)]='addCutting.Description' placeholder="Description"></textarea>
+    </div>
+    <div class="row">
+      <span class="col-md-3" style="margin-top:27px;color: #636c72;">Size</span>
+      <div class="input-group col-xs-12 col-md-3">
+        <input type="number" class="form-control" name='Length' [(ngModel)]='addCutting.Length' placeholder="Length" aria-describedby="basic-addon1"
+          required>
+      </div>
+      <div class="input-group col-xs-12 col-md-3">
+        <input type="number" class="form-control" name='width' [(ngModel)]='addCutting.width' placeholder="width" aria-describedby="basic-addon1"
+          required>
+      </div>
+      <div class="input-group col-xs-12 col-md-3">
+        <input type="number" class="form-control" name='height' [(ngModel)]='addCutting.height' placeholder="height" aria-describedby="basic-addon1"
+          required>
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="col-md-3" style="margin-top:25px;color: #636c72;">Unit Type</span>
+      <div class="input-group col-xs-12 col-md-3">
+        <input type="radio" class="form-control"style="margin-top:27px;" name='unitType' value="1" [(ngModel)]='addCutting.unitType'>
+        <span class="col-md-3" style="margin-top:20px;color: #636c72;">{{unitType[0].title}}</span>        
+      </div>
+      <div class="input-group col-xs-12 col-md-3">
+        <input type="radio" class="form-control" name='unitType'style="margin-top:27px;" value="2" [(ngModel)]='addCutting.unitType'>
+        <span class="col-md-3" style="margin-top:20px;color: #636c72;">{{unitType[1].title}}</span>        
+      </div>
+    </div>
+
+    <!-- <div class="input-group col-xs-12">
+      <input type="text" class="form-control" name='type' [(ngModel)]='newMicro.type'
+      placeholder="Type" aria-describedby="basic-addon1">
+    </div> -->
+    
+    <div class="input-group col-xs-12 row">
+      <span class="col-md-3" style="margin-top:20px;color: #636c72;">Choose Unit</span>        
+        
+      <select class="form-control col-md-9" name='type' [(ngModel)]="addCutting.units" required>
+        <option [value]="type" *ngFor='let type of units'>{{type}}</option>
+      </select>
+    </div>
+
+
+    <div class="row">
+      <button type="submit" class="btn  addbtn col-xs-7 " [disabled]="myform.invalid">Add Contact</button>
+    </div>
+     <div class='row'>
+      <button type="button" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>
+    </div> 
+  </form>
+</div>

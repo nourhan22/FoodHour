@@ -1969,7 +1969,7 @@ ul.thumbnail-gallery li {
 	border-radius: 35px;
 	color: #FFF;
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	height: 35px;
 	line-height: 35px;
 	margin-right: 10px;

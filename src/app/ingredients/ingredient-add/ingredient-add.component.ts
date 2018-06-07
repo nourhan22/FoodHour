@@ -12,25 +12,23 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./ingredient-add.component.css']
 })
 export class IngredientAddComponent implements OnInit {
-
+public newIngredientNutirition:IIngredientNutiritions;
   public newIngredient : IIngredient;
-  public newIngredientNutiritions:IIngredientNutiritions;
   public nutiritionTypes:INutiritionType[];
     constructor(private ingredientService : IngredientService,private router:Router) { }
   
     ngOnInit() {
-      this.newIngredientNutiritions ={
-        nutiritionName:'',
-        nutiritionType:'',
-        percentage:''
-      }
+     
       this.newIngredient = {
         name:'',
         img:'',
         desc:'',
         id:0,
+       nutiritions:[{nutiritionName:' ',nutiritionType:' ',percentage:0}]
+        
         }
-  
+       
+ 
         this.nutiritionTypes = this.ingredientService.GetNutiritionTypes();
     }
   

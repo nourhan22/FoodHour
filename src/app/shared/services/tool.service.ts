@@ -94,5 +94,24 @@ public onDelete(id:number)
 AddNewTool(item:ISmallTool){
   this.Tools.push(item);
 }
+
+Edit(item:ISmallTool)
+ {
+  //  debugger;
+  //  let item = this.GetbyId(id);
+
+  const index= this.Tools.findIndex(a=>a.id === item.id);
+  if(index >-1)
+  {
+    this.Tools[index] = item;
+    return item;
+  }
+ }
+ DeleteAll()
+ {
+  let len = this.Tools.length; 
+  this.Tools.splice(0,len);
+ }
+
 public lengthOfTool :number=this.Tools.length;
 }

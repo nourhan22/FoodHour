@@ -22,7 +22,7 @@ private id :number;
   ngOnInit() {
     
 // this.ActivatedRoute.url.subscribe((data)=>{console.log(data[0].path);});
-
+debugger;
     this.ActivatedRoute.params.subscribe(
      
       (params)=>{  this.id = params['id'];}

@@ -30,5 +30,10 @@ headerTitle:string;
     }
     
   }
+  onDelete()
+   {
+     debugger;
+     this.toolservice.DeleteAll();
+   }
 
 }

@@ -1,5 +1,5 @@
 /* owl-carousel */
-.owl-carousel {
+/* .owl-carousel {
 	display: none;
 	width: 100%;
 
@@ -8,7 +8,7 @@
 }
 	.owl-carousel .owl-stage {
 		position: relative;
-		 }
+		 } */
 	/* .owl-carousel .owl-stage:after {
 		content: ".";
 		display: block;
@@ -73,12 +73,12 @@
  /*
  	Owl Carousel - Lazy Load Plugin
  */
-.owl-carousel .owl-item .owl-lazy {
+/* .owl-carousel .owl-item .owl-lazy {
 	opacity: 0;
 	transition: opacity 400ms ease; }
 
 .owl-carousel .owl-item img.owl-lazy {
-	transform-style: preserve-3d; }
+	transform-style: preserve-3d; } */
 
 /*
  * 	Owl Carousel - Video Plugin
@@ -126,7 +126,7 @@
 
 /* owl-carousel */
 /* owl-theme-default */
-.owl-theme .owl-nav {
+/* .owl-theme .owl-nav {
 	margin-top: 10px;
 	text-align: center;
 	-webkit-tap-highlight-color: transparent; }
@@ -167,7 +167,7 @@
 			transition: opacity 200ms ease;
 			border-radius: 30px; }
 		.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-			background: #869791; }
+			background: #869791; } */
 
 /* owl-theme-default */
 
@@ -294,7 +294,7 @@
 
 .thumb-info .thumb-info-wrapper:after {
 	content: "";
-	background: rgba(23, 23, 23, 0.8);
+	/* background: rgba(23, 23, 23, 0.8); */
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -722,10 +722,10 @@ p{
 .thumb-info .thumb-info-type {
     background-color: #ff530a;
 }
-.thumb-info .thumb-info-wrapper:after {
+/* .thumb-info .thumb-info-wrapper:after {
     content: "";
     background: rgba(172, 167, 167, 0.5);
-}
+} */
 .h2{
     color:#ff530a; 
     font-weight:500;

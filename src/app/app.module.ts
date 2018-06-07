@@ -1,3 +1,6 @@
+import{HomeModule} from './home/home.module';
+
+
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
 import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
@@ -26,6 +29,7 @@ import {ToolDetailesComponent} from './tools/tool-detailes/tool-detailes.compone
 // import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
 //import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
 import {IngredientsModule} from './ingredients/ingredients.module';
+
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
 import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
 import { TabsComponent } from 'src/app/micro-organisms/tabs/tabs.component';
@@ -42,6 +46,8 @@ import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-a
 import { RecipeDetailsComponent } from 'src/app/recipe/recipe-details/recipe-details.component';
 
 import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
+import { IngredientNutiritionsComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutiritions.component';
+import { IngredientNutiritionItemComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutirition-Item/ingredient-nutirition-Item.component';
 import { ToolAddComponent } from './tools/tool-add/tool-add.component';
 import {RecipeListingComponent} from 'src/app/recipe/recipe-listing/recipe-listing.component';
 import {RecipeItemComponent} from 'src/app/recipe/recipe-item/recipe-item.component';
@@ -52,6 +58,13 @@ import {NutritionComponent} from 'src/app/recipe/recipe-details/nutrition/nutrit
 import {PieChartComponent}from 'src/app/recipe/recipe-details/nutrition/pie-chart/pie-chart.component';
 import {BarChartComponent} from 'src/app/recipe/recipe-details/nutrition/bar-chart/bar-chart.component';
 import {MiniItemComponent} from 'src/app/recipe/recipe-details/miniIngrediant/miniItem/miniItem.component';
+import { CuttingMethodAddComponent } from 'src/app/cutting-methods/cutting-method-add/cutting-method-add.component';
+import { CutToolComponent } from 'src/app/shared/components/cutTool/cutTool.component';
+import { CuttingSliderComponent } from 'src/app/cutting-methods/cutting-slider/cutting-slider.component';
+import { SliderComponent } from 'src/app/home/slider/slider.component';
+import { WhoWeAreComponent } from 'src/app/home/who-we-are/who-we-are.component';
+import { ServicesComponent } from 'src/app/home/services/services.component';
+import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +82,8 @@ import {MiniItemComponent} from 'src/app/recipe/recipe-details/miniIngrediant/mi
     IngredientDetailsComponent,
     IngredientDescriptionComponent,
     IngredientAddComponent,
+    IngredientNutiritionsComponent,
+    IngredientNutiritionItemComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -84,6 +99,16 @@ import {MiniItemComponent} from 'src/app/recipe/recipe-details/miniIngrediant/mi
     RelatedtopicComponent,
     MicroOrganismAddComponent,
     CookingMethodAddComponent,
+
+    ToolAddComponent,
+    CuttingMethodAddComponent,
+    CutToolComponent,
+    CuttingSliderComponent,
+    SliderComponent,
+    WhoWeAreComponent,
+    ServicesComponent,
+    ViewHomeComponent,
+
     RecipeDetailsComponent,
     ToolAddComponent,
     RecipeListingComponent,
@@ -101,6 +126,8 @@ import {MiniItemComponent} from 'src/app/recipe/recipe-details/miniIngrediant/mi
   imports: [
     BrowserModule,FormsModule,
     RouterModule.forRoot([
+     {path:'home', component:ViewHomeComponent},
+     
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
@@ -126,10 +153,11 @@ import {MiniItemComponent} from 'src/app/recipe/recipe-details/miniIngrediant/mi
      {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
      {path:'recipeListing/details/:id',component:RecipeDetailsComponent},
      {path:'ToolListing/add' , component:ToolAddComponent},
-     
-    //  {path:'',component: GallaryComponent },
-    //  {path:'',component: MainInfoComponent},
-    //  {path:'',component: MiniIngrediantComponent},
+     {path:'cuttingMethodListing/add' , component:CuttingMethodAddComponent},
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'ToolListing/edit/:id',component:ToolAddComponent},
+     {path:'recipe/details',component:RecipeDetailsComponent},
+     {path:'ToolListing/add' , component:ToolAddComponent}
     ])
   ],
   providers: [MicroService,CookingMethodService],

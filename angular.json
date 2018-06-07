@@ -23,10 +23,36 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/animate.min.css",                                          
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/owl.theme.default.css",
+              "src/assets/css/theme.css",
+              "src/assets/css/theme-elements.css",
+              "src/assets/css/settings.css",
+              "src/assets/css/demo-one-page-agency.css",
               "src/styles.css"
+              
+              
             ],
 
-            "scripts": []   
+            "scripts": [
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/modernizr.min.js",
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/jquery.appear.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/jquery-cookie.min.js",
+              
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/theme.js",
+              "src/assets/js/custom.js",
+              "src/assets/js/theme.init.js",
+              "src/assets/js/jquery.themepunch.tools.min.js",
+              "src/assets/js/jquery.themepunch.revolution.min.js",
+              "src/assets/js/examples.gallery.js"
+              
+            ]   
           },
           "configurations": {
             "production": {
@@ -75,7 +101,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [ "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+            "scripts": [
+              "../src/assets/js/jquery.appear.min.js",
+              "../src/assets/js/jquery.easing.min.js",
+              "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+              
             ],
             "assets": [
               "src/favicon.ico",
