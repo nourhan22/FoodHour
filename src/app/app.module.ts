@@ -102,7 +102,7 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
     SliderComponent,
     WhoWeAreComponent,
     ServicesComponent,
-    ViewHomeComponent
+    ViewHomeComponent,
 
     RecipeDetailsComponent,
 
