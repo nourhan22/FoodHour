@@ -1,0 +1,39 @@
+<!-- <h3>pasta and broccoli sausage simmer -->
+<!-- </h3> -->
+<!-- <div class="post-meta">
+                                    <span>
+                                        <i class="fa fa-check"></i>
+                                        <a href="#">33 Made it ,</a>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                        <a href="#"> 150 Views ,</a>
+                                    </span>
+    
+                                    <span>
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                        <a href="#"> 200 like it </a>
+                                    </span>
+                                </div> -->
+<span>
+  <i class="fa fa-heartbeat" aria-hidden="true"> </i>
+  <!--<h4> health informtion :</h4>-->
+</span>
+<h5>vitamins :</h5>
+<div class="row">
+  <ul>
+    <app-pie-chart [RecipeItem]='item' *ngFor='let item of RecipeItem.nutritions.VITAMINS'></app-pie-chart>
+  </ul>
+</div>
+<h5>minerals :</h5>
+<div class="row">
+  <ul>
+    <app-pie-chart [RecipeItem]='item' *ngFor='let item of RecipeItem.nutritions.MINERALS'></app-pie-chart>
+  </ul>
+</div>
+<hr>
+<div class="row">
+  <ul>
+    <app-bar-chart [RecipeItem]='item' *ngFor='let item of RecipeItem.nutritions.Cal'></app-bar-chart>
+  </ul>
+</div>

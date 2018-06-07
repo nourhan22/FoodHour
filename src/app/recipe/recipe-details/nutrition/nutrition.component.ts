@@ -3,12 +3,12 @@ import {IRecipe} from 'src/app/shared/models/interfaces/IRecipe';
 import { Input } from '@angular/core';
 
 @Component({
-  selector: 'app-recipe-item',
-  templateUrl: './recipe-item.component.html',
-  styleUrls: ['./recipe-item.component.css']
+  selector: 'app-nutrition',
+  templateUrl: './nutrition.component.html',
+  styleUrls: ['./nutrition.component.css']
 })
-export class RecipeItemComponent implements OnInit {
-  @Input() item:IRecipe[];
+export class NutritionComponent implements OnInit {
+  @Input() RecipeItem:IRecipe;
   constructor() { }
 
   ngOnInit() {

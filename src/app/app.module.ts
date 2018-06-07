@@ -43,9 +43,15 @@ import { RecipeDetailsComponent } from 'src/app/recipe/recipe-details/recipe-det
 
 import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-add.component';
 import { ToolAddComponent } from './tools/tool-add/tool-add.component';
-
-
-
+import {RecipeListingComponent} from 'src/app/recipe/recipe-listing/recipe-listing.component';
+import {RecipeItemComponent} from 'src/app/recipe/recipe-item/recipe-item.component';
+import {GallaryComponent} from 'src/app/recipe/recipe-details/gallary/gallary.component';
+import {MainInfoComponent } from 'src/app/recipe/recipe-details/mainInfo/mainInfo.component';
+import {MiniIngrediantComponent} from 'src/app/recipe/recipe-details/miniIngrediant/miniIngrediant.component';
+import {NutritionComponent} from 'src/app/recipe/recipe-details/nutrition/nutrition.component';
+import {PieChartComponent}from 'src/app/recipe/recipe-details/nutrition/pie-chart/pie-chart.component';
+import {BarChartComponent} from 'src/app/recipe/recipe-details/nutrition/bar-chart/bar-chart.component';
+import {MiniItemComponent} from 'src/app/recipe/recipe-details/miniIngrediant/miniItem/miniItem.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +85,17 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
     MicroOrganismAddComponent,
     CookingMethodAddComponent,
     RecipeDetailsComponent,
-    ToolAddComponent
+    ToolAddComponent,
+    RecipeListingComponent,
+    RecipeItemComponent,
+    MainInfoComponent,
+    MiniIngrediantComponent,
+    GallaryComponent,
+    NutritionComponent,
+    PieChartComponent,
+    BarChartComponent,
+    MiniItemComponent
+
 
   ],
   imports: [
@@ -94,13 +110,13 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
+     {path: 'recipeListing' , component: RecipeListingComponent},
      {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
      {path:'microOrganismListing/edit/:id' , component:MicroOrganismAddComponent},
      {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
+     {path:'cookingMethodListing/edit/:id' , component:CookingMethodAddComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
      {path:'cuttingMethodListing/details/:id', component:CuttingMethodDetailsComponent},
-     
-     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
      {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
@@ -108,8 +124,12 @@ import { ToolAddComponent } from './tools/tool-add/tool-add.component';
      {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
      {path:'ToolListing/details/:id',component:ToolDetailesComponent},
      {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
-     {path:'recipe/details',component:RecipeDetailsComponent},
-     {path:'ToolListing/add' , component:ToolAddComponent}
+     {path:'recipeListing/details/:id',component:RecipeDetailsComponent},
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     
+    //  {path:'',component: GallaryComponent },
+    //  {path:'',component: MainInfoComponent},
+    //  {path:'',component: MiniIngrediantComponent},
     ])
   ],
   providers: [MicroService,CookingMethodService],
