@@ -46,6 +46,9 @@ import { IngredientNutiritionsComponent } from './ingredients/ingredient-details
 import { IngredientNutiritionItemComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutirition-Item/ingredient-nutirition-Item.component';
 import { ToolAddComponent } from './tools/tool-add/tool-add.component';
 import { ShopItemComponent } from './shopping-list/shop-item/shop-item.component';
+import { CuttingMethodAddComponent } from 'src/app/cutting-methods/cutting-method-add/cutting-method-add.component';
+import { CutToolComponent } from 'src/app/shared/components/cutTool/cutTool.component';
+import { CuttingSliderComponent } from 'src/app/cutting-methods/cutting-slider/cutting-slider.component';
 
 
 
@@ -83,7 +86,14 @@ import { ShopItemComponent } from './shopping-list/shop-item/shop-item.component
     RelatedtopicComponent,
     MicroOrganismAddComponent,
     CookingMethodAddComponent,
+
+    ToolAddComponent,
+    CuttingMethodAddComponent,
+    CutToolComponent,
+    CuttingSliderComponent,
+
     RecipeDetailsComponent,
+
     ToolAddComponent,
     ShopListingComponent,
     ShopItemComponent
@@ -116,13 +126,18 @@ import { ShopItemComponent } from './shopping-list/shop-item/shop-item.component
      {path:'ToolListing/details/:id',component:ToolDetailesComponent},
      {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
 
+     {path:'cuttingMethodListing/add' , component:CuttingMethodAddComponent},
+
+
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
 
      {path:'recipe/details',component:RecipeDetailsComponent},
+
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'shoplisting',component:ShopListingComponent},
      {path:'shopitem',component:ShopItemComponent}
+
 
     ])
   ],

@@ -3,5 +3,9 @@ export interface ICuttingMethods {
     imageUrl: string;
     id: Number;
     Description:string;
-    size:string;
+    Length:Number;
+    width:Number;
+    height:Number;
+    unitType:string;
+    units:string
 }
