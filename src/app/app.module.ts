@@ -1,3 +1,6 @@
+import{HomeModule} from './home/home.module';
+
+
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
 import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
@@ -26,6 +29,7 @@ import {ToolDetailesComponent} from './tools/tool-detailes/tool-detailes.compone
 // import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
 //import { IngredientListingComponent } from 'src/app/ingredients/ingredient-listing/ingredient-listing.component';
 import {IngredientsModule} from './ingredients/ingredients.module';
+
 import {CookingMethodDetailsComponent} from 'src/app/cooking-methods/cooking-method-details/cooking-method-details.component';
 import { SmallHeaderComponent } from 'src/app/shared/components/smallHeader/smallHeader.component';
 import { TabsComponent } from 'src/app/micro-organisms/tabs/tabs.component';
@@ -49,6 +53,10 @@ import { ShopItemComponent } from './shopping-list/shop-item/shop-item.component
 import { CuttingMethodAddComponent } from 'src/app/cutting-methods/cutting-method-add/cutting-method-add.component';
 import { CutToolComponent } from 'src/app/shared/components/cutTool/cutTool.component';
 import { CuttingSliderComponent } from 'src/app/cutting-methods/cutting-slider/cutting-slider.component';
+import { SliderComponent } from 'src/app/home/slider/slider.component';
+import { WhoWeAreComponent } from 'src/app/home/who-we-are/who-we-are.component';
+import { ServicesComponent } from 'src/app/home/services/services.component';
+import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 
 
 
@@ -91,6 +99,10 @@ import { CuttingSliderComponent } from 'src/app/cutting-methods/cutting-slider/c
     CuttingMethodAddComponent,
     CutToolComponent,
     CuttingSliderComponent,
+    SliderComponent,
+    WhoWeAreComponent,
+    ServicesComponent,
+    ViewHomeComponent
 
     RecipeDetailsComponent,
 
@@ -102,6 +114,8 @@ import { CuttingSliderComponent } from 'src/app/cutting-methods/cutting-slider/c
   imports: [
     BrowserModule,FormsModule,
     RouterModule.forRoot([
+     {path:'home', component:ViewHomeComponent},
+     
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
