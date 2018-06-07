@@ -1,5 +1,5 @@
 <div class="container">
-  <form>
+  <form (ngSubmit)="onSave(myform)" #myform="ngForm">
     <div class='row header'>
       <span class="text-muted">Add a New Tool</span>
       <hr>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="row">
-      <button type="button" class="btn  addbtn col-xs-7 " (click)='onSave()'>Add Tool</button>
+      <button type="submit" class="btn  addbtn col-xs-7 " [disabled]="myform.invalid" >Add Contact</button>
     </div>
     <div class='row'>
       <button type="button" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>
