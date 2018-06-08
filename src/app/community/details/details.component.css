@@ -1,0 +1,52 @@
+a ,a:hover, a:focus, a:active {
+    color: #ff530a;
+}
+
+.owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #ff530a;
+}
+
+html body .tabs .nav-tabs li.active a, html.dark body .tabs .nav-tabs li.active a {
+    border-top-color: #ff530a;
+    color: #ff530a;
+}
+
+html body .tabs .nav-tabs a:hover, html.dark body .tabs .nav-tabs a:hover, html body .tabs .nav-tabs a:focus, html.dark body .tabs .nav-tabs a:focus {
+    border-top-color: #ff530a;
+}
+
+html body .tabs .nav-tabs a, html.dark body .tabs .nav-tabs a, html body .tabs .nav-tabs a:hover, html.dark body .tabs .nav-tabs a:hover {
+    color: #ff530a;
+}
+
+.pagination > .active > a, body.dark .pagination > .active > a {
+    color: #ffffff;
+    background-color: #ff530a !important;
+    border-color: #ff530a #ff530a #ff530a;
+}
+
+.pagination > li > a, .pagination > li > span, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    color: #827f7fcc;
+}
+
+.recent-posts .date .day, article.post .post-date .day {
+    color: #ff530a;
+}
+.recent-posts .date .month, article.post .post-date .month {
+    background-color: #ff530a;
+}
+
+html .heading-primary, html .lnk-primary, html .text-color-primary {
+    color: #ff530a !important;
+}
+
+.btn-primary {
+  
+    margin-bottom: 1px  !important;
+}
+
+.postText{
+    background-color: #f1f1f1;
+    border-radius: 15px;
+   
+}
