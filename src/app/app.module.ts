@@ -136,7 +136,7 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
     AuthorComponent,
     CommentComponent,
     SmallPostComponent,
-    AddCommentComponent
+    AddCommentComponent,
 
     PostComponent
 

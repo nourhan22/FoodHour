@@ -2,9 +2,9 @@ a ,a:hover, a:focus, a:active {
     color: #ff530a;
 }
 
-/* .owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span {
+.owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span {
     background-color: #ff530a;
-} */
+}
 
 html body .tabs .nav-tabs li.active a, html.dark body .tabs .nav-tabs li.active a {
     border-top-color: #ff530a;
