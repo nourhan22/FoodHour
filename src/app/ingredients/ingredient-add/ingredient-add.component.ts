@@ -3,8 +3,8 @@ import { IIngredient } from './../../shared/models/interfaces/IIngredient';
 import { Component, OnInit } from '@angular/core';
 import { INutiritionType } from '../../shared/models/interfaces/INutiritionType';
 import { IngredientService } from '../../shared/services/ingredient.service';
-import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ingredient-add',
@@ -15,7 +15,9 @@ export class IngredientAddComponent implements OnInit {
 public newIngredientNutirition:IIngredientNutiritions;
   public newIngredient : IIngredient;
   public nutiritionTypes:INutiritionType[];
-    constructor(private ingredientService : IngredientService,private router:Router) { }
+  public isEdit :boolean = false;
+  public id:number;
+    constructor(private ingredientService : IngredientService,private router:Router, private ActivatedRoute:ActivatedRoute) { }
   
     ngOnInit() {
      
@@ -24,23 +26,44 @@ public newIngredientNutirition:IIngredientNutiritions;
         img:'',
         desc:'',
         id:0,
-       nutiritions:[{nutiritionName:' ',nutiritionType:' ',percentage:0}]
+       nutiritions:[{nutiritionName:'Choose Type',nutiritionType:'',percentage:0}]
         
         }
        
  
         this.nutiritionTypes = this.ingredientService.GetNutiritionTypes();
+
+        this.ActivatedRoute.params.subscribe(
+        
+          (params)=>{ 
+            debugger;
+             this.id = params['id'];
+             if(this.id!=null)
+             {
+               debugger;
+              this.newIngredient =  this.ingredientService.GetbyId(this.id);
+              this.isEdit = true;
+             }
+           }
+        )
+ 
     }
   
     onSave(myform:NgForm)
     {
-      if(this.newIngredient!=null && myform.valid)
+      if(this.newIngredient!=null && myform.valid && this.isEdit== false)
       {
         this.newIngredient.id = this.ingredientService.lengthOfIngredients+1;
         this.newIngredient.img = '../assets/images/default.png'
         this.ingredientService.AddNewIngredient(this.newIngredient);   
         this.router.navigate(['IngredientListing']) ;       
       }
+      else if(this.isEdit == true)
+      {
+        this.ingredientService.Edit(this.newIngredient);
+      }
+      this.router.navigate(['IngredientListing']) ; 
+  
     }
   
     onCancel()
