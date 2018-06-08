@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input} from '@angular/core';
+import { IAuthor } from 'src/app/shared/models/interfaces/IAuthor';
+
 
 @Component({
   selector: 'app-author',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./author.component.css']
 })
 export class AuthorComponent implements OnInit {
-
+@Input()author:IAuthor;
   constructor() { }
 
   ngOnInit() {

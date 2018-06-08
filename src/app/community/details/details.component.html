@@ -15,18 +15,18 @@
 								<div class="post-content">
 
 								
-									<app-post-content></app-post-content>
-									<app-author></app-author>
+									<app-post-content [postContent] = "postItem"></app-post-content>
+									<app-author [author] = "postItem.author"></app-author>
 
 									<div class="post-block post-comments clearfix">
 										<h3 class="heading-primary">
-											<i class="fa fa-comments"></i>Comments (3)</h3>
+											<i class="fa fa-comments"></i>Comments ({{postItem.comments.length}})</h3>
 
 										<ul class="comments">
 
 
 											
-										<app-comment></app-comment>
+										<app-comment  [comment] = "x" *ngFor = " let x of postItem.comments"></app-comment>
 											
 										</ul>
 
@@ -59,16 +59,13 @@
 								<div class="tab-content">
 									<div class="tab-pane active" id="popularPosts">
 										<ul class="simple-post-list">
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>		
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of popularPosts'></app-small-post>
+														
 										</ul>
 									</div>
 									<div class="tab-pane" id="recentPosts">
 										<ul class="simple-post-list">
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of recentPosts'></app-small-post>
 										</ul>
 									</div>
 								</div>

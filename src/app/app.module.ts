@@ -129,7 +129,7 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
     NutritionComponent,
     PieChartComponent,
     BarChartComponent,
-    MiniItemComponent
+    MiniItemComponent,
 
     DetailsComponent,
     PostContentComponent,
@@ -180,7 +180,7 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
      {path:'recipe/details',component:RecipeDetailsComponent},
 
      {path:'ToolListing/add' , component:ToolAddComponent},
-     {path:'community/details' , component:DetailsComponent}
+     {path:'community/details/:id' , component:DetailsComponent}
 
     ])
   ],
