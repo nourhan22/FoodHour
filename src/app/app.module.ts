@@ -1,4 +1,6 @@
 import{HomeModule} from './home/home.module';
+import{CommunityModule} from './community/community.module';
+
 
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
@@ -64,6 +66,14 @@ import { SliderComponent } from 'src/app/home/slider/slider.component';
 import { WhoWeAreComponent } from 'src/app/home/who-we-are/who-we-are.component';
 import { ServicesComponent } from 'src/app/home/services/services.component';
 import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
+import { PostComponent } from 'src/app/community/post/post.component';
+import { DetailsComponent } from 'src/app/community/details/details.component';
+import { PostContentComponent } from 'src/app/community/post-content/post-content.component';
+import { AuthorComponent } from 'src/app/community/author/author.component';
+import { CommentComponent } from 'src/app/shared/components/comment/comment.component';
+// import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
+import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
+import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 
 @NgModule({
   declarations: [
@@ -109,6 +119,7 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
     ViewHomeComponent,
 
     RecipeDetailsComponent,
+
     ToolAddComponent,
     RecipeListingComponent,
     RecipeItemComponent,
@@ -120,6 +131,16 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
     BarChartComponent,
     MiniItemComponent
 
+    DetailsComponent,
+    PostContentComponent,
+    AuthorComponent,
+    CommentComponent,
+    SmallPostComponent,
+    AddCommentComponent
+
+    PostComponent
+
+
 
   ],
   imports: [
@@ -130,6 +151,7 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
+     {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent}  ,
@@ -156,7 +178,10 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
      {path:'recipe/details',component:RecipeDetailsComponent},
-     {path:'ToolListing/add' , component:ToolAddComponent}
+
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'community/details' , component:DetailsComponent}
+
     ])
   ],
   providers: [MicroService,CookingMethodService],
