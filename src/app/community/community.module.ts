@@ -11,10 +11,12 @@ import { SmallPostComponent } from './small-post/small-post.component';
     CommonModule
   ],
   declarations: [,
-    PostComponent,
+    PostComponent
+,
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
+    SmallPostComponent,
     SmallPostComponent
 ]
 })
