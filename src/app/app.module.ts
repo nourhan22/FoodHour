@@ -56,6 +56,7 @@ import { SliderComponent } from 'src/app/home/slider/slider.component';
 import { WhoWeAreComponent } from 'src/app/home/who-we-are/who-we-are.component';
 import { ServicesComponent } from 'src/app/home/services/services.component';
 import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
+import { DetailsComponent } from 'src/app/community/details/details.component';
 
 
 
@@ -101,9 +102,10 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
     SliderComponent,
     WhoWeAreComponent,
     ServicesComponent,
-    ViewHomeComponent
+    ViewHomeComponent,
 
     RecipeDetailsComponent,
+    DetailsComponent,
 
 
   ],
@@ -144,7 +146,9 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 
      {path:'recipe/details',component:RecipeDetailsComponent},
 
-     {path:'ToolListing/add' , component:ToolAddComponent}
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'comunity/details' , component:DetailsComponent}
+     
 
     ])
   ],
