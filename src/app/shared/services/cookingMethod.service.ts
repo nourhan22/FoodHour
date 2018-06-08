@@ -84,4 +84,19 @@ AddNewCooKingMethod(item:IcookingMethod){
   this.cookingMethods.push(item);
 }
 public lengthOfCookingMethod :number=this.cookingMethods.length;
+DeleteAll()
+ {
+  let len = this.cookingMethods.length;
+  this.cookingMethods.splice(0,len);
+ }
+
+Edit(item:IcookingMethod)
+{
+ const index= this.cookingMethods.findIndex(a=>a.id === item.id);
+ if(index >-1)
+ {
+   this.cookingMethods[index] = item;
+   return item;
+ }
+}
 }

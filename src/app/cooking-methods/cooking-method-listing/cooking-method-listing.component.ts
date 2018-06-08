@@ -29,7 +29,10 @@ public cookingMethods: IcookingMethod[];
     {
       this.cookingMethods = this.cookingMethodService.SearchInCookingMethods(txtSearch);
     }
-    
+     
   }
-
+  onDelete()
+  {
+    this.cookingMethodService.DeleteAll();
+  }
 }
