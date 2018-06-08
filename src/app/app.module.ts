@@ -57,6 +57,12 @@ import { WhoWeAreComponent } from 'src/app/home/who-we-are/who-we-are.component'
 import { ServicesComponent } from 'src/app/home/services/services.component';
 import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 import { DetailsComponent } from 'src/app/community/details/details.component';
+import { PostContentComponent } from 'src/app/community/post-content/post-content.component';
+import { AuthorComponent } from 'src/app/community/author/author.component';
+import { CommentComponent } from 'src/app/shared/components/comment/comment.component';
+// import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
+import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
+import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 
 
 
@@ -106,6 +112,11 @@ import { DetailsComponent } from 'src/app/community/details/details.component';
 
     RecipeDetailsComponent,
     DetailsComponent,
+    PostContentComponent,
+    AuthorComponent,
+    CommentComponent,
+    SmallPostComponent,
+    AddCommentComponent
 
 
   ],
@@ -147,7 +158,7 @@ import { DetailsComponent } from 'src/app/community/details/details.component';
      {path:'recipe/details',component:RecipeDetailsComponent},
 
      {path:'ToolListing/add' , component:ToolAddComponent},
-     {path:'comunity/details' , component:DetailsComponent}
+     {path:'community/details' , component:DetailsComponent}
      
 
     ])
