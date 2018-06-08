@@ -23,10 +23,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/animate.min.css",                                          
               "src/assets/css/bootstrap.css",
+              "src/assets/css/animate.min.css",                                                        
               "src/assets/css/owl.carousel.min.css",
               "src/assets/css/owl.theme.default.css",
+              "src/assets/css/theme-blog.css",
               "src/assets/css/theme.css",
               "src/assets/css/theme-elements.css",
               "src/assets/css/settings.css",
@@ -50,7 +51,6 @@
               "src/assets/js/jquery.themepunch.tools.min.js",
               "src/assets/js/jquery.themepunch.revolution.min.js",
               "src/assets/js/examples.gallery.js"
-              
             ]   
           },
           "configurations": {
