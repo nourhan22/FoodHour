@@ -1,4 +1,6 @@
 import{HomeModule} from './home/home.module';
+import{CommunityModule} from './community/community.module';
+
 
 
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
@@ -56,6 +58,7 @@ import { SliderComponent } from 'src/app/home/slider/slider.component';
 import { WhoWeAreComponent } from 'src/app/home/who-we-are/who-we-are.component';
 import { ServicesComponent } from 'src/app/home/services/services.component';
 import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
+import { PostComponent } from 'src/app/community/post/post.component';
 import { DetailsComponent } from 'src/app/community/details/details.component';
 
 
@@ -106,6 +109,8 @@ import { DetailsComponent } from 'src/app/community/details/details.component';
 
     RecipeDetailsComponent,
     DetailsComponent,
+
+    PostComponent
 
 
   ],
