@@ -23,9 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/animate.min.css",                                          
-              "src/assets/css/bootstrap.css",
-              "src/styles.css"
+               
 
             ],
 
