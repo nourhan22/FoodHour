@@ -2,8 +2,9 @@
 /* theme style */
 /* Header */
 #header {
-	position: relative;
+	 position: relative; 
 	z-index: 100;
+
 }
 
 #header .header-body {
@@ -17,6 +18,7 @@
 	width: 100%;
 	z-index: 1001;
 	min-height: 125px;
+	/* margin-top: -690px !important; */
 }
 
 #header.header-no-min-height .header-body {
@@ -658,7 +660,7 @@ html:not(.sticky-header-active) #header.header-transparent-sticky-deactive .head
 
 	#header .header-nav-main a:hover > .thumb-info-preview {
 		transform: translate3d(0, 0, 0);
-		top: 0;
+		top: 0; 
 		opacity: 1;
 		margin-top: -5px;
 	}
