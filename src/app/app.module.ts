@@ -121,6 +121,9 @@ import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/mi
 
     RecipeDetailsComponent,
 
+
+    ToolAddComponent,
+
     RecipeListingComponent,
     RecipeItemComponent,
     MainInfoComponent,
@@ -132,7 +135,6 @@ import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/mi
     MiniItemComponent,
     StepsComponent,
     MiseEnPlaceComponent,
-
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
@@ -182,7 +184,11 @@ import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/mi
      {path:'recipe/details',component:RecipeDetailsComponent},
      {path:'ToolListing/add' , component:ToolAddComponent},
 
-     {path:'community/details' , component:DetailsComponent}
+     {path:'community/details' , component:DetailsComponent},
+
+
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'community/details/:id' , component:DetailsComponent}
     ])
   ],
   providers: [MicroService,CookingMethodService],

@@ -15,20 +15,20 @@
   </div> -->
   
   <div class="img-thumbnail">
-      <img class="img-responsive" src="../../../assets/images/comunity/blog-image-1.jpg" alt="">
+      <img class="img-responsive" [src]="postContent.image" alt="">
     </div>
 <div class="post-date">
-    <span class="day">10</span>
-    <span class="month">Jan</span>
+    <span class="day">{{postContent.day}}</span>
+    <span class="month">{{postContent.month}}</span>
   </div>
 <h2>
-<a href="CommunityTopic.html">Class aptent taciti sociosqu ad litora torquent</a>
+<a href="CommunityTopic.html" class=" title">{{postContent.title}}</a>
 </h2>
 
 <div class="post-meta">
 <span>
   <i class="fa fa-user"></i> By
-  <a href="#">John Doe</a>
+  <a href="#">postContent.username</a>
 </span>
 <span>
   <i class="fa fa-tag"></i>
@@ -37,17 +37,8 @@
 </span>
 <span>
   <i class="fa fa-comments"></i>
-  <a href="#">12 Comments</a>
+  <a href="#">{{postContent.noOfComments}} Comments</a>
 </span>
 </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum
-nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec
-tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor
-sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
-non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus
-orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla.
-Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet
-dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo
-justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius
-sit amet hendrerit id, egestas quis mauris.</p>
+<p>{{postContent.content}}</p>

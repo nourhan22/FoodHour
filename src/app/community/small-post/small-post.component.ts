@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
+import { ISmallPost } from 'src/app/shared/models/interfaces/ISmallPost';
 
 @Component({
   selector: 'app-small-post',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./small-post.component.css']
 })
 export class SmallPostComponent implements OnInit {
-
+@Input() smallpost:ISmallPost;
   constructor() { }
 
   ngOnInit() {
