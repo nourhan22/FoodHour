@@ -74,7 +74,8 @@ import { CommentComponent } from 'src/app/shared/components/comment/comment.comp
 // import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
 import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
-
+import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
+import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -120,7 +121,6 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
 
     RecipeDetailsComponent,
 
-    ToolAddComponent,
     RecipeListingComponent,
     RecipeItemComponent,
     MainInfoComponent,
@@ -130,6 +130,8 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
     PieChartComponent,
     BarChartComponent,
     MiniItemComponent,
+    StepsComponent,
+    MiseEnPlaceComponent,
 
     DetailsComponent,
     PostContentComponent,

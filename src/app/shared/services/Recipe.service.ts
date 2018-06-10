@@ -17,7 +17,8 @@ export class RecipeService {
       nutritions:{'VITAMINS':[{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'o','percent':'25%'}],
       'MINERALS':[{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'}],'Cal':[{title:'calories','percent':'25%'},{title:'fat','percent':'25%'},{title:'saturation','percent':'25%'},{title:'sugars','percent':'25%'},{title:'salt','percent':'25%'}]},
       ingredients:[{'title':'TOMATOO','weight':'17 g'},{'title':'TOMATOO','weight':'17 g'},{'title':'TOMATOO','weight':'17 g'},{'title':'TOMATOO','weight':'17 g'},{'title':'TOMATOO','weight':'17 g'}],
-      comments:{'imgOfUser':'nnnn','userName':'salah','desc':'hhhhhtttttrrrr','replay':[{'imgOfUser':'lllllllll','userName':'kkkkkk','desc':'kkkkk'}]}
+      comments:{'imgOfUser':'nnnn','userName':'salah','desc':'hhhhhtttttrrrr','replay':[{'imgOfUser':'lllllllll','userName':'kkkkkk','desc':'kkkkk'}]},
+      steps:[{'title':'tomato','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'},{'title':'tttttttt','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'},{'title':'gggggggggg','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'}]
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ export class RecipeService {
       UserName:"mo salah",
       nutritions:{'VITAMINS':[{title:'A','percent':'25%'}],'MINERALS':[{title:'A','percent':'25%'}],'Cal':[{title:'calories','percent':'25%'},{title:'fat','percent':'25%'},{title:'saturation','percent':'25%'},{title:'sugars','percent':'25%'},{title:'salt','percent':'25%'}]},
       ingredients:[{'title':'TOMATOO','weight':'17 g'}],
-      comments:{'imgOfUser':'nnnn','userName':'salah','desc':'hhhhhtttttrrrr','replay':[{'imgOfUser':'lllllllll','userName':'kkkkkk','desc':'kkkkk'}]}
+      comments:{'imgOfUser':'nnnn','userName':'salah','desc':'hhhhhtttttrrrr','replay':[{'imgOfUser':'lllllllll','userName':'kkkkkk','desc':'kkkkk'}]},
+      steps:[{'title':'tomato','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'},{'title':'tomato','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'},{'title':'tomato','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'}]
     },
     {
       id: 3,
@@ -40,6 +42,7 @@ export class RecipeService {
       nutritions:{'VITAMINS':[{title:'A','percent':'25%'}],'MINERALS':[{title:'A','percent':'25%'}],'Cal':[{title:'calories','percent':'25%'},{title:'fat','percent':'25%'},{title:'saturation','percent':'25%'},{title:'sugars','percent':'25%'},{title:'salt','percent':'25%'}]},
       ingredients:[{'title':'TOMATOO','weight':'17 g'}],
       comments:{'imgOfUser':'nnnn','userName':'salah','desc':'hhhhhtttttrrrr','replay':[{'imgOfUser':'lllllllll','userName':'kkkkkk','desc':'kkkkk'}]},
+      steps:[{'title':'tomato','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'},{'title':'tomato','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'},{'title':'tomato','description':'nnnnnnn','imageUrl':'../../assets/images/cooking method/grill.jpg'}]
     }
   ];
 
