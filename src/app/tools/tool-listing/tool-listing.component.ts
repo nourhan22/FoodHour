@@ -7,7 +7,6 @@ import { ToolService } from '../../shared/services/tool.service';
   styleUrls: ['./tool-listing.component.css']
 })
 export class ToolListingComponent implements OnInit {
-
   public Tools:ISmallTool[];
   constructor(private toolservice:ToolService) {}
 headerTitle:string;

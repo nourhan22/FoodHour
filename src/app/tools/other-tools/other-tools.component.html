@@ -1,0 +1,14 @@
+<li class="row" >
+  <div class="post-image col-md-4">
+    <div class="img-thumbnail active">
+      <a routerLink="../../details/{{item.id}}">
+        <!-- <a [routerLink] = "['../../details',item.id]"> -->
+        <img alt="" width="60" height="60" class="img-responsive" src="{{item.img}}">
+      </a>
+    </div>
+  </div>
+  <div class="post-info col-md-6">
+
+    <span>{{item.name}}</span>
+  </div>
+</li>

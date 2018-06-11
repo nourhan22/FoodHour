@@ -1,6 +1,6 @@
 import{HomeModule} from './home/home.module';
 
-
+import {OtherToolsComponent} from './tools/other-tools/other-tools.component';
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
 import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
@@ -103,9 +103,8 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
     WhoWeAreComponent,
     ServicesComponent,
     ViewHomeComponent,
-
+    OtherToolsComponent,
     RecipeDetailsComponent,
-
     ToolAddComponent,
     ShopListingComponent,
     ShopItemComponent
