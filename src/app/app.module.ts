@@ -1,7 +1,4 @@
 import{HomeModule} from './home/home.module';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { ModalModule } from 'ngx-bootstrap/modal';
-
 import{CommunityModule} from './community/community.module';
 
 
@@ -72,15 +69,11 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 import { PostComponent } from 'src/app/community/post/post.component';
 import { DetailsComponent } from 'src/app/community/details/details.component';
 import { PostContentComponent } from 'src/app/community/post-content/post-content.component';
-// import { AuthorComponent } from 'src/app/community/author/author.component';
-import { AuthorComponent } from 'src/app/shared/components/author/author.component';
+ import { AuthorComponent } from 'src/app/shared/components/author/author.component';
 import { CommentComponent } from 'src/app/shared/components/comment/comment.component';
 // import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
 import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
-import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
-import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
-import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
 @NgModule({
@@ -128,9 +121,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
     RecipeDetailsComponent,
 
-
     ToolAddComponent,
-
     RecipeListingComponent,
     RecipeItemComponent,
     MainInfoComponent,
@@ -140,9 +131,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     PieChartComponent,
     BarChartComponent,
     MiniItemComponent,
-    StepsComponent,
-    MiseEnPlaceComponent,
-    RecipeAddComponent,
+
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
@@ -157,7 +146,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
   ],
   imports: [
-    BrowserModule,FormsModule,CarouselModule.forRoot(),ModalModule.forRoot(),
+    BrowserModule,FormsModule,
 
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
@@ -192,15 +181,10 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
      {path:'recipe/details',component:RecipeDetailsComponent},
-     {path:'recipeListing/add',component:RecipeAddComponent},
-     
-     {path:'ToolListing/add' , component:ToolAddComponent},
-
-     {path:'community/details' , component:DetailsComponent},
-
 
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'community/details/:id' , component:DetailsComponent}
+
     ])
   ],
   providers: [MicroService,CookingMethodService],
