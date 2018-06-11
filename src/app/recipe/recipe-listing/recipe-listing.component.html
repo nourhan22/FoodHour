@@ -1,3 +1,14 @@
-<p>
-  recipe-listing works!
-</p>
+<!-- <app-smallHeader [title] = 'headertitle' (IngredientSearch)='onIngredientSearch($event)'></app-smallHeader> -->
+<div class='container'>
+  <div class="row">
+    <a routerLink='add'>
+      <i class="fa fa-plus pull-right" id="plus"></i>
+    </a>
+    <i class="fa fa-edit pull-right" id="plus"></i>
+    <i class="fa fa-trash pull-right" id="plus"></i>
+  </div>
+  <ul class="container listing">
+    <app-recipe-item [item]='item' *ngFor='let item of recipes'></app-recipe-item>
+  </ul>
+
+</div>

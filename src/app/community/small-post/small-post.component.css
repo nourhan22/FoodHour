@@ -1,0 +1,13 @@
+li {
+    border-bottom: 1px dotted #E2E2E2 !important;
+    padding: 15px 0;
+}
+li.active a {
+    border-top-color: #ff530a;
+    color: #ff530a;
+}
+
+.post-info .post-meta {
+    color: #ff530a;
+    font-size: 0.8em;
+}

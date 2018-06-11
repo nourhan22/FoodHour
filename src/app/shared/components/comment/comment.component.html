@@ -1,3 +1,68 @@
-<p>
-  comment works!
-</p>
+<!-- <li>
+    <div class="comment">
+      <div class="img-thumbnail">
+        <img class="avatar" alt="" src="../../../assets/images/comunity/avatar.jpg">
+      </div>
+      <div class="comment-block">
+        <div class="comment-arrow"></div>
+        <span class="comment-by">
+          <strong>John Doe</strong>
+          <span class="pull-right">
+            <span>
+              <a href="#">
+                <i class="fa fa-reply"></i> Reply</a>
+            </span>
+          </span>
+        </span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span class="date pull-right">November 12, 2016 at 1:38 pm</span>
+      </div>
+    </div>
+  </li> -->
+
+  <li>
+      <div class="comment">
+        <div class="img-thumbnail">
+          <img class="avatar" alt="" [src] = "comment.user.image">
+        </div>
+        <div class="comment-block">
+          <div class="comment-arrow"></div>
+          <span class="comment-by">
+            <strong>{{comment.user.username}}</strong>
+            <span class="pull-right">
+              <span>
+                <a href="#">
+                  <i class="fa fa-reply"></i> Reply</a>
+              </span>
+            </span>
+          </span>
+          <p>{{comment.comment}}</p>
+          <span class="date pull-right">{{comment.date}}</span>
+        </div>
+      </div>
+
+       <ul class="comments reply">
+        <li *ngFor = "let reply of comment.replys">
+          <div class="comment">
+            <div class="img-thumbnail">
+              <img class="avatar" alt="" [src]="reply.user.image">
+            </div>
+            <div class="comment-block">
+              <div class="comment-arrow"></div>
+              <span class="comment-by">
+                <strong>{{reply.user.username}}</strong>
+                <span class="pull-right">
+                  <span>
+                    <a href="#">
+                      <i class="fa fa-reply"></i> Reply</a>
+                  </span>
+                </span>
+              </span>
+              <p>{{reply.comment}}</p>
+              <span class="date pull-right">{{reply.date}}</span>
+            </div>
+          </div>
+        </li>
+        
+      </ul> 
+    </li>

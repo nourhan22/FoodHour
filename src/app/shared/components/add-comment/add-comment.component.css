@@ -1,0 +1,11 @@
+.post-block h3.heading-primary{
+    color: #ff530a;
+}
+.btn ,.btn:focus{
+    background-color: #ff530a;
+    border-color: #ff530a;
+}
+label{
+    font-size: 17px;
+    color: #777;
+}
