@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PostComponent } from './post/post.component';
+import {DetailsComponent} from './details/details.component';
 
 import { PostListingComponent } from './post-listing/post-listing.component';
-import { DetailsComponent } from './details/details.component';
-
-
-import { DetailsComponent } from './details/details.component';
 import { PostContentComponent } from './post-content/post-content.component';
 import { SmallPostComponent } from './small-post/small-post.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
@@ -31,9 +28,9 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
     DetailsComponent,
     PostContentComponent,
-    SmallPostComponent,
+    SmallPostComponent
 
-    SmallPostComponent,
+  
 
 ]
 })
