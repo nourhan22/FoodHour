@@ -7,7 +7,7 @@ import { Input } from '@angular/core';
   styleUrls: ['./gallary.component.css']
 })
 export class GallaryComponent implements OnInit {
-  @Input() item:IRecipe;
+  @Input() item:any;
   constructor() { }
 
   ngOnInit() {

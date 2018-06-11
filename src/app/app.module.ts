@@ -69,13 +69,15 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 import { PostComponent } from 'src/app/community/post/post.component';
 import { DetailsComponent } from 'src/app/community/details/details.component';
 import { PostContentComponent } from 'src/app/community/post-content/post-content.component';
-import { AuthorComponent } from 'src/app/community/author/author.component';
+// import { AuthorComponent } from 'src/app/community/author/author.component';
+import { AuthorComponent } from 'src/app/shared/components/author/author.component';
 import { CommentComponent } from 'src/app/shared/components/comment/comment.component';
 // import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
 import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
+import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -135,6 +137,7 @@ import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/mi
     MiniItemComponent,
     StepsComponent,
     MiseEnPlaceComponent,
+    RecipeAddComponent,
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
@@ -182,6 +185,8 @@ import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/mi
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
      {path:'recipe/details',component:RecipeDetailsComponent},
+     {path:'recipeListing/add',component:RecipeAddComponent},
+     
      {path:'ToolListing/add' , component:ToolAddComponent},
 
      {path:'community/details' , component:DetailsComponent},

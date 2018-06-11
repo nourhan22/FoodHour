@@ -8,7 +8,7 @@ import { IRecipe } from 'src/app/shared/models/interfaces/IRecipe';
   styleUrls: ['./steps.component.css']
 })
 export class StepsComponent implements OnInit {
-@Input() public RecipeItem:any;
+@Input() public item:any;
   constructor() { }
 
   ngOnInit() {

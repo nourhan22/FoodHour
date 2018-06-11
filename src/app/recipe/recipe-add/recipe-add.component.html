@@ -1,3 +1,45 @@
-<p>
-  recipe-add works!
-</p>
+<div class="container">
+  <form (ngSubmit)="onSave(myform)" #myform="ngForm">
+
+    <div class='row header'>
+      <span class="text-muted">Add a New Recipe</span>
+      <hr>
+    </div>
+    <div class="row img">
+
+      <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+
+
+      <img src="../assets/images/default.png" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
+      />
+
+      <span class="text-muted">Add Photo</span>
+    </div>
+
+    <div class="input-group col-xs-12">
+      <input type="text" class="form-control" name='name' [(ngModel)]='newMicro.name' placeholder="Name" aria-describedby="basic-addon1"
+        required>
+    </div>
+    <div class="input-group col-xs-12">
+      <select class="form-control" name='type' required>
+        <option value='Choose Type' required>Choose Type</option>
+        <option value='Choose Type' required>metric</option>
+        <option value='Choose Type' required>us</option>
+        <!-- <option [value]="type.title" *ngFor='let type of microTypes'>{{type.title}}</option> -->
+      </select>
+    </div>
+    <div class="row">
+      <div class=" col-md-12">
+        <input type="text" class="form-control" name='name' placeholder="Ingrediant Name" aria-describedby="basic-addon1" required>
+        <i class="fa fa-plus pull-right" id="plus"></i>
+      </div>
+     
+    </div>
+    <div class="row">
+      <button type="submit" class="btn  addbtn col-xs-7 " [disabled]="myform.invalid">Add Contact</button>
+    </div>
+    <div class='row'>
+      <button type="button" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>
+    </div>
+  </form>
+</div>
