@@ -1,0 +1,14 @@
+article.post .post-date .day {
+    color: #ff503a;
+}
+article.post .post-date .month {
+    background: #ff503a;
+    color: #FFF;
+}
+h2, h3, h4, h5, h6 {
+    color: rgb(83, 81, 81);
+}
+a, a:hover, a:focus {
+    color: rgb(83, 81, 81);
+    font-weight: lighter;
+}
