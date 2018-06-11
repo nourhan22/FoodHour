@@ -78,6 +78,8 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
 import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
+import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -145,13 +147,15 @@ import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component
     SmallPostComponent,
     AddCommentComponent,
 
-    PostComponent
+    PostComponent,
+    SearchPipe
 
 
 
   ],
   imports: [
     BrowserModule,FormsModule,
+
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
      
