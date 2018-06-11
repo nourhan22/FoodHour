@@ -60,6 +60,7 @@ import { WhoWeAreComponent } from 'src/app/home/who-we-are/who-we-are.component'
 import { ServicesComponent } from 'src/app/home/services/services.component';
 import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 import { PostComponent } from 'src/app/community/post/post.component';
+import { DetailsComponent } from 'src/app/community/details/details.component';
 
 
 
@@ -108,6 +109,7 @@ import { PostComponent } from 'src/app/community/post/post.component';
     ViewHomeComponent,
 
     RecipeDetailsComponent,
+    DetailsComponent,
 
     PostComponent,
     PostListingComponent
@@ -123,6 +125,7 @@ import { PostComponent } from 'src/app/community/post/post.component';
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
+     {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
      {path:'ToolListing' , component:ToolListingComponent},
@@ -152,7 +155,9 @@ import { PostComponent } from 'src/app/community/post/post.component';
 
      {path:'recipe/details',component:RecipeDetailsComponent},
 
-     {path:'ToolListing/add' , component:ToolAddComponent}
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'comunity/details' , component:DetailsComponent}
+     
 
     ])
   ],
