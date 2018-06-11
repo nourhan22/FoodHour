@@ -1,5 +1,6 @@
 import{HomeModule} from './home/home.module';
 import{CommunityModule} from './community/community.module';
+import{PostListingComponent} from './community/post-listing/post-listing.component';
 
 
 
@@ -108,7 +109,8 @@ import { PostComponent } from 'src/app/community/post/post.component';
 
     RecipeDetailsComponent,
 
-    PostComponent
+    PostComponent,
+    PostListingComponent
 
 
   ],
@@ -116,13 +118,14 @@ import { PostComponent } from 'src/app/community/post/post.component';
     BrowserModule,FormsModule,
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
+     {path:'community', component:PostListingComponent},
      
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
-     {path:'ToolListing' , component:ToolListingComponent}  ,
+     {path:'ToolListing' , component:ToolListingComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
