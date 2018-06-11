@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { PostComponent } from './post/post.component';
 import { DetailsComponent } from './details/details.component';
 import { PostContentComponent } from './post-content/post-content.component';
-import { AuthorComponent } from './author/author.component';
 import { SmallPostComponent } from './small-post/small-post.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
@@ -18,7 +17,6 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 ,
     DetailsComponent,
     PostContentComponent,
-    AuthorComponent,
     SmallPostComponent,
     SmallPostComponent
 ]
