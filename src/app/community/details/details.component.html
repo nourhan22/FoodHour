@@ -11,234 +11,27 @@
 						<div class="blog-posts single-post">
 
 							<article class="post post-large blog-single-post">
-								<div class="post-image">
-									<div class="owl-carousel owl-theme" data-plugin-options="{'items':1}">
-										<div>
-											<div class="img-thumbnail">
-												<img class="img-responsive" src="../../../assets/images/comunity/blog-image-1.jpg" alt="">
-											</div>
-										</div>
-										<div>
-											<div class="img-thumbnail">
-												<img class="img-responsive" src="../../../assets/images/comunity/blog-image-2.jpg" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="post-date">
-									<span class="day">10</span>
-									<span class="month">Jan</span>
-								</div>
 
 								<div class="post-content">
 
-									<h2>
-										<a href="CommunityTopic.html">Class aptent taciti sociosqu ad litora torquent</a>
-									</h2>
-
-									<div class="post-meta">
-										<span>
-											<i class="fa fa-user"></i> By
-											<a href="#">John Doe</a>
-										</span>
-										<span>
-											<i class="fa fa-tag"></i>
-											<a href="#">Duis</a>,
-											<a href="#">News</a>
-										</span>
-										<span>
-											<i class="fa fa-comments"></i>
-											<a href="#">12 Comments</a>
-										</span>
-									</div>
-
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum
-										nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec
-										tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor
-										sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
-										non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus
-										orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla.
-										Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet
-										dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo
-										justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius
-										sit amet hendrerit id, egestas quis mauris.</p>
-
-
-
-
-									<div class="post-block post-author clearfix">
-										<h3 class="heading-primary">
-											<i class="fa fa-user"></i>Author</h3>
-										<div class="img-thumbnail">
-											<a href="CommunityTopic.html">
-												<img src="../../../assets/images/comunity/avatar.jpg" alt="">
-											</a>
-										</div>
-										<p>
-											<strong class="name">
-												<a href="#">John Doe</a>
-											</strong>
-										</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius
-											vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat,
-											felis enim ornare nisi, vitae mattis nulla ante id dui. </p>
-									</div>
+								
+									<app-post-content [postContent] = "postItem"></app-post-content>
+									<app-author [author] = "postItem.author"></app-author>
 
 									<div class="post-block post-comments clearfix">
 										<h3 class="heading-primary">
-											<i class="fa fa-comments"></i>Comments (3)</h3>
+											<i class="fa fa-comments"></i>Comments ({{postItem.comments.length}})</h3>
 
 										<ul class="comments">
-											<li>
-												<div class="comment">
-													<div class="img-thumbnail">
-														<img class="avatar" alt="" src="../../../assets/images/comunity/avatar-2.jpg">
-													</div>
-													<div class="comment-block">
-														<div class="comment-arrow"></div>
-														<span class="comment-by">
-															<strong>John Doe</strong>
-															<span class="pull-right">
-																<span>
-																	<a href="#">
-																		<i class="fa fa-reply"></i> Reply</a>
-																</span>
-															</span>
-														</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-															varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-															Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing
-															et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis
-															nulla ante id dui.</p>
-														<span class="date pull-right">November 12, 2016 at 1:38 pm</span>
-													</div>
-												</div>
 
-												<ul class="comments reply">
-													<li>
-														<div class="comment">
-															<div class="img-thumbnail">
-																<img class="avatar" alt="" src="../../../assets/images/comunity/avatar-3.jpg">
-															</div>
-															<div class="comment-block">
-																<div class="comment-arrow"></div>
-																<span class="comment-by">
-																	<strong>John Doe</strong>
-																	<span class="pull-right">
-																		<span>
-																			<a href="#">
-																				<i class="fa fa-reply"></i> Reply</a>
-																		</span>
-																	</span>
-																</span>
-																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-																	varius vitae, gravida pellentesque urna varius vitae.</p>
-																<span class="date pull-right">November 12, 2016 at 1:38 pm</span>
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="comment">
-															<div class="img-thumbnail">
-																<img class="avatar" alt="" src="../../../assets/images/comunity/avatar-4.jpg">
-															</div>
-															<div class="comment-block">
-																<div class="comment-arrow"></div>
-																<span class="comment-by">
-																	<strong>John Doe</strong>
-																	<span class="pull-right">
-																		<span>
-																			<a href="#">
-																				<i class="fa fa-reply"></i> Reply</a>
-																		</span>
-																	</span>
-																</span>
-																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-																	varius vitae, gravida pellentesque urna varius vitae.</p>
-																<span class="date pull-right">November 12, 2016 at 1:38 pm</span>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<div class="comment">
-													<div class="img-thumbnail">
-														<img class="avatar" alt="" src="../../../assets/images/comunity/avatar.jpg">
-													</div>
-													<div class="comment-block">
-														<div class="comment-arrow"></div>
-														<span class="comment-by">
-															<strong>John Doe</strong>
-															<span class="pull-right">
-																<span>
-																	<a href="#">
-																		<i class="fa fa-reply"></i> Reply</a>
-																</span>
-															</span>
-														</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-														<span class="date pull-right">November 12, 2016 at 1:38 pm</span>
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="comment">
-													<div class="img-thumbnail">
-														<img class="avatar" alt="" src="../../../assets/images/comunity/avatar.jpg">
-													</div>
-													<div class="comment-block">
-														<div class="comment-arrow"></div>
-														<span class="comment-by">
-															<strong>John Doe</strong>
-															<span class="pull-right">
-																<span>
-																	<a href="#">
-																		<i class="fa fa-reply"></i> Reply</a>
-																</span>
-															</span>
-														</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-														<span class="date pull-right">November 12, 2016 at 1:38 pm</span>
-													</div>
-												</div>
-											</li>
+
+											
+										<app-comment  [comment] = "x" *ngFor = " let x of postItem.comments"></app-comment>
+											
 										</ul>
 
 									</div>
-
-									<div class="post-block post-leave-comment">
-										<h3 class="heading-primary">Leave a comment</h3>
-
-										<form action="" method="post">
-											<div class="row">
-												<div class="form-group">
-													<div class="col-md-6">
-														<label>Your name *</label>
-														<input type="text" value="" maxlength="100" class="form-control" name="name" id="name">
-													</div>
-													<div class="col-md-6">
-														<label>Your email address *</label>
-														<input type="email" value="" maxlength="100" class="form-control" name="email" id="email">
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="form-group">
-													<div class="col-md-12">
-														<label>Comment *</label>
-														<textarea maxlength="5000" rows="10" class="form-control" name="comment" id="comment"></textarea>
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-md-12">
-													<input type="submit" value="Post Comment" class="btn btn-primary btn-lg" data-loading-text="Loading...">
-												</div>
-											</div>
-										</form>
-									</div>
+								    <app-add-comment></app-add-comment> 
 
 								</div>
 							</article>
@@ -249,16 +42,7 @@
 					<div class="col-md-3">
 						<aside class="sidebar">
 
-							<form>
-								<div class="input-group input-group-lg">
-									<input id="searchbar" class="form-control" placeholder="Search..." name="s" id="s" type="text">
-									<span class="input-group-btn">
-										<button type="submit" class="btn btn-primary btn-lg">
-											<i class="fa fa-search"></i>
-										</button>
-									</span>
-								</div>
-							</form>
+							<app-search></app-search>
 
 							<hr>
 
@@ -275,100 +59,13 @@
 								<div class="tab-content">
 									<div class="tab-pane active" id="popularPosts">
 										<ul class="simple-post-list">
-											<li>
-												<div class="post-image">
-													<div class="img-thumbnail">
-														<a href="CommunityTopic.html">
-															<img src="../../../assets/images/comunity/blog-thumb-1.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="post-info">
-													<a href="CommunityTopic.html">Nullam Vitae Nibh Un Odiosters</a>
-													<div class="post-meta">
-														Jan 10, 2016
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="post-image">
-													<div class="img-thumbnail">
-														<a href="CommunityTopic.html">
-															<img src="../../../assets/images/comunity/blog-thumb-2.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="post-info">
-													<a href="CommunityTopic.html">Vitae Nibh Un Odiosters</a>
-													<div class="post-meta">
-														Jan 10, 2016
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="post-image">
-													<div class="img-thumbnail">
-														<a href="CommunityTopic.html">
-															<img src="../../../assets/images/comunity/blog-thumb-3.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="post-info">
-													<a href="CommunityTopic.html">Odiosters Nullam Vitae</a>
-													<div class="post-meta">
-														Jan 10, 2016
-													</div>
-												</div>
-											</li>
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of popularPosts'></app-small-post>
+														
 										</ul>
 									</div>
 									<div class="tab-pane" id="recentPosts">
 										<ul class="simple-post-list">
-											<li>
-												<div class="post-image">
-													<div class="img-thumbnail">
-														<a href="CommunityTopic.html">
-															<img src="../../../assets/images/comunity/blog-thumb-2.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="post-info">
-													<a href="CommunityTopic.html">Vitae Nibh Un Odiosters</a>
-													<div class="post-meta">
-														Jan 10, 2016
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="post-image">
-													<div class="img-thumbnail">
-														<a href="CommunityTopic.html">
-															<img src="../../../assets/images/comunity/blog-thumb-3.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="post-info">
-													<a href="CommunityTopic.html">Odiosters Nullam Vitae</a>
-													<div class="post-meta">
-														Jan 10, 2016
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="post-image">
-													<div class="img-thumbnail">
-														<a href="CommunityTopic.html">
-															<img src="../../../assets/images/comunity/blog-thumb-1.jpg" alt="">
-														</a>
-													</div>
-												</div>
-												<div class="post-info">
-													<a href="CommunityTopic.html">Nullam Vitae Nibh Un Odiosters</a>
-													<div class="post-meta">
-														Jan 10, 2016
-													</div>
-												</div>
-											</li>
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of recentPosts'></app-small-post>
 										</ul>
 									</div>
 								</div>
