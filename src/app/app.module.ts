@@ -1,6 +1,5 @@
 import{HomeModule} from './home/home.module';
 import{CommunityModule} from './community/community.module';
-import{PostListingComponent} from './community/post-listing/post-listing.component';
 
 
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
@@ -141,11 +140,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     AddCommentComponent,
 
     PostComponent,
-
-    PostListingComponent,
-
     SearchPipe
-
 
 
 
@@ -155,7 +150,6 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
-     {path:'community', component:PostListingComponent},
      
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
@@ -163,7 +157,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
      {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
-     {path:'ToolListing' , component:ToolListingComponent},
+     {path:'ToolListing' , component:ToolListingComponent}  ,
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
