@@ -190,11 +190,9 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
      {path:'recipe/details',component:RecipeDetailsComponent},
-
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'shoplisting',component:ShopListingComponent},
      {path:'shopitem',component:ShopItemComponent},
-
      {path:'community/details/:id' , component:DetailsComponent}
 
     ])

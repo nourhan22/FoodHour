@@ -5,14 +5,16 @@ import { ToolAddComponent } from './tool-add/tool-add.component';
 import { ToolItemComponent } from './tool-item/tool-item.component';
 import { ToolDetailesComponent } from './tool-detailes/tool-detailes.component';
 import { OtherToolsComponent } from './other-tools/other-tools.component';
+import { SearchPipe } from '../shared/pipes/search.pipe';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [ToolListingComponent, ToolAddComponent, ToolItemComponent,
-    ToolDetailesComponent,
-    OtherToolsComponent
+    ToolDetailesComponent,
+    OtherToolsComponent,
+    SearchPipe
 ]
   
 })
