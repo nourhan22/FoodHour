@@ -34,41 +34,41 @@ export class IngredientService {
       title: 'Water'
     },
   ];
-  private ingredientNutirition:IIngredientNutiritions[] = [
+  // private ingredientNutirition:IIngredientNutiritions[] = [
    
-    {
-      nutiritionName:'molybdnum ',
-      nutiritionType:' ',
-      percentage:24
-    },
-    {
-      nutiritionName:'Vitamin ',
-      nutiritionType:' K',
-      percentage:54
-    },
+  //   {
+  //     nutiritionName:'molybdnum',
+  //     nutiritionType:' ',
+  //     percentage:24
+  //   },
+  //   {
+  //     nutiritionName:'Vitamin',
+  //     nutiritionType:' K',
+  //     percentage:54
+  //   },
 
-  ];
+  // ];
   private ingredients: IIngredient[] = [
     {
       id: 1,
       name: 'Tomato',
       desc: 'tomato is very useful',
       img: '../../assets/images/tomato.jpg',
-      nutiritions:[ {nutiritionName:'molybdnum ', nutiritionType:' ',percentage:24}]
+      nutiritions:[ {nutiritionName:'Mineral', nutiritionType:' ',percentage:24}]
     },
     {
       id: 2,
       name: 'Potato',
       desc: 'potato is very useful',
       img: '../../assets/images/potato3.jpg',
-      nutiritions:[ {nutiritionName:'molybdnum ', nutiritionType:' ',percentage:24}]
+      nutiritions:[ {nutiritionName:'Vitamin', nutiritionType:'C',percentage:24}]
     },
     {
       id: 3,
       name: 'Carrot',
       desc: 'Carrot is very useful',
       img: '../../assets/images/storecarrots.jpg',
-      nutiritions:[ {nutiritionName:'molybdnum ', nutiritionType:' ',percentage:24}]
+      nutiritions:[ {nutiritionName:'Mineral', nutiritionType:'',percentage:24}]
     }
 
   ];
@@ -97,6 +97,13 @@ export class IngredientService {
 
     this.ingredients.push(item);
     
+  }
+  Edit(item: IIngredient){
+   const index= this.ingredients.findIndex(a=>a.id===item.id);
+    if(index >-1){
+        this.ingredients[index]=item;
+        return item;
+    }
   }
   GetNutiritionTypes() {
     return this.nutiritionTypes;

@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-               
+
+              "src/assets/css/bootstrap.css"
 
             ],
 
@@ -37,6 +38,7 @@
               "src/assets/js/jquery-cookie.min.js",
               "src/assets/js/jquery.isotope.min.js",
               "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery-cookie.min.js",              
               "src/assets/js/owl.carousel.min.js",
               "src/assets/js/theme.js",
               "src/assets/js/custom.js",
@@ -44,7 +46,6 @@
               "src/assets/js/jquery.themepunch.tools.min.js",
               "src/assets/js/jquery.themepunch.revolution.min.js",
               "src/assets/js/examples.gallery.js"
-              
             ]   
           },
           "configurations": {

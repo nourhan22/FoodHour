@@ -54,7 +54,7 @@ public isEdit :boolean = false;
     if(this.newMicro!=null && myform.valid && this.isEdit== false)
     {
       this.newMicro.id = this.microService.lengthOfMicros+1;
-      this.newMicro.img = '../assets/images/default.png'
+      this.newMicro.img = '../assets/images/default.png';
       this.microService.AddNewMicro(this.newMicro);   
            
     }

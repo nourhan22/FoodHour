@@ -1,0 +1,8 @@
+.nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+ 
+    border-top: 3px solid #ff530a;
+    color: #ff530a;
+}
+.post-block h3{
+    color: #ff530a !important;   
+}
