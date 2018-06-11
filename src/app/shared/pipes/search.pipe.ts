@@ -9,7 +9,7 @@ export class SearchPipe implements PipeTransform {
 
     if(arr != null && arr.length > 0){
       debugger;
-      return arr.filter(f=> f.title.toLowerCase().includes((txtsearch.toLowerCase())));
+      return arr.filter(f=> f.title.toLowerCase().includes((txtsearch.toLowerCase())) || f.date.toLowerCase().includes((txtsearch.toLowerCase())) );
     }
     return arr;
   }
