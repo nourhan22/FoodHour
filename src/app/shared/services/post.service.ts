@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { IPost } from 'src/app/shared/models/interfaces/IPost';
 import { ISmallPost } from 'src/app/shared/models/interfaces/ISmallPost';
+import { Observable, of } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,12 +18,7 @@ posts:IPost[]=[
     nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec
     tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor
     sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
-    non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus
-    orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla.
-    Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet
-    dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo
-    justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius
-    sit amet hendrerit id, egestas quis mauris.`,
+    non tristique enim sapien vel nisl.`,
     day:10,
     month:"Jun",
    
@@ -69,12 +66,7 @@ posts:IPost[]=[
     nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec
     tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor
     sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
-    non tristique enim sapien vel nisl. Suspendisse vestibulum lobortis dapibus. Vestibulum ante ipsum primis in faucibus
-    orci luctus et ultrices posuere cubilia Curae; Praesent nec tempus nibh. Donec mollis commodo metus et fringilla.
-    Etiam venenatis, diam id adipiscing convallis, nisi eros lobortis tellus, feugiat adipiscing ante ante sit amet
-    dolor. Vestibulum vehicula scelerisque facilisis. Sed faucibus placerat bibendum. Maecenas sollicitudin commodo
-    justo, quis hendrerit leo consequat ac. Proin sit amet risus sapien, eget interdum dui. Proin justo sapien, varius
-    sit amet hendrerit id, egestas quis mauris.`,
+    non tristique enim sapien vel nisl..`,
     day:24,
     month:"May",
     comments:[
@@ -134,6 +126,10 @@ GetById(id:number)
   return this.posts.find(function(element){
     return element.id == id;
   });
+}
+public getAll():Observable<IPost[]>
+{
+  return of (this.posts);
 }
 
 }

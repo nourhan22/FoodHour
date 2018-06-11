@@ -141,11 +141,8 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     AddCommentComponent,
 
     PostComponent,
-<<<<<<< HEAD
-    PostListingComponent
-=======
+    PostListingComponent,
     SearchPipe
->>>>>>> 58574cb2fababb9ef802da86c4b1d8931f4d8974
 
 
 
