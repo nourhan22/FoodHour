@@ -33,6 +33,8 @@
               // "src/assets/css/settings.css",
               // "src/assets/css/demo-one-page-agency.css",
               "src/styles.css"              
+              
+              
             ],
 
             "scripts": [
