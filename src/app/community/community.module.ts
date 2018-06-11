@@ -5,9 +5,9 @@ import {DetailsComponent} from './details/details.component';
 
 import { PostListingComponent } from './post-listing/post-listing.component';
 import { PostContentComponent } from './post-content/post-content.component';
-import { AuthorComponent } from './author/author.component';
 import { SmallPostComponent } from './small-post/small-post.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+
 
 @NgModule({
   imports: [
@@ -15,13 +15,22 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     SearchPipe
   ],
   declarations: [,
+
+
     PostComponent,
-    SearchPipe
-,
+    PostListingComponent,
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
+
+    PostComponent,
+    SearchPipe,
+
+    DetailsComponent,
+    PostContentComponent,
     SmallPostComponent
+
+  
 
 ]
 })
