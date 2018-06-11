@@ -8,22 +8,32 @@ import { DetailsComponent } from './details/details.component';
 
 import { DetailsComponent } from './details/details.component';
 import { PostContentComponent } from './post-content/post-content.component';
-import { AuthorComponent } from './author/author.component';
 import { SmallPostComponent } from './small-post/small-post.component';
+import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SearchPipe
   ],
   declarations: [,
+
 
     PostComponent,
     PostListingComponent,
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
-    SmallPostComponent
+
+    PostComponent,
+    SearchPipe,
+
+    DetailsComponent,
+    PostContentComponent,
+    SmallPostComponent,
+
+    SmallPostComponent,
 
 ]
 })
