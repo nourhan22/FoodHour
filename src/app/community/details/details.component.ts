@@ -15,7 +15,7 @@ export class DetailsComponent implements OnInit {
   postItem:IPost;
   popularPosts:ISmallPost[];
   recentPosts:ISmallPost[];
-  txtsearch:string = '';
+  public txtsearch:string = '';
   constructor(private postService:PostService,private ActivatedRoute:ActivatedRoute,) { }
 
   ngOnInit() {
@@ -29,5 +29,26 @@ export class DetailsComponent implements OnInit {
     this.popularPosts = this.postService.popularPots;
     this.recentPosts = this.postService.recentPosts;
   }
+
+  // search()
+  // {
+  //  var txt = this.txtsearch;
+  //   if(txt !='')
+  //   {
+  //     debugger;
+
+  //     this.popularPosts.filter(function(ele){
+  //       console.log(ele.title.toLowerCase().includes(txt.toLowerCase()));
+  //       return ele.title.toLowerCase().includes(txt.toLowerCase());
+  //     })
+
+  //     debugger;
+  
+  //   }
+  //   else{
+  //     this.popularPosts = this.postService.popularPots;
+  //   }
+  
+  // }
 
 }
