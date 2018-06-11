@@ -14,7 +14,8 @@ export class DetailsComponent implements OnInit {
   id:number;
   postItem:IPost;
   popularPosts:ISmallPost[];
-  recentPosts:ISmallPost[]
+  recentPosts:ISmallPost[];
+  txtsearch:string = 'n';
   constructor(private postService:PostService,private ActivatedRoute:ActivatedRoute,) { }
 
   ngOnInit() {

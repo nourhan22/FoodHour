@@ -75,6 +75,7 @@ import { CommentComponent } from 'src/app/shared/components/comment/comment.comp
 // import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
 import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
+import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
 @NgModule({
   declarations: [
@@ -140,13 +141,18 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
     AddCommentComponent,
 
     PostComponent,
+<<<<<<< HEAD
     PostListingComponent
+=======
+    SearchPipe
+>>>>>>> 58574cb2fababb9ef802da86c4b1d8931f4d8974
 
 
 
   ],
   imports: [
     BrowserModule,FormsModule,
+
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
      {path:'community', component:PostListingComponent},
