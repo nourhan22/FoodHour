@@ -6,3 +6,30 @@
 .post-block h3{
     color: #ff530a !important;   
 }
+/*search*/
+#btnsearch {
+    color: #ffffff;
+    background-color: #ff530a;
+    border-color: #ff530a #ff530a #ff530a;
+}
+
+#btnsearch:hover{
+    color: #ffffff;
+    background-color: #fa6124;
+    border-color: #ff530a #ff530a #ff530a;
+}
+#btnsearch:active{
+    color: #ffffff;
+    background-color: #ff530a;
+    border-color: #ff530a #ff530a #ff530a;
+}
+
+input:hover,:focus{
+    border-color:  #ff530a #ff530a #ff530a;
+}
+li{
+    margin-top: 20px;
+}
+h5{
+    font-weight:bolder; 
+}
