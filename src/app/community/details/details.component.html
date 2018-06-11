@@ -42,7 +42,18 @@
 					<div class="col-md-3">
 						<aside class="sidebar">
 
-							<app-search></app-search>
+							<!-- <app-search></app-search> -->
+							<form>
+								<div class="input-group input-group-lg">
+									<input class="form-control" placeholder="Search..." 
+									name="s" id="s" type="text" [(ngModel)]='txtsearch'>
+									<span class="input-group-btn" >
+										<button type="submit" class="btn btn-primary btn-lg" id="btnsearch">
+											<i class="fa fa-search"></i>
+										</button>
+									</span>
+								</div>
+							  </form>
 
 							<hr>
 
