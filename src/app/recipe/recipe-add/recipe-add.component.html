@@ -29,11 +29,23 @@
       </select>
     </div>
     <div class="row">
-      <div class=" col-md-12">
+      <div class=" col-md-6">
         <input type="text" class="form-control" name='name' placeholder="Ingrediant Name" aria-describedby="basic-addon1" required>
-        <i class="fa fa-plus pull-right" id="plus"></i>
       </div>
-     
+      <div class=" col-md-6">
+        <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+        <ng-template #template>
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">Ingrediant Name</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+        </ng-template>
+      </div>
     </div>
     <div class="row">
       <button type="submit" class="btn  addbtn col-xs-7 " [disabled]="myform.invalid">Add Contact</button>

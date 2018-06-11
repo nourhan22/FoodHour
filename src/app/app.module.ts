@@ -1,4 +1,7 @@
 import{HomeModule} from './home/home.module';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ModalModule } from 'ngx-bootstrap/modal';
+
 import{CommunityModule} from './community/community.module';
 
 
@@ -154,7 +157,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
   ],
   imports: [
-    BrowserModule,FormsModule,
+    BrowserModule,FormsModule,CarouselModule.forRoot(),ModalModule.forRoot(),
 
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
