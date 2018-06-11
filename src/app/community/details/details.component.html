@@ -43,17 +43,17 @@
 						<aside class="sidebar">
 
 							<!-- <app-search></app-search> -->
-							<form>
+							<!-- <form>
 								<div class="input-group input-group-lg">
 									<input class="form-control" placeholder="Search..." 
-									name="s" id="s" type="text" [(ngModel)]='txtsearch'>
+									name="s" id="s" type="text" [(ngModel)]='txtsearch' (change)="search($event)">
 									<span class="input-group-btn" >
 										<button type="submit" class="btn btn-primary btn-lg" id="btnsearch">
 											<i class="fa fa-search"></i>
 										</button>
 									</span>
 								</div>
-							  </form>
+							  </form> -->
 
 							<hr>
 
@@ -70,13 +70,13 @@
 								<div class="tab-content">
 									<div class="tab-pane active" id="popularPosts">
 										<ul class="simple-post-list">
-												<app-small-post [smallpost]='post'  *ngFor = 'let post of popularPosts  | search : txtsearch'></app-small-post>
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of popularPosts'></app-small-post>
 														
 										</ul>
 									</div>
 									<div class="tab-pane" id="recentPosts">
 										<ul class="simple-post-list">
-												<app-small-post [smallpost]='post'  *ngFor = 'let post of recentPosts  | search : txtsearch'></app-small-post>
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of recentPosts'></app-small-post>
 										</ul>
 									</div>
 								</div>
