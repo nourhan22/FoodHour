@@ -1,7 +1,7 @@
 import{HomeModule} from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
-
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import{CommunityModule} from './community/community.module';
 import{PostListingComponent} from './community/post-listing/post-listing.component';
 
@@ -83,6 +83,7 @@ import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/s
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
 
 @NgModule({
   declarations: [
@@ -155,14 +156,15 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
     PostListingComponent,
 
-    SearchPipe
+    SearchPipe,
+    SmallTabComponent
 
 
 
 
   ],
   imports: [
-    BrowserModule,FormsModule,CarouselModule.forRoot(),ModalModule.forRoot(),
+    BrowserModule,FormsModule,CarouselModule.forRoot(),TabsModule.forRoot(),ModalModule.forRoot(),
 
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},

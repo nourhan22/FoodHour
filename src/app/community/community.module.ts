@@ -4,10 +4,13 @@ import { PostComponent } from './post/post.component';
 import {DetailsComponent} from './details/details.component';
 
 import { PostListingComponent } from './post-listing/post-listing.component';
+
+import { DetailsComponent } from './details/details.component';
+
 import { PostContentComponent } from './post-content/post-content.component';
 import { SmallPostComponent } from './small-post/small-post.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
-
+import { SmallTabComponent } from './small-tab/small-tab.component';
 
 @NgModule({
   imports: [
@@ -21,7 +24,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     PostListingComponent,
     DetailsComponent,
     PostContentComponent,
-    AuthorComponent,
+  
 
     PostComponent,
     SearchPipe,
@@ -30,8 +33,11 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     PostContentComponent,
     SmallPostComponent
 
-  
+
+    SmallPostComponent,
+    SmallTabComponent
 
 ]
+,exports:[SmallTabComponent]
 })
 export class CommunityModule { }
