@@ -9,7 +9,7 @@ import { DetailsComponent } from './details/details.component';
 import { PostContentComponent } from './post-content/post-content.component';
 import { SmallPostComponent } from './small-post/small-post.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
-
+import { SmallTabComponent } from './small-tab/small-tab.component';
 
 @NgModule({
   imports: [
@@ -33,7 +33,8 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     SmallPostComponent,
 
     SmallPostComponent,
-
+    SmallTabComponent
 ]
+,exports:[SmallTabComponent]
 })
 export class CommunityModule { }
