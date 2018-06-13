@@ -84,6 +84,7 @@ import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/mi
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
+import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 
 @NgModule({
   declarations: [
@@ -157,7 +158,8 @@ import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.compone
     PostListingComponent,
 
     SearchPipe,
-    SmallTabComponent
+    SmallTabComponent,
+    AddPostComponent
 
 
 
