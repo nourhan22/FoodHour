@@ -5,12 +5,13 @@ import {DetailsComponent} from './details/details.component';
 
 import { PostListingComponent } from './post-listing/post-listing.component';
 
-import { DetailsComponent } from './details/details.component';
+
 
 import { PostContentComponent } from './post-content/post-content.component';
 import { SmallPostComponent } from './small-post/small-post.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 import { SmallTabComponent } from './small-tab/small-tab.component';
+import { AddPostComponent } from './addPost/addPost.component';
 
 @NgModule({
   imports: [
@@ -31,13 +32,15 @@ import { SmallTabComponent } from './small-tab/small-tab.component';
 
     DetailsComponent,
     PostContentComponent,
-    SmallPostComponent
+
 
 
     SmallPostComponent,
     SmallTabComponent
 
+,
+    AddPostComponent
 ]
-,exports:[SmallTabComponent]
+,exports:[SmallTabComponent,AddPostComponent]
 })
 export class CommunityModule { }

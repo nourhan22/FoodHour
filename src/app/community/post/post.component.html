@@ -2,6 +2,8 @@
 
   <div class="blog-posts">
 
+ 
+   
     <article class="post post-medium">
       <div class="row">
 
@@ -26,7 +28,7 @@
           <div class="post-content">
 
             <h2>
-              <a href="CommunityTopic.html">{{item.title}}</a>
+              <a routerLink = '../community/details/{{item.id}}'>{{item.title}}</a>
             </h2>
             <p>{{item.content}}</p>
 
@@ -52,7 +54,7 @@
               <i class="fa fa-comments"></i>
               <a href="#">12 Comments</a>
             </span>
-            <a href="CommunityTopic.html" class="btn btn-xs btn-primary pull-right">Read more...</a>
+            <a routerLink = '../community/details/{{item.id}}' class="btn btn-xs btn-primary pull-right">Read more...</a>
           </div>
         </div>
       </div>
