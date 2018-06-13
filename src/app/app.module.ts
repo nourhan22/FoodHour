@@ -206,7 +206,6 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
      
      {path:'ToolListing/add' , component:ToolAddComponent},
 
-     {path:'community/details' , component:DetailsComponent},
 
 
      {path:'ToolListing/add' , component:ToolAddComponent},

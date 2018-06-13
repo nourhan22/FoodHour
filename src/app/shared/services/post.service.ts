@@ -132,4 +132,8 @@ public getAll():Observable<IPost[]>
   return of (this.posts);
 }
 
+public AddNewPost(newPost:IPost)
+{
+  this.posts.push(newPost);
+}
 }

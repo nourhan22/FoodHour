@@ -3,7 +3,6 @@
 form{
     border:1px solid #dddddd;
     padding: 20px;
-    width: 65%;
     margin: auto;
     box-shadow: 5px 6px #f3f2f2cc;
 }
@@ -105,4 +104,9 @@ input:focus{
 }
 textarea{
     height: 10em;
+}
+#action{
+    width: 20%;
+    float: right;
+    margin: 2%;
 }
