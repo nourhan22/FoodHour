@@ -42,8 +42,14 @@
               "src/assets/js/theme.init.js",
               "src/assets/js/jquery.themepunch.tools.min.js",
               "src/assets/js/jquery.themepunch.revolution.min.js",
-              "src/assets/js/examples.gallery.js"
-            ]   
+              "src/assets/js/examples.gallery.js",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/animate.min.css",                                                        
+         
+              "src/styles.css"              
+              
+              
+            ]  
           },
           "configurations": {
             "production": {
@@ -92,9 +98,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              
-              
+            "scripts": [   
             ],
             "assets": [
               "src/favicon.ico",

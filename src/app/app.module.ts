@@ -1,5 +1,9 @@
 import{HomeModule} from './home/home.module';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import{CommunityModule} from './community/community.module';
+import{PostListingComponent} from './community/post-listing/post-listing.component';
 
 import {OtherToolsComponent} from './tools/other-tools/other-tools.component';
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
@@ -73,12 +77,18 @@ import { ViewHomeComponent } from 'src/app/home/view-home/view-home.component';
 import { PostComponent } from 'src/app/community/post/post.component';
 import { DetailsComponent } from 'src/app/community/details/details.component';
 import { PostContentComponent } from 'src/app/community/post-content/post-content.component';
-import { AuthorComponent } from 'src/app/community/author/author.component';
+// import { AuthorComponent } from 'src/app/community/author/author.component';
+import { AuthorComponent } from 'src/app/shared/components/author/author.component';
 import { CommentComponent } from 'src/app/shared/components/comment/comment.component';
 // import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
 import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
+import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
+import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
+import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
+import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 
 @NgModule({
   declarations: [
@@ -130,7 +140,9 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
     RecipeDetailsComponent,
 
+
     ToolAddComponent,
+
     RecipeListingComponent,
     RecipeItemComponent,
     MainInfoComponent,
@@ -140,7 +152,9 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     PieChartComponent,
     BarChartComponent,
     MiniItemComponent,
-
+    StepsComponent,
+    MiseEnPlaceComponent,
+    RecipeAddComponent,
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
@@ -149,16 +163,23 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     AddCommentComponent,
 
     PostComponent,
-    SearchPipe
+
+    PostListingComponent,
+
+    SearchPipe,
+    SmallTabComponent,
+    AddPostComponent
+
 
 
 
   ],
   imports: [
-    BrowserModule,FormsModule,
+    BrowserModule,FormsModule,CarouselModule.forRoot(),TabsModule.forRoot(),ModalModule.forRoot(),
 
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
+     {path:'community', component:PostListingComponent},
      
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
@@ -166,7 +187,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
      {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
-     {path:'ToolListing' , component:ToolListingComponent}  ,
+     {path:'ToolListing' , component:ToolListingComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
@@ -190,11 +211,16 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
      {path:'recipe/details',component:RecipeDetailsComponent},
+     {path:'recipeListing/add',component:RecipeAddComponent},
+     
+     {path:'ToolListing/add' , component:ToolAddComponent},
+
+     {path:'community/details' , component:DetailsComponent},
+
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'shoplisting',component:ShopListingComponent},
      {path:'shopitem',component:ShopItemComponent},
      {path:'community/details/:id' , component:DetailsComponent}
-
     ])
   ],
   providers: [MicroService,CookingMethodService],

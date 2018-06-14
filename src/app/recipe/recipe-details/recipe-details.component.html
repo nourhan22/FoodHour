@@ -13,5 +13,23 @@
         </div>
         <hr>
         <app-miniIngrediant [RecipeItem]='RecipeItem'></app-miniIngrediant>
+        <app-miseEnPlace [RecipeItem]='RecipeItem'></app-miseEnPlace>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-posts single-post">
+                        <app-author [author] = "RecipeItem.author"></app-author>
+                    <div class="post-block post-comments clearfix">
+                        
+                        <h3 class="heading-primary">
+                            <i class="fa fa-comments"></i>Comments ({{RecipeItem.comments.length}})</h3>
+                        <ul class="comments">
+                            <app-comment [comment]="x" *ngFor=" let x of RecipeItem.comments"></app-comment>
+                       </ul>
+
+                    </div>
+                    <app-add-comment></app-add-comment> 
+                </div>
+            </div>
+        </div>
     </div>
 </div>
