@@ -23,12 +23,12 @@
               "src/assets"
             ],
             "styles": [
-                        
+              "src/assets/css/bootstrap.css"              
             ],
 
             "scripts": [
        
-            
+            "src/assets/js/bootstrap.min.js"
           
            
               
