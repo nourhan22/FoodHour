@@ -5,20 +5,18 @@
 <link rel="stylesheet" href="../../../assets/css/demo-photography-3.css">
 <!-- body=============================== -->
 
-<li class="col-sm-4  isotope-item p-md ">
+<li class="col-sm-3  isotope-item p-md ">
     <article class="our-blog-item">
         <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
             <span class="image-wrapper">
                 <img src="{{item.img}}" alt="" class="img-responsive" />
             </span>
-            <span class="category text-uppercase background-color-quaternary" id="fav">
-                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-            </span>
+           
         </a>
 
         <div class="post-infos">
 
-            <div class="share">
+            <!-- <div class="share">
                 <div class="share-icons background-color-quaternary ">
                     <a href="#" class="text-decoration-none" title="Share on Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -31,7 +29,7 @@
                     </a>
                     <i class="fa fa-share-alt"></i>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -41,11 +39,11 @@
             <div class="row">
                
                     <i class="fa fa-minus" aria-hidden="true" (click)="onDelete(item.id)"></i>
-                    <i class="fas fa-pencil-alt" [routerLink] = "['edit',item.id]"></i>
+                    <i class="fas fa-pencil-alt"></i>
                 
                
                 <h1 class="font-weight-normal">
-                    <a [routerLink]="['/IngredientDetails',item.id]" class="text-decoration-none">{{item.name}}</a>
+                    <a class="text-decoration-none">{{item.name}}</a>
                 </h1>
 
             </div>
@@ -53,10 +51,10 @@
 
 
 
-            <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+            <!-- <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
                 <p>{{item.desc}}
                 </p>
-            </a>
+            </a> -->
         </div>
     </article>
 </li>

@@ -1,0 +1,15 @@
+<app-smallHeader [title] = 'headertitle' (UserSearch)='onUserSearch($event)'></app-smallHeader>
+<div class='container'>
+    <div class="row">
+        <a><i class="fa fa-plus pull-right" id="plus"></i></a>
+        <i class="fa fa-trash pull-right" id="plus" (click)="onDelete()"></i>
+    </div>
+ 
+    
+
+<!--listing items========-->
+<ul class="container listing">
+<app-user-item  [item]='item' *ngFor='let item of users'></app-user-item>
+</ul>
+
+</div>
