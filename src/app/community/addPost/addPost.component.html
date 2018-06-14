@@ -2,6 +2,7 @@
   <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
   
   <ng-template #template>
+      <form (ngSubmit)="onSave(template)" #myform="ngForm">
     <div class="modal-header">
       <h4 class="modal-title pull-left">Add New Post </h4>
       <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
@@ -12,14 +13,14 @@
     <div class="modal-body">
       <div class="row">
         <div class="input-group col-xs-12">
-          <input type="text" class="form-control" name='name' 
-           placeholder="Title" aria-describedby="basic-addon1" required>
+          <input type="text" class="form-control" name='title' [(ngModel)]='newpost.title'
+          placeholder="Title" aria-describedby="basic-addon1" required>
         </div>
       </div>
   
       <div class="row">
         <div class="input-group col-xs-12">
-          <textarea class="form-control txtArea"name='content'
+          <textarea class="form-control txtArea"name='content' [(ngModel)]='newpost.content'
           placeholder="Add Text"></textarea>
         </div>
     
@@ -30,10 +31,16 @@
         type="file" (change)="onFileChanged($event)" #fileInput>
      
   
-      <img src="../assets/images/default.png" 
+      <img [src]="newpost.image" 
       (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle" />
   
       <span class="text-muted">Add Photo</span>
+    </div>
+
+    <div class="row" style="padding:20px;">
+      <button type="submit" id="action" class="btn  addbtn col-xs-7 ">Add Contact</button>
+    
+      <button type="button" id="action" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>
     </div>
   
       
@@ -41,5 +48,6 @@
   
   
     </div>
+  </form>
   </ng-template>
   </div>
