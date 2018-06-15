@@ -93,6 +93,8 @@ import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-ca
 import { ShoppingCartService } from './shared/services/ShoppingCart.service';
 import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
 
+
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -222,55 +224,53 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
       { path: 'community/details', component: DetailsComponent },
 
       { path: 'ToolListing/add', component: ToolAddComponent },
-{path:'shopcategory',component:ShopIngrediantComponent},
+      { path: 'shopcategory', component: ShopIngrediantComponent },
       { path: 'ShoppingCart', component: ShoppingCartComponent },
       { path: 'community/details/:id', component: DetailsComponent },
 
-     {path:'home', component:ViewHomeComponent},
-     {path:'community', component:PostListingComponent},
-     
-     {path:'IngredientListing', component:IngredientListingComponent},
-     {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
-     {path:'IngredientListing/add' , component:IngredientAddComponent},
-     {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
-     {path:'microOrganismListing', component:MicroOrganismListingComponent},
-     {path:'ToolItem' , component:ToolItemComponent},
-     {path:'ToolListing' , component:ToolListingComponent},
-     {path: 'microOrganismListing', component: MicroOrganismListingComponent},
-     {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
-     {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
-     {path: 'recipeListing' , component: RecipeListingComponent},
-     {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
-     {path:'microOrganismListing/edit/:id' , component:MicroOrganismAddComponent},
-     {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
-     {path:'cookingMethodListing/edit/:id' , component:CookingMethodAddComponent},
-     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
-     {path:'cuttingMethodListing/details/:id', component:CuttingMethodDetailsComponent},
-     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
-     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
-     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
-     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
-     {path:'ToolListing/details/:id',component:ToolDetailesComponent},
-     {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
-     {path:'recipeListing/details/:id',component:RecipeDetailsComponent},
-     {path:'ToolListing/add' , component:ToolAddComponent},
-     {path:'cuttingMethodListing/add' , component:CuttingMethodAddComponent},
-     {path:'ToolListing/add' , component:ToolAddComponent},
-     {path:'ToolListing/edit/:id',component:ToolAddComponent},
-     {path:'recipe/details',component:RecipeDetailsComponent},
-     {path:'recipeListing/add',component:RecipeAddComponent},
-     
-     {path:'ToolListing/add' , component:ToolAddComponent},
+      { path: 'home', component: ViewHomeComponent },
+      { path: 'community', component: PostListingComponent },
 
+      { path: 'IngredientListing', component: IngredientListingComponent },
+      { path: 'IngredientDetails/:id', component: IngredientDetailsComponent },
+      { path: 'IngredientListing/add', component: IngredientAddComponent },
+      { path: 'IngredientListing/edit/:id', component: IngredientAddComponent },
+      { path: 'microOrganismListing', component: MicroOrganismListingComponent },
+      { path: 'ToolItem', component: ToolItemComponent },
+      { path: 'ToolListing', component: ToolListingComponent },
+      { path: 'microOrganismListing', component: MicroOrganismListingComponent },
+      { path: 'cookingMethodListing', component: CookingMethodListingComponent },
+      { path: 'cuttingMethodListing', component: CuttingMethodListingComponent },
+      { path: 'recipeListing', component: RecipeListingComponent },
+      { path: 'CuttingMethodDetails', component: CuttingMethodDetailsComponent },
+      { path: 'microOrganismListing/edit/:id', component: MicroOrganismAddComponent },
+      { path: 'microOrganismListing/add', component: MicroOrganismAddComponent },
+      { path: 'cookingMethodListing/edit/:id', component: CookingMethodAddComponent },
+      { path: 'cookingMethodListing/details', component: CookingMethodDetailsComponent },
+      { path: 'cuttingMethodListing/details/:id', component: CuttingMethodDetailsComponent },
+      { path: 'microOrganismListing/details/:id', component: MicroOrganismDetailsComponent },
+      { path: 'cookingMethodListing/details/:id', component: CookingMethodDetailsComponent },
+      { path: 'cookingMethodListing/details', component: CookingMethodDetailsComponent },
+      { path: 'microOrganismListing/details/:id', component: MicroOrganismDetailsComponent },
+      { path: 'cookingMethodListing/details/:id', component: CookingMethodDetailsComponent },
+      { path: 'ToolListing/details/:id', component: ToolDetailesComponent },
+      { path: 'cookingMethodListing/Add', component: CookingMethodAddComponent },
+      { path: 'recipeListing/details/:id', component: RecipeDetailsComponent },
+      { path: 'ToolListing/add', component: ToolAddComponent },
+      { path: 'cuttingMethodListing/add', component: CuttingMethodAddComponent },
+      { path: 'ToolListing/add', component: ToolAddComponent },
+      { path: 'ToolListing/edit/:id', component: ToolAddComponent },
+      { path: 'recipe/details', component: RecipeDetailsComponent },
+      { path: 'recipeListing/add', component: RecipeAddComponent },
 
+      { path: 'ToolListing/add', component: ToolAddComponent },
 
-     {path:'ToolListing/add' , component:ToolAddComponent},
-     {path:'community/details/:id' , component:DetailsComponent}
+      { path: 'ToolListing/add', component: ToolAddComponent },
+      { path: 'community/details/:id', component: DetailsComponent }
 
     ])
   ],
-  providers: [MicroService, CookingMethodService,ShoppingCartService],
+  providers: [MicroService, CookingMethodService, ShoppingCartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
