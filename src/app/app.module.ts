@@ -1,9 +1,12 @@
 import { HomeModule } from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NgxGalleryModule } from 'ngx-gallery';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-import { CommunityModule } from './community/community.module';
-import { PostListingComponent } from './community/post-listing/post-listing.component';
+
+import{CommunityModule} from './community/community.module';
+import{PostListingComponent} from './community/post-listing/post-listing.component';
+
 
 import { OtherToolsComponent } from './tools/other-tools/other-tools.component';
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
@@ -87,6 +90,8 @@ import { StepsComponent } from 'src/app/recipe/recipe-details//miseEnPlace/steps
 import { MiseEnPlaceComponent } from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import { RecipeAddComponent } from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
+import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
 import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
@@ -113,6 +118,7 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
+    RecipeIngredientItemComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -167,6 +173,9 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     AddCommentComponent,
 
     PostComponent,
+    SearchPipe,
+    AddRecipeIngredientComponent,
+
 
     PostListingComponent,
 
@@ -174,7 +183,6 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     SmallTabComponent,
     AddPostComponent,
     ShoppingCartComponent
-
 
 
 
