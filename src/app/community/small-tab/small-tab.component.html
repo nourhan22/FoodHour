@@ -1,0 +1,17 @@
+<div>
+  <tabset>
+    <tab heading="Popular" id="tab1">
+      <ul class="simple-post-list">
+        <app-small-post [smallpost]='post'  *ngFor = 'let post of popularPosts'></app-small-post>
+            
+    </ul>
+    </tab>
+    <tab heading="Recent">
+      <ul class="simple-post-list">
+        <app-small-post [smallpost]='post'  *ngFor = 'let post of recentPosts'></app-small-post>
+            
+    </ul>
+    </tab>
+  </tabset>
+</div>
+ 

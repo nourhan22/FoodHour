@@ -7,5 +7,5 @@ export interface ICuttingMethods {
     width?:Number;
     height?:Number;
     unitType?:string;
-    units?:string
+    units?:string;
 }

@@ -30,7 +30,8 @@ export class CuttingMethodAddComponent implements OnInit {
       width:0,
       height:0,
       unitType:'',
-      units:''
+      units:'',
+      tools:[{title:'',imgUrl:''}]
     }
   }
   onSave(myform:NgForm)

@@ -2,9 +2,10 @@ import{HomeModule} from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxGalleryModule } from 'ngx-gallery';
-
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 import{CommunityModule} from './community/community.module';
+import{PostListingComponent} from './community/post-listing/post-listing.component';
 
 
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
@@ -86,6 +87,8 @@ import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
 import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
+import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
+import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 
 @NgModule({
   declarations: [
@@ -160,6 +163,13 @@ import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingred
     AddRecipeIngredientComponent,
 
 
+    PostListingComponent,
+
+    SearchPipe,
+    SmallTabComponent,
+    AddPostComponent
+
+
 
   ],
   imports: [
@@ -170,13 +180,19 @@ import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingred
     NgxGalleryModule,
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},     
+    BrowserModule,FormsModule,CarouselModule.forRoot(),TabsModule.forRoot(),ModalModule.forRoot(),
+
+    RouterModule.forRoot([
+     {path:'home', component:ViewHomeComponent},
+     {path:'community', component:PostListingComponent},
+  
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
      {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
      {path:'microOrganismListing', component:MicroOrganismListingComponent},
      {path:'ToolItem' , component:ToolItemComponent},
-     {path:'ToolListing' , component:ToolListingComponent}  ,
+     {path:'ToolListing' , component:ToolListingComponent},
      {path: 'microOrganismListing', component: MicroOrganismListingComponent},
      {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
      {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
@@ -204,7 +220,6 @@ import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingred
      
      {path:'ToolListing/add' , component:ToolAddComponent},
 
-     {path:'community/details' , component:DetailsComponent},
 
 
      {path:'ToolListing/add' , component:ToolAddComponent},
