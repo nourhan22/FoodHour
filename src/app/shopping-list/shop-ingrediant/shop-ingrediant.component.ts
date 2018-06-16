@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Query, Input } from '@angular/core';
 import { ShopIngrediantService } from '../../shared/services/ShopIngrediant.service';
 import { IShopIngrediant } from '../../shared/models/interfaces/IShopIngrediant';
 import { ICategory } from '../../shared/models/interfaces/ICategory';
 import { ShopCategoryService } from '../../shared/services/ShopCategory.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-shop-ingrediant',
@@ -12,12 +13,23 @@ import { ShopCategoryService } from '../../shared/services/ShopCategory.service'
 export class ShopIngrediantComponent implements OnInit {
   public ingrediants: IShopIngrediant[];
   public categories: ICategory[];
-  constructor(private shopingredservice: ShopIngrediantService, private shopcategoryservice: ShopCategoryService) { }
+  @Input() public item:ICategory;
+ // private id :number;
+  active:number
+  constructor(
+    private ActivatedRoute:ActivatedRoute,
+    private shopingredservice: ShopIngrediantService,
+     private shopcategoryservice: ShopCategoryService) { 
+  //     this.ActivatedRoute.params.subscribe(
+  //     (params)=>{this.id = params['id'];
+  //    this.item= this.shopcategoryservice.getByIndex(this.id);
+  //  }
+  //     );
+     }
 
   ngOnInit() {
     this.shopingredservice.getAll().subscribe(
       (data) => {
-
         this.ingrediants = data;
       }
     );
@@ -27,6 +39,9 @@ export class ShopIngrediantComponent implements OnInit {
         this.categories = data;
       }
     );
+   
   }
-
+  onClick(index: number) {
+    this.active = index;
+  }
 }

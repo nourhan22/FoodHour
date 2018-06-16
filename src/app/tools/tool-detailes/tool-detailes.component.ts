@@ -21,7 +21,7 @@ export class ToolDetailesComponent implements OnInit {
        (params)=>{this.id = params['id'];
     this.item = this.toolservice.getByIndex(this.id);
   }
-     )
+     );
  
 
  

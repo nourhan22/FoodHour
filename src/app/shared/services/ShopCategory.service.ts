@@ -29,5 +29,11 @@ public getAll() :Observable<ICategory[]>
 {
 return of(this.categories);
 }
+public getByIndex(id: number)
+{
+    return this.categories.find(function(element){
+    return element.id == id;
+  })
+}
 
 }

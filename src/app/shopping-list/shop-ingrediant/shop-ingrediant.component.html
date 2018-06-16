@@ -1,10 +1,19 @@
 <div class="container-fluid">
 <div class="row">
   <div class="col-sm-3"> 
-      <ul class="list-group">
-          <li *ngFor='let item of categories' class="list-group-item">{{item.title}}</li>
+      <div class="list-group">
+          <a 
+          *ngFor="let item of categories ; let i = index;" 
+          class="list-group-item list-group-item-action"
+          routerLink="/shopcategory/"
+          [queryParams]="{category:item.id}"
+          [class.active]="active === i" 
+          (click)="onClick(i)"
+          
+          >
+            {{item.title}}</a>
 
-        </ul>    
+      </div>    
   </div>
   <div class="col-sm-6">
     <div class="row">
