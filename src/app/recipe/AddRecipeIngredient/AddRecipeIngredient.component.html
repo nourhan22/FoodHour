@@ -1,0 +1,81 @@
+
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Add Ingrediants </h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+        <div class=" col-md-6">
+            <input type="text" class="form-control" name='name' placeholder="Ingrediant Name" aria-describedby="basic-addon1" required>
+          </div>
+      <div class="col-md-3">
+        <input type="number" value="nnnn" name="nnn" placeholder="Count" class="form-control">
+      </div>
+      <div class="col-md-3">
+        <select class="form-control">
+          <option selected>Choose Unit...</option>
+          <option value="1">gram</option>
+          <option value="2">ouns</option>
+          <option value="3">kg</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col-md-12">
+        <select class="form-control ">
+          <option selected>Choose Cutting Method ...</option>
+          <option value="1">tornee</option>
+          <option value="2">sharp</option>
+          <option value="3">xxxxx</option>
+        </select>
+      </div>
+
+    </div>
+    <div class="row ">
+      <div class="col-md-12">
+        <select class="form-control ">
+          <option selected>Choose Cooking Method ...</option>
+          <option value="1">tornee</option>
+          <option value="2">sharp</option>
+          <option value="3">xxxxx</option>
+        </select>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-xs-8">
+        <textarea class="form-control txtArea" name='description' placeholder="Procedure" rows="7"></textarea>
+      </div>
+      <div class="col-xs-4">
+        <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+        <img src="../assets/images/default.png" class="img" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
+          width="50%" />
+        <span class="text-muted">Add procedure Photo</span>
+      </div>
+    </div>
+
+
+    <div class="row ">
+      <div class="col-xs-7">
+        <!-- <i class="fa fa-clock-o" aria-hidden="true"></i> -->
+        <input type="number" class="form-control" placeholder="time">
+      </div>
+      <div class="col-xs-5">
+        <select class="form-control ">
+          <option selected>Choose time unit ...</option>
+          <option value="1">min</option>
+          <option value="2">xxxx</option>
+          <option value="3">xxxxx</option>
+        </select>
+      </div>
+    </div>
+
+    <div class='row'>
+        <button type="button" class="btn  addbtn col-xs-6" (click)="OnAddIngredient()" >save ingredaint</button>
+        <button type="button" class="btn addbtn col-xs-6" >add new  ingredaint</button>
+      </div>
+
+
+  </div>

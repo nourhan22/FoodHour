@@ -1,40 +1,36 @@
 <div class="container">
   <form (ngSubmit)="onSave(myform)" #myform="ngForm">
-
     <div class='row header'>
       <span class="text-muted">Add a New Recipe</span>
       <hr>
     </div>
     <div class="row img">
-
-      <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
-
-
-      <img src="../assets/images/default.png" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
-      />
-
+      <input name="img" style="display: none" type="file" [(ngModel)]="recipeItem.imageUrl" (change)="onFileChanged($event)" #fileInput>
+      <img src="../assets/images/default.png" (click)="fileInput.click()"   alt="Scott Stevens" class="img-responsive img-circle"/>
       <span class="text-muted">Add Photo</span>
     </div>
-
     <div class="input-group col-xs-12">
-      <input type="text" class="form-control" name='name' [(ngModel)]='newMicro.name' placeholder="Name" aria-describedby="basic-addon1"
+      <input type="text" class="form-control" name='name' [(ngModel)]='recipeItem.title' placeholder="Recipe Name" aria-describedby="basic-addon1"
         required>
     </div>
     <div class="input-group col-xs-12">
-      <select class="form-control" name='type' required>
+      <select class="form-control"[(ngModel)]="recipeItem.unit" name='type' required>
         <option value='Choose Type' required>Choose Type</option>
-        <option value='Choose Type' required>metric</option>
-        <option value='Choose Type' required>us</option>
+        <option value='metric' required>metric</option>
+        <option value='us' required>us</option>
         <!-- <option [value]="type.title" *ngFor='let type of microTypes'>{{type.title}}</option> -->
       </select>
     </div>
     <div class="row">
       <div class=" col-md-6">
-        <input type="text" class="form-control" name='name' placeholder="Ingrediant Name" aria-describedby="basic-addon1" required>
+        <app-recipe-ingredient-item [ingredient]="ingredient" *ngFor="let ingredient of ingredients"></app-recipe-ingredient-item>
       </div>
       <div class=" col-md-6">
-       
-        <button type="button" class="btn  addbtn" (click)="openModal(template)">Add Ingredaint</button>
+          <button type="button" class="btn  addbtn" (click)="openModal(template)">Add Ingredaint</button>
+          <ng-template #template>
+           <app-AddRecipeIngredient></app-AddRecipeIngredient>
+          </ng-template>
+        <!-- <button type="button" class="btn  addbtn" (click)="openModal(template)">Add Ingredaint</button>
         <ng-template #template>
           <div class="modal-header">
             <h4 class="modal-title pull-left">Add Ingrediants </h4>
@@ -96,7 +92,7 @@
 
             <div class="row ">
               <div class="col-xs-7">
-                <!-- <i class="fa fa-clock-o" aria-hidden="true"></i> -->
+               
                 <input type="number" class="form-control" placeholder="time">
               </div>
               <div class="col-xs-5">
@@ -116,7 +112,7 @@
 
 
           </div>
-        </ng-template>
+        </ng-template> -->
       </div>
     </div>
     <div class="row">

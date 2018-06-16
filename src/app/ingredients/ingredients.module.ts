@@ -5,17 +5,31 @@ import { IngredientItemComponent } from './ingredient-item/ingredient-item.compo
 import { IngredientListingComponent } from './ingredient-listing/ingredient-listing.component';
 
 import { IngredientDetailsComponent } from './ingredient-details/ingredient-details.component';
-import { RouterLink } from '@angular/router';
 import { IngredientDeleteComponent } from './Ingredient-delete/Ingredient-delete.component';
+import { RecipeIngredientItemComponent } from './recipe-ingredient-item/recipe-ingredient-item.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterLink
+    FormsModule,
+    RouterModule.forChild([
+      {path:'IngredientListing', component:IngredientListingComponent},
+      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
+      {path:'IngredientListing/add' , component:IngredientAddComponent},
+      {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
+    ])
   ],
   declarations: [IngredientAddComponent, IngredientItemComponent, IngredientListingComponent,
-    IngredientDetailsComponent,
-    IngredientDeleteComponent
+    IngredientDetailsComponent
+,
+    IngredientDeleteComponent,
+    RecipeIngredientItemComponent
+],
+exports:
+[
+  RecipeIngredientItemComponent
 ]
 })
 export class IngredientsModule { }
