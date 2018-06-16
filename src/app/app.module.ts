@@ -1,7 +1,9 @@
 import{HomeModule} from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NgxGalleryModule } from 'ngx-gallery';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+
 import{CommunityModule} from './community/community.module';
 import{PostListingComponent} from './community/post-listing/post-listing.component';
 
@@ -83,6 +85,8 @@ import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/s
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
+import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
 import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 
@@ -104,6 +108,7 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
+    RecipeIngredientItemComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -154,6 +159,9 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
     AddCommentComponent,
 
     PostComponent,
+    SearchPipe,
+    AddRecipeIngredientComponent,
+
 
     PostListingComponent,
 
@@ -163,15 +171,21 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 
 
 
-
   ],
   imports: [
+    BrowserModule,
+    FormsModule,
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
+    NgxGalleryModule,
+    RouterModule.forRoot([
+     {path:'home', component:ViewHomeComponent},     
     BrowserModule,FormsModule,CarouselModule.forRoot(),TabsModule.forRoot(),ModalModule.forRoot(),
 
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
      {path:'community', component:PostListingComponent},
-     
+  
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
