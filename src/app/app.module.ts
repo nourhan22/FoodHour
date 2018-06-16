@@ -1,6 +1,8 @@
 import{HomeModule} from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { NgxGalleryModule } from 'ngx-gallery';
+
 
 import{CommunityModule} from './community/community.module';
 
@@ -82,6 +84,8 @@ import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/s
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
+import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
 
 @NgModule({
   declarations: [
@@ -101,6 +105,7 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
+    RecipeIngredientItemComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -151,17 +156,20 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     AddCommentComponent,
 
     PostComponent,
-    SearchPipe
+    SearchPipe,
+    AddRecipeIngredientComponent,
 
 
 
   ],
   imports: [
-    BrowserModule,FormsModule,CarouselModule.forRoot(),ModalModule.forRoot(),
-
+    BrowserModule,
+    FormsModule,
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
+    NgxGalleryModule,
     RouterModule.forRoot([
-     {path:'home', component:ViewHomeComponent},
-     
+     {path:'home', component:ViewHomeComponent},     
      {path:'IngredientListing', component:IngredientListingComponent},
      {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
      {path:'IngredientListing/add' , component:IngredientAddComponent},
