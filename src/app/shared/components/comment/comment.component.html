@@ -23,12 +23,12 @@
   <li>
       <div class="comment">
         <div class="img-thumbnail">
-          <img class="avatar" alt="" src="../../../assets/images/comunity/avatar-2.jpg">
+          <img class="avatar" alt="" [src] = "comment.user.image">
         </div>
         <div class="comment-block">
           <div class="comment-arrow"></div>
           <span class="comment-by">
-            <strong>John Doe</strong>
+            <strong>{{comment.user.username}}</strong>
             <span class="pull-right">
               <span>
                 <a href="#">
@@ -36,25 +36,21 @@
               </span>
             </span>
           </span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-            varius vitae, gravida pellentesque urna varius vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing
-            et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis
-            nulla ante id dui.</p>
-          <span class="date pull-right">November 12, 2016 at 1:38 pm</span>
+          <p>{{comment.comment}}</p>
+          <span class="date pull-right">{{comment.date}}</span>
         </div>
       </div>
 
-      <ul class="comments reply">
-        <li>
+       <ul class="comments reply">
+        <li *ngFor = "let reply of comment.replys">
           <div class="comment">
             <div class="img-thumbnail">
-              <img class="avatar" alt="" src="../../../assets/images/comunity/avatar-3.jpg">
+              <img class="avatar" alt="" [src]="reply.user.image">
             </div>
             <div class="comment-block">
               <div class="comment-arrow"></div>
               <span class="comment-by">
-                <strong>John Doe</strong>
+                <strong>{{reply.user.username}}</strong>
                 <span class="pull-right">
                   <span>
                     <a href="#">
@@ -62,33 +58,11 @@
                   </span>
                 </span>
               </span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-                varius vitae, gravida pellentesque urna varius vitae.</p>
-              <span class="date pull-right">November 12, 2016 at 1:38 pm</span>
+              <p>{{reply.comment}}</p>
+              <span class="date pull-right">{{reply.date}}</span>
             </div>
           </div>
         </li>
-        <li>
-          <div class="comment">
-            <div class="img-thumbnail">
-              <img class="avatar" alt="" src="../../../assets/images/comunity/avatar-4.jpg">
-            </div>
-            <div class="comment-block">
-              <div class="comment-arrow"></div>
-              <span class="comment-by">
-                <strong>John Doe</strong>
-                <span class="pull-right">
-                  <span>
-                    <a href="#">
-                      <i class="fa fa-reply"></i> Reply</a>
-                  </span>
-                </span>
-              </span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna
-                varius vitae, gravida pellentesque urna varius vitae.</p>
-              <span class="date pull-right">November 12, 2016 at 1:38 pm</span>
-            </div>
-          </div>
-        </li>
-      </ul>
+        
+      </ul> 
     </li>

@@ -25,30 +25,6 @@
         <div class="input-group col-xs-12">
             <textarea class="form-control txtArea" name='food' [(ngModel)]='newIngredient.desc' placeholder="Description"></textarea>
         </div>
-
-
-        <!-- <div class="input-group col-xs-12">
-        <input type="text" class="form-control" name='type' [(ngModel)]='newMicro.type'
-        placeholder="Description" aria-describedby="basic-addon1">
-      </div>  -->
-        <!-- <div class="input-group col-xs-12">
-            <select class="form-control" name='type' [(ngModel)]="newMicro.type" required>
-                <option value='Choose Type' required>Choose Type</option>
-                <option [value]="type.title" *ngFor='let type of microTypes'>{{type.title}}</option>
-            </select>
-        </div> -->
-
-        <!-- <div class="input-group col-xs-12">
-            <input type="text" class="form-control" name='source' [(ngModel)]='newMicro.Source' placeholder="Source">
-        </div> -->
-
-        <!-- <div class="input-group col-xs-12">
-            <textarea class="form-control txtArea" name='prevention' [(ngModel)]='newIngredient.types' placeholder="Types"></textarea>
-        </div> -->
-
-        <!-- <div class="input-group col-xs-12">
-            <textarea class="form-control txtArea" name='description' [(ngModel)]='newIngredient.ingredientRecipes' placeholder="Most Popular Recipes"></textarea>
-        </div> -->
         <br>
         <div class='row header'>
             <span class="text-muted">Available Nutiritions</span>
@@ -61,12 +37,6 @@
                         <select  class="form-control" name='type'  [(ngModel)]="newIngredient.nutiritions[0].nutiritionName" required > 
                                 <option  value='Choose Type' required>Choose Type</option>
                             <option [value]="type.title" *ngFor='let type of nutiritionTypes'>{{type.title}}</option>
-                        <!-- <option value="Vitamin">Vitamin</option>
-                        <option value="Mineral">Mineral</option>
-                        <option value="Fat">Fat</option>
-                        <option value="Fiber">Fiber</option>
-                        <option value="Protien">Protien</option>
-                        <option value="Water">Water</option> -->
                     </select>
                 </div>
             </div>
@@ -79,66 +49,6 @@
             <input type="number" class="form-control" name='percentage' [(ngModel)]='newIngredient.nutiritions[0].percentage' placeholder="Percentage" aria-describedby="basic-addon1"
                 required>
         </div>
-        <!-- <div class="row">
-            <div class="col-xs-10">
-                <button class="btn  mr-xs mb-sm" id="addType"> Add Type
-                    <i class="fa fa-plus-circle"></i>
-                </button>
-            </div>
-           
-
-        </div>
-        <div id="myDiv">
-            <h4>Type List</h4>
-
-            <table class="table table-hover" id="mytable">
-
-
-
-
-                <thead>
-                    <tr>
-                        <th>
-                            #
-                        </th>
-                        <th>
-                            Nutirition Name
-                        </th>
-                        <th>
-                            Nutirition Type
-                        </th>
-                        <th>
-                            Percentage
-                        </th>
-                        <th>
-
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="hidden">
-                        <td></td>
-
-
-                        <td class="insertedType">
-
-                        </td>
-                        <td class="insertedText1">
-
-                        </td>
-                        <td class="insertedText2">
-
-                        </td>
-
-                        <td>
-
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div> -->
-
 
         <div class="row">
             <button type="submit" class="btn  addbtn col-xs-7 " [disabled]="myform.invalid">Add Ingredient</button>

@@ -17,6 +17,7 @@ export class MicroOrganismListingComponent implements OnInit {
   ngOnInit() {
    
     this.headertitle = 'MicroOrganisms';
+    
         this.MicroService.GetAllMicros().subscribe(
         (data)=>{ this.Micros = data}
        );

@@ -234,7 +234,7 @@
 	color: #CCC;
 	position: absolute;
 	right: 0;
-	top: 2;
+	top: 2px;
 	z-index: 3;
 }
 
@@ -2128,8 +2128,16 @@ li:hover > a {
 }
 
 /********************************************************************/
+#header .header-body
+{
+	position: relative;
+}
 /* NewFlatService */
 /* .orange{
     color: #ff530a !important;
 } */
+#header .header-body{
+	position: relative;
+	margin-bottom: 20px;
+}
 

@@ -2,6 +2,8 @@
 
   <div class="blog-posts">
 
+ 
+   
     <article class="post post-medium">
       <div class="row">
 
@@ -10,7 +12,7 @@
             <div class="" data-plugin-options="{'items':1}">
               <div>
                 <div class="img-thumbnail">
-                  <img class="img-responsive" src="../../../assets/images/10.jpg" alt="">
+                  <img class="img-responsive" src="{{item.image}}" alt="">
                 </div>
               </div>
               <!-- <div>
@@ -26,12 +28,9 @@
           <div class="post-content">
 
             <h2>
-              <a href="CommunityTopic.html">Class aptent taciti sociosqu ad litora torquent</a>
+              <a routerLink = '../community/details/{{item.id}}'>{{item.title}}</a>
             </h2>
-            <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-              per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus
-              id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam
-              ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. [...]</p>
+            <p>{{item.content}}</p>
 
           </div>
         </div>
@@ -55,7 +54,7 @@
               <i class="fa fa-comments"></i>
               <a href="#">12 Comments</a>
             </span>
-            <a href="CommunityTopic.html" class="btn btn-xs btn-primary pull-right">Read more...</a>
+            <a routerLink = '../community/details/{{item.id}}' class="btn btn-xs btn-primary pull-right">Read more...</a>
           </div>
         </div>
       </div>

@@ -11,13 +11,13 @@ export class SearchComponent implements OnInit {
   constructor() { }
 
   public txtSearch:string;
-  @Output() TxtChange : EventEmitter<any> = new EventEmitter();
+  @Output() postSearchChange : EventEmitter<any> = new EventEmitter();
   ngOnInit() {
   }
 
   onChange()
   {
-   this.TxtChange.emit(this.txtSearch);
+   this.postSearchChange.emit(this.txtSearch);
   }
 
 }
