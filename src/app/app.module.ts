@@ -240,14 +240,14 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
   imports: [
     BrowserModule,
     FormsModule,
+    TabsModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     NgxGalleryModule,
+   
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},     
-    BrowserModule,FormsModule,CarouselModule.forRoot(),TabsModule.forRoot(),ModalModule.forRoot(),
-
-    RouterModule.forRoot([
+     
      {path:'home', component:ViewHomeComponent},
      {path:'community', component:PostListingComponent},
   
@@ -282,10 +282,8 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
      {path:'ToolListing/edit/:id',component:ToolAddComponent},
      {path:'recipe/details',component:RecipeDetailsComponent},
      {path:'recipeListing/add',component:RecipeAddComponent},
-     
 
-
-
+     {path:'ToolListing/add' , component:ToolAddComponent},
 
      {path:'ToolListing/add' , component:ToolAddComponent},
      {path:'community/details/:id' , component:DetailsComponent}
