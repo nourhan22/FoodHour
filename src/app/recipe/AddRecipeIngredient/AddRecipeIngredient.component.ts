@@ -15,11 +15,22 @@ export class AddRecipeIngredientComponent implements OnInit {
   constructor(private recipeService: RecipeService,private router:Router) { }
   public recipeingrediant:IRecipeIngredient;
   ngOnInit() {
+    this.recipeingrediant = {cookingMethod:{},cuttingMethod:{},recipe:{},
+    ingredient:{},image:'../assets/images/default.png'};
+   
   }
   OnAddIngredient()
   {
     debugger;
     this.recipeService.onRecipeIngredientAdded.next(this.recipeingrediant);
     this.router.navigate(['recipeListing/add']);
+  }
+
+  onNewIngredient()
+  {
+    this.recipeingrediant = {cookingMethod:{},cuttingMethod:{},recipe:{},
+    ingredient:{},image:'../assets/images/default.png'};
+   
+  
   }
 }

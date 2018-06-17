@@ -8,4 +8,5 @@ export interface ICuttingMethods {
     height?:Number;
     unitType?:string;
     units?:string;
+    tools?:any[];
 }
