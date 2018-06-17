@@ -1,0 +1,267 @@
+<link rel="stylesheet" href="../../../assets/css/theme.css">
+<link rel="stylesheet" href="../../../assets/css/theme-elements.css">
+<link rel="stylesheet" href="../../../assets/css/demo-medical.css">
+<link rel="stylesheet" href="../../../assets/css/demo-photography-3.css">
+
+<!-- <script src="../../../assets/js/theme.init.js"></script>
+<script src="../../../assets/js/jquery.min.js"></script>
+<script src="../../../assets/js/jquery.appear.min.js"></script> -->
+
+
+<!--bodyyyy-->
+<section class="section section-default more" [ngStyle]="{'background-image': getUrl()}">
+    <!-- <div [ngStyle]="{background: 'url(./images/' + trls.img + ')'"></div> -->
+    <!-- <div [ngStyle]="{background: 'url(../../../assets/images/header.jpg)'}"></div> -->
+    <!-- <div class="panel panel-default" [ngStyle]="{'background-image': getUrl()}"></div> -->
+  <!-- <img src="../../../assets/images/header.jpg"  />    -->
+  <div class="container">
+         
+      <div class="row">
+          <div class="col-md-3">
+              <div class="testimonial-author-thumbnail">
+                  <img src="{{item.img}}" class="img-responsive img-circle" alt="">
+              </div>
+              <div class="testimonial testimonial-style-3">
+                  <div class="testimonial-author">
+                      <h4>
+                          <strong>{{item.name}}</strong>
+                      </h4>
+                      <!--   <i class="fa fa-users"></i>
+                      0
+                      <i class="fa fa-heart"></i>
+                      0
+                      <i class="fa fa-bell"></i>
+                      0-->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="section-custom-medical">
+  <div class="container">
+         
+      <div class="row medical-schedules">
+          <div class="col-lg-3 box-one background-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
+              <div class="feature-box feature-box-style-2 p-lg">
+                  <div class="feature-box-icon">
+                      <img src="../../../assets/images/favorite.png" alt class="img-responsive pt-xs" />
+                  </div>
+                  <div class="feature-box-info ml-md">
+                      <h4 class="m-none">My Favourites</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 box-four background-color-secondary p-none appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="1800">
+              <a href="tel:+008001234567" class="text-decoration-none">
+                  <div class="feature-box feature-box-style-2 m-none">
+                      <div class="feature-box-icon">
+                          <img src="../../../assets/images/myRecipe1.png" alt class="img-responsive  pushtop" />
+                      </div>
+                      <div class="feature-box-info ml-md">
+                          <h4 class="m-none">My Recipes</h4>
+                      </div>
+
+                  </div>
+              </a>
+          </div>
+          <div class="col-lg-3 box-one background-color-primary appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="0">
+              <div class="feature-box feature-box-style-2 p-lg">
+                  <div class="feature-box-icon">
+                      <img src="../../../assets/images/followers.png" alt class="img-responsive pt-xs " />
+                  </div>
+                  <div class="feature-box-info ml-md">
+                      <h4 class="m-none">My Followers</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 box-four background-color-secondary p-none appear-animation" data-appear-animation="fadeInLeft" data-appear-animation-delay="1800">
+              <a href="tel:+008001234567" class="text-decoration-none">
+                  <div class="feature-box feature-box-style-2 m-none">
+                      <div class="feature-box-icon">
+                          <img src="../../../assets/images/edit2.png" alt class="img-responsive pushtop" />
+                      </div>
+                      <div class="feature-box-info ml-md">
+                          <h4 class="m-none">Edit Profile</h4>
+                      </div>
+
+                  </div>
+              </a>
+          </div>
+      </div>
+      <div class="row mt-xlg  mb-xlg pb-xs">
+          <!-- <div class="col-sm-8 col-md-8">
+              <h2 class="font-weight-semibold mb-xs">About Us</h2>
+              <p class="lead font-weight-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit, leo vitae interdum pretium,
+                  tortor risus dapibus tortor, eu suscipit orci leo sed nisl. Integer et ipsum eu nulla auctor mattis
+                  sit amet in diam. Vestibulum non ornare arcu. Class aptent taciti sociosqu ad...</p>
+
+              <a class="btn btn-borders btn-quaternary custom-button text-uppercase mt-lg mb-lg font-weight-bold">read more</a>
+          </div>
+          <div class="col-sm-4 col-md-4">
+              <img src="3.jpg" alt class="img-responsive box-shadow-custom" />
+          </div> -->
+
+          <ul id="ourBlog" class="p-none">
+              <li class="col-sm-4 col-md-3 isotope-item p-md">
+                  <article class="our-blog-item">
+                      <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                          <span class="image-wrapper">
+                              <img src="../../../assets/images/blog-img-5.jpg" alt="" class="img-responsive" />
+                          </span>
+                          <span class="category text-uppercase background-color-quaternary" id="fav">
+                              <i class="fa fa-heart" aria-hidden="true"></i>
+                          </span>
+                      </a>
+                      <div class="post-infos">
+                          <div class="share">
+                              <div class="share-icons background-color-quaternary">
+                                  <a href="#" class="text-decoration-none" title="Share on Facebook">
+                                      <i class="fab fa-facebook"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Twitter">
+                                      <i class="fab fa-twitter"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Linkedin">
+                                      <i class="fa fa-linkedin"></i>
+                                  </a>
+                                  <i class="fa fa-share-alt"></i>
+                              </div>
+                          </div>
+                          <span class="post-date">
+                              31 NOV 2016
+                          </span>
+                          <h1 class="font-weight-normal">
+                              <a href="demo-photography-3-blog-post.html" class="text-decoration-none">Incredible Places</a>
+                          </h1>
+                          <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur diam id urna...
+                              </p>
+                          </a>
+                      </div>
+                  </article>
+              </li>
+              <li class="col-sm-4 col-md-3 isotope-item p-md">
+                  <article class="our-blog-item">
+                      <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                          <span class="image-wrapper">
+                              <img src="../../../assets/images/blog-img-2.jpg" alt="" class="img-responsive" />
+                          </span>
+                          <span class="category text-uppercase background-color-quaternary" id="fav">
+                              <i class="fa fa-heart" aria-hidden="true"></i>
+                          </span>
+                      </a>
+                      <div class="post-infos">
+                          <div class="share">
+                              <div class="share-icons background-color-quaternary">
+                                  <a href="#" class="text-decoration-none" title="Share on Facebook">
+                                      <i class="fab fa-facebook"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Twitter">
+                                      <i class="fab fa-twitter"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Linkedin">
+                                      <i class="fab fa-linkedin"></i>
+                                  </a>
+                                  <i class="fa fa-share-alt"></i>
+                              </div>
+                          </div>
+                          <span class="post-date">
+                              31 NOV 2016
+                          </span>
+                          <h1 class="font-weight-normal">
+                              <a href="demo-photography-3-blog-post.html" class="text-decoration-none">Incredible Places</a>
+                          </h1>
+                          <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur diam id urna...
+                              </p>
+                          </a>
+                      </div>
+                  </article>
+              </li>
+              <li class="col-sm-4 col-md-3 isotope-item p-md">
+                  <article class="our-blog-item">
+                      <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                          <span class="image-wrapper">
+                              <img src="../../../assets/images/blog-img-1.jpg" alt="" class="img-responsive" />
+                          </span>
+                          <span class="category text-uppercase background-color-quaternary" id="fav">
+                              <i class="fa fa-heart" aria-hidden="true"></i>
+                          </span>
+                      </a>
+                      <div class="post-infos">
+                          <div class="share">
+                              <div class="share-icons background-color-quaternary">
+                                  <a href="#" class="text-decoration-none" title="Share on Facebook">
+                                      <i class="fab fa-facebook"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Twitter">
+                                      <i class="fab fa-twitter"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Linkedin">
+                                      <i class="fab fa-linkedin"></i>
+                                  </a>
+                                  <i class="fa fa-share-alt"></i>
+                              </div>
+                          </div>
+                          <span class="post-date">
+                              31 NOV 2016
+                          </span>
+                          <h1 class="font-weight-normal">
+                              <a href="demo-photography-3-blog-post.html" class="text-decoration-none">Incredible Places</a>
+                          </h1>
+                          <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur diam id urna...
+                              </p>
+                          </a>
+                      </div>
+                  </article>
+              </li>
+              <li class="col-sm-4 col-md-3 isotope-item p-md">
+                  <article class="our-blog-item">
+                      <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                          <span class="image-wrapper">
+                              <img src="../../../assets/images/blog-img-8.JPG" alt="" class="img-responsive" />
+                          </span>
+                          <span class="category text-uppercase background-color-quaternary" id="fav">
+                              <i class="fa fa-heart" aria-hidden="true"></i>
+                          </span>
+                      </a>
+                      <div class="post-infos">
+                          <div class="share">
+                              <div class="share-icons background-color-quaternary">
+                                  <a href="#" class="text-decoration-none" title="Share on Facebook">
+                                      <i class="fab fa-facebook"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Twitter">
+                                      <i class="fab fa-twitter"></i>
+                                  </a>
+                                  <a href="#" class="text-decoration-none" title="Share on Linkedin">
+                                      <i class="fab fa-linkedin"></i>
+                                  </a>
+                                  <i class="fa fa-share-alt"></i>
+                              </div>
+                          </div>
+                          <span class="post-date">
+                              31 NOV 2016
+                          </span>
+                          <h1 class="font-weight-normal">
+                              <a href="demo-photography-3-blog-post.html" class="text-decoration-none">Incredible Places</a>
+                          </h1>
+                          <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur diam id urna...
+                              </p>
+                          </a>
+                      </div>
+                  </article>
+              </li>
+
+          </ul>
+
+      </div>
+
+
+  </div>
+</section>
