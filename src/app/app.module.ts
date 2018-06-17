@@ -185,9 +185,9 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     CommentComponent,
     SmallPostComponent,
     AddCommentComponent,
-
     PostComponent,
-
+    PostListingComponent,
+    ShoppingCartComponent,
     UserItemComponent ,
     UserListingComponent,
     UserDetailsComponent,
