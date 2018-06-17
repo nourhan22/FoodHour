@@ -34,20 +34,7 @@ export class IngredientService {
       title: 'Water'
     },
   ];
-  // private ingredientNutirition:IIngredientNutiritions[] = [
-   
-  //   {
-  //     nutiritionName:'molybdnum',
-  //     nutiritionType:' ',
-  //     percentage:24
-  //   },
-  //   {
-  //     nutiritionName:'Vitamin',
-  //     nutiritionType:' K',
-  //     percentage:54
-  //   },
-
-  // ];
+ 
   private ingredients: IIngredient[] = [
     {
       id: 1,

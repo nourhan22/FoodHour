@@ -7,6 +7,13 @@ export interface IRecipeIngredient {
     ingredient?: IIngredient,
     cookingMethod?: IcookingMethod,
     cuttingMethod?:ICuttingMethods,
-    recipe?: IRecipe
+    recipe?: IRecipe,
+    countOfIngredient?:number,
+    weightUnitId?:number;
+    procedure?:string,
+    image?:string,
+    time?:number,
+    TimeunitId?:number,
+    
 }
 

@@ -23,12 +23,17 @@
               "src/assets"
             ],
             "styles": [
+
               "src/assets/css/bootstrap.css",
               "src/assets/css/animate.min.css",                                                        
               "src/styles.css"              
+
+              
+              
             ],
 
             "scripts": [
+
             ]   
           },
           "configurations": {

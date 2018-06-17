@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="../../../assets/css/theme.css">
+<link rel="stylesheet" href="../../../assets/css/theme-elements.css">
+<link rel="stylesheet" href="../../../assets/css/demo-photography-3.css">
+<!-- body=============================== -->
+
+<li class="col-sm-3  isotope-item p-md ">
+    <article class="our-blog-item">
+        <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+            <span class="image-wrapper">
+                <img src="{{item.img}}" alt="" class="img-responsive" />
+            </span>
+           
+        </a>
+
+        <div class="post-infos">
+
+            <!-- <div class="share">
+                <div class="share-icons background-color-quaternary ">
+                    <a href="#" class="text-decoration-none" title="Share on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none" title="Share on Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none" title="Share on Linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <i class="fa fa-share-alt"></i>
+                </div>
+            </div> -->
+
+
+
+            <!-- <span class="post-date">
+                31 NOV 2016
+            </span> -->
+            <div class="row">
+               
+                    <i class="fa fa-minus" aria-hidden="true" (click)="onDelete(item.id)"></i>
+                    <i class="fas fa-pencil-alt"  [routerLink] = "['edit',item.id]"></i>
+                
+               
+                <h1 class="font-weight-normal">
+                    <a [routerLink]="['/UserDetails',item.id]" class="text-decoration-none">{{item.name}}</a>
+                </h1>
+
+            </div>
+
+
+
+
+            <!-- <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+                <p>{{item.desc}}
+                </p>
+            </a> -->
+        </div>
+    </article>
+</li>

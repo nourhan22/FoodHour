@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-cut-tool',
@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cutTool.component.css']
 })
 export class CutToolComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  @Input() public cut:any;
+  constructor(){}
+  ngOnInit(){
+    
   }
-
 }
