@@ -69,7 +69,6 @@ import { NutritionComponent } from 'src/app/recipe/recipe-details/nutrition/nutr
 import { PieChartComponent } from 'src/app/recipe/recipe-details/nutrition/pie-chart/pie-chart.component';
 import { BarChartComponent } from 'src/app/recipe/recipe-details/nutrition/bar-chart/bar-chart.component';
 import { MiniItemComponent } from 'src/app/recipe/recipe-details/miniIngrediant/miniItem/miniItem.component';
-
 import { CuttingMethodAddComponent } from 'src/app/cutting-methods/cutting-method-add/cutting-method-add.component';
 import { CutToolComponent } from 'src/app/shared/components/cutTool/cutTool.component';
 import { CuttingSliderComponent } from 'src/app/cutting-methods/cutting-slider/cutting-slider.component';
@@ -86,9 +85,17 @@ import { CommentComponent } from 'src/app/shared/components/comment/comment.comp
 // import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
 import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
-import { StepsComponent } from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
-import { MiseEnPlaceComponent } from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
-import { RecipeAddComponent } from 'src/app/recipe/recipe-add/recipe-add.component';
+
+
+import { IngredientRecipesSliderComponent } from './ingredients/ingredient-details/ingredient-recipes-slider/ingredient-recipes-slider.component';
+import { UserListingComponent } from './user/user-listing/user-listing.component';
+import { UserItemComponent } from './user/user-item/user-item.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
+import { UserAddComponent } from './user/user-add/user-add.component';
+
+import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
+import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
+import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
 import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
@@ -97,6 +104,7 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
 import { ShoppingCartService } from './shared/services/ShoppingCart.service';
 import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
+
 
 
 
@@ -118,7 +126,11 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
+
+    IngredientRecipesSliderComponent,
+
     RecipeIngredientItemComponent,
+
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -162,9 +174,11 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     PieChartComponent,
     BarChartComponent,
     MiniItemComponent,
+
     StepsComponent,
     MiseEnPlaceComponent,
     RecipeAddComponent,
+
     DetailsComponent,
     PostContentComponent,
     AuthorComponent,
@@ -173,22 +187,19 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     AddCommentComponent,
 
     PostComponent,
-    SearchPipe,
-    AddRecipeIngredientComponent,
 
-
-    PostListingComponent,
-
-    SearchPipe,
-    SmallTabComponent,
-    AddPostComponent,
-    ShoppingCartComponent
-
-
-
+    UserItemComponent ,
+    UserListingComponent,
+    UserDetailsComponent,
+    UserAddComponent
   ],
+  
   imports: [
-    BrowserModule, FormsModule, CarouselModule.forRoot(), TabsModule.forRoot(), ModalModule.forRoot(),
+    BrowserModule,
+     FormsModule, 
+     CarouselModule.forRoot(),
+      TabsModule.forRoot(),
+       ModalModule.forRoot(),
 
     RouterModule.forRoot([
 
@@ -274,11 +285,52 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
       { path: 'ToolListing/add', component: ToolAddComponent },
 
       { path: 'ToolListing/add', component: ToolAddComponent },
-      { path: 'community/details/:id', component: DetailsComponent }
+      { path: 'community/details/:id', component: DetailsComponent },
 
+     {path:'home', component:ViewHomeComponent},     
+     
+     {path:'home', component:ViewHomeComponent},
+     {path:'community', component:PostListingComponent},
+  
+     {path:'IngredientListing', component:IngredientListingComponent},
+     {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},
+     {path:'IngredientListing/add' , component:IngredientAddComponent},
+     {path:'IngredientListing/edit/:id' , component:IngredientAddComponent},
+     {path:'microOrganismListing', component:MicroOrganismListingComponent},
+     {path:'ToolItem' , component:ToolItemComponent},
+     {path:'ToolListing' , component:ToolListingComponent},
+     {path: 'microOrganismListing', component: MicroOrganismListingComponent},
+     {path: 'cookingMethodListing' , component: CookingMethodListingComponent},
+     {path: 'cuttingMethodListing' , component: CuttingMethodListingComponent},
+     {path: 'recipeListing' , component: RecipeListingComponent},
+     {path: 'CuttingMethodDetails' , component:CuttingMethodDetailsComponent},
+     {path:'microOrganismListing/edit/:id' , component:MicroOrganismAddComponent},
+     {path:'microOrganismListing/add' , component:MicroOrganismAddComponent},
+     {path:'cookingMethodListing/edit/:id' , component:CookingMethodAddComponent},
+     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'cuttingMethodListing/details/:id', component:CuttingMethodDetailsComponent},
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'cookingMethodListing/details' , component:CookingMethodDetailsComponent},
+     {path:'microOrganismListing/details/:id', component:MicroOrganismDetailsComponent},
+     {path:'cookingMethodListing/details/:id' , component:CookingMethodDetailsComponent},
+     {path:'ToolListing/details/:id',component:ToolDetailesComponent},
+     {path:'cookingMethodListing/Add' , component:CookingMethodAddComponent},
+     {path:'recipeListing/details/:id',component:RecipeDetailsComponent},
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'cuttingMethodListing/add' , component:CuttingMethodAddComponent},
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'ToolListing/edit/:id',component:ToolAddComponent},
+     {path:'recipe/details',component:RecipeDetailsComponent},
+     {path:'recipeListing/add',component:RecipeAddComponent},
+
+     {path:'ToolListing/add' , component:ToolAddComponent},
+
+     {path:'ToolListing/add' , component:ToolAddComponent},
+     {path:'community/details/:id' , component:DetailsComponent}
     ])
   ],
-  providers: [MicroService, CookingMethodService, ShoppingCartService],
+  providers: [MicroService, CookingMethodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

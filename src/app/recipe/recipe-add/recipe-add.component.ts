@@ -26,7 +26,7 @@ export class RecipeAddComponent implements OnInit {
     ];
 
     this.recipeService.onRecipeIngredientAdded.subscribe(
-      (recipeIngredient)=>{this.ingredients.push(recipeIngredient)}
+      (recipeIngredient)=>{ debugger; this.ingredients.push(recipeIngredient) ;console.log(this.ingredients)}
     );
   }
   openModal(template: TemplateRef<any>) {
