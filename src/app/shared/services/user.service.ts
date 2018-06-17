@@ -10,25 +10,37 @@ export class UserService {
     {
       id: 1,
       name: 'nayera saad',
-      img: '../../assets/images/user6.jpg'
+      img: '../../assets/images/user6.jpg',
+      Email: 'nayerasaad@yahoo.com',
+      passWord: 'hello123',
+      age:25
     },
     {
       id: 2,
       name: 'reem ahmed',
-      img: '../../assets/images/user5.jpg'
+      img: '../../assets/images/user5.jpg',
+      Email: 'nayerasaad@yahoo.com',
+      passWord: 'hello123',
+      age:23
     },
     {
       id: 3,
       name: 'sara rashid',
-      img: '../../assets/images/user7.jpg'
+      img: '../../assets/images/user7.jpg',
+      Email: 'nayerasaad@yahoo.com',
+      passWord: 'hello123',
+      age:26
     },
     {
       id: 4,
       name: 'soso soso',
-      img: '../../assets/images/user4.jpg'
+      img: '../../assets/images/user4.jpg',
+      Email: 'nayerasaad@yahoo.com',
+      passWord: 'hello123',
+      age:21
     }
   ]
-
+  public lengthOfUsers: number = this.users.length;
   constructor() { }
   GetAllUsers(): Observable<IUser[]> {
     return of(this.users);
@@ -56,4 +68,14 @@ export class UserService {
     })
     return filteredArr;
   }
+  AddNewUser(item:IUser){
+    this.users.push(item);
+  }
+  Edit(item: IUser){
+    const index= this.users.findIndex(a=>a.id===item.id);
+     if(index >-1){
+         this.users[index]=item;
+         return item;
+     }
+   }
 }

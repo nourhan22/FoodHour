@@ -77,6 +77,8 @@ import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-c
 import { IngredientRecipesSliderComponent } from './ingredients/ingredient-details/ingredient-recipes-slider/ingredient-recipes-slider.component';
 import { UserListingComponent } from './user/user-listing/user-listing.component';
 import { UserItemComponent } from './user/user-item/user-item.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
+import { UserAddComponent } from './user/user-add/user-add.component';
 
 @NgModule({
   declarations: [
@@ -144,13 +146,18 @@ import { UserItemComponent } from './user/user-item/user-item.component';
 
     PostComponent,
     UserItemComponent ,
-    UserListingComponent
+    UserListingComponent,
+    UserDetailsComponent,
+    UserAddComponent
   ],
   imports: [
     BrowserModule, FormsModule,
     RouterModule.forRoot([
       { path: 'home', component: ViewHomeComponent },
       { path: 'UserListing', component: UserListingComponent },
+      { path: 'UserDetails/:id', component: UserDetailsComponent },
+      { path: 'UserListing/add', component: UserAddComponent},
+      { path: 'UserListing/edit/:id', component: UserAddComponent},
       { path: 'IngredientListing', component: IngredientListingComponent },
       { path: 'IngredientDetails/:id', component: IngredientDetailsComponent },
       { path: 'IngredientListing/add', component: IngredientAddComponent },
