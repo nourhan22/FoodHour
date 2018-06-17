@@ -1,0 +1,91 @@
+
+<div class="container">
+    <form (ngSubmit)="onSave(myform)" #myform="ngForm">
+
+        <div class='row header'>
+            <span class="text-muted">Sign Up</span>
+            <hr>
+        </div>
+        <div class="row img">
+
+            <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+
+
+            <img src="../assets/images/default.png" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
+            />
+
+            <span class="text-muted">Add Photo</span>
+        </div>
+
+
+        <div class="input-group col-xs-12">
+            <input type="text" class="form-control" name='Username' [(ngModel)]='newUser.name' placeholder="Username" aria-describedby="basic-addon1"
+                required>
+        </div>
+        <br>
+        <div class="input-group col-xs-12">
+            <input type="text" class="form-control" name='E-mail Address' [(ngModel)]='newUser.Email' placeholder="E-mail Address" aria-describedby="basic-addon1"
+                required>
+        </div>
+
+        <br>
+        <!-- <div class="input-group col-xs-12" ng:controller="PasswordController">
+           
+            <input type="password" class="form-control" name="password" [(ngModel)]='newUser.passWord' placeholder="enter password" required/>
+            <span class="strength" ng:class="strength">This password is {{strength}} !</span><br />
+             <button ng:click="generate()">Generate on server</button> 
+            <input type="checkbox" name="showPwd"> Show password: 
+            <span ng:show="showPwd">{{password}}</span>
+        </div> -->
+        <div class="input-group col-xs-12">
+            <input type="password" class="form-control" name='Password' [(ngModel)]='newUser.passWord' placeholder="Password" aria-describedby="basic-addon1"
+                required>
+        </div>
+        <br>
+        <div class="input-group col-xs-12">
+            <input type="number" class="form-control" name='Age' [(ngModel)]='newUser.age' placeholder="Age" aria-describedby="basic-addon1"
+                required>
+        </div>
+   
+
+     
+
+
+
+
+        <div class="row">
+            <button type="submit" class="btn  addbtn col-xs-7 " [disabled]="myform.invalid">Sign Up </button>
+        </div>
+        <div class='row'>
+            <button type="button" class="btn cancelbtn col-xs-7" (click)='onCancel()'>Cancel</button>
+        </div>
+        <br>
+        <div class="row">
+            <label class="text-muted">Login with</label>
+            <br>
+            <ul class="header-social-icons social-icons hidden-xs">
+                <li class="social-icons-facebook">
+                    <a href="http://www.facebook.com/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="social-icons-twitter">
+                    <a href="http://www.twitter.com/" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-icons-linkedin">
+                    <a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </form>
+
+
+
+
+
+
+</div>

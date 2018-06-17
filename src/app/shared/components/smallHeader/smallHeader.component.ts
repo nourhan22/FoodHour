@@ -16,6 +16,7 @@ export class SmallHeaderComponent implements OnInit {
 @Output() CuttingMethodSearch: EventEmitter<any> = new EventEmitter();
 @Output() IngredientSearch:EventEmitter<any> = new EventEmitter();
 @Output() ToolSearch:EventEmitter<any> = new EventEmitter();
+@Output() UserSearch:EventEmitter<any> = new EventEmitter();
 public txtSearch : string;
 
   constructor(private ActivatedRoute : ActivatedRoute) { }
@@ -48,6 +49,10 @@ public txtSearch : string;
         else if(segmentUrl == 'ToolListing')
         {
           this.ToolSearch.emit(this.txtSearch);
+        }
+        else if(segmentUrl == 'UserListing')
+        {
+          this.UserSearch.emit(this.txtSearch);
         }
       });
   }
