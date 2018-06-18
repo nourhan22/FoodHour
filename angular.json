@@ -24,16 +24,12 @@
             ],
             "styles": [
 
-              "src/assets/css/bootstrap.css",
-              "src/styles.css"              
-
-              
-              
+              "src/assets/css/bootstrap.css"                          
             ],
 
             "scripts": [
-
-            ]   
+ 
+            ]  
           },
           "configurations": {
             "production": {

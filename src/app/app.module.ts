@@ -1,17 +1,11 @@
-
-
-import{HomeModule} from './home/home.module';
+import { HomeModule } from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
-import {MatSelectModule } from '@angular/material/select';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-
 import{CommunityModule} from './community/community.module';
 import{PostListingComponent} from './community/post-listing/post-listing.component';
-
-
-
+import { OtherToolsComponent } from './tools/other-tools/other-tools.component';
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
 import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
@@ -50,10 +44,8 @@ import { SearchComponent } from 'src/app/shared/components/search/search.compone
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 
-import {ActivatedRoute} from '@angular/router'
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'
-import { ActivatedRoute } from '@angular/router'
-import { FormsModule } from '@angular/forms'
+import {ActivatedRoute} from '@angular/router';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import { CookingMethodAddComponent } from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
@@ -63,6 +55,9 @@ import { IngredientAddComponent } from './ingredients/ingredient-add/ingredient-
 import { IngredientNutiritionsComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutiritions.component';
 import { IngredientNutiritionItemComponent } from './ingredients/ingredient-details/ingredient-nutiritions/ingredient-nutirition-Item/ingredient-nutirition-Item.component';
 import { ToolAddComponent } from './tools/tool-add/tool-add.component';
+
+
+
 import { RecipeListingComponent } from 'src/app/recipe/recipe-listing/recipe-listing.component';
 import { RecipeItemComponent } from 'src/app/recipe/recipe-item/recipe-item.component';
 import { GallaryComponent } from 'src/app/recipe/recipe-details/gallary/gallary.component';
@@ -89,6 +84,7 @@ import { CommentComponent } from 'src/app/shared/components/comment/comment.comp
 import { SmallPostComponent } from 'src/app/community/small-post/small-post.component';
 import { AddCommentComponent } from 'src/app/shared/components/add-comment/add-comment.component';
 
+
 import { IngredientRecipesSliderComponent } from './ingredients/ingredient-details/ingredient-recipes-slider/ingredient-recipes-slider.component';
 import { UserListingComponent } from './user/user-listing/user-listing.component';
 import { UserItemComponent } from './user/user-item/user-item.component';
@@ -101,15 +97,20 @@ import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MyComponentComponent } from 'src/app/cutting-methods/my-component/my-component.component';
-import { OwlModule } from 'ngx-owl-carousel';
 import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
 import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
 import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
+
+import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
+import { ShoppingCartService } from './shared/services/ShoppingCart.service';
+import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
+
+
+
+
 @NgModule({
   declarations: [
-    MyComponentComponent,
     HeaderComponent,
     AppComponent,
     CuttingMethodItemComponent,
@@ -126,11 +127,95 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
-
+   
+    
     IngredientRecipesSliderComponent,
 
     RecipeIngredientItemComponent,
 
+    CookingMethodItemComponent,
+    FooterComponent,
+    CuttingMethodListingComponent,
+    CuttingMethodDetailsComponent,
+    CookingMethodDetailsComponent,
+    CookingMethodDetailsComponent,
+    ToolDetailesComponent,
+    SmallHeaderComponent,
+    TabsComponent,
+    MicroOrganismDetailsComponent,
+    MicroItemDescriptionComponent,
+    SearchComponent,
+    RelatedtopicComponent,
+    MicroOrganismAddComponent,
+    CookingMethodAddComponent,
+
+    ToolAddComponent,
+    CuttingMethodAddComponent,
+    CutToolComponent,
+    CuttingSliderComponent,
+    SliderComponent,
+    WhoWeAreComponent,
+    ServicesComponent,
+    ViewHomeComponent,
+    OtherToolsComponent,
+    RecipeDetailsComponent,
+    ToolAddComponent,
+
+    ShopIngrediantComponent,
+    RecipeDetailsComponent,
+
+
+    ToolAddComponent,
+
+    RecipeListingComponent,
+    RecipeItemComponent,
+    MainInfoComponent,
+    MiniIngrediantComponent,
+    GallaryComponent,
+    NutritionComponent,
+    PieChartComponent,
+    BarChartComponent,
+    MiniItemComponent,
+
+    StepsComponent,
+    MiseEnPlaceComponent,
+    RecipeAddComponent,
+
+    DetailsComponent,
+    PostContentComponent,
+    AuthorComponent,
+    CommentComponent,
+    SmallPostComponent,
+    AddCommentComponent,
+    PostComponent,
+    PostListingComponent,
+    ShoppingCartComponent,
+    UserItemComponent ,
+    UserListingComponent,
+    UserDetailsComponent,
+    UserAddComponent,
+    HeaderComponent,
+    AppComponent,
+    CuttingMethodItemComponent,
+    MicroOrganismListingComponent,
+    MicroOrganismItemComponent,
+    ToolItemComponent,
+    ToolListingComponent,
+    MicroOrganismListingComponent,
+    CookingMethodListingComponent,
+    IngredientListingComponent,
+    IngredientItemComponent,
+    IngredientDetailsComponent,
+    IngredientDescriptionComponent,
+    IngredientAddComponent,
+    IngredientNutiritionsComponent,
+    IngredientNutiritionItemComponent,
+     PostListingComponent,
+    IngredientRecipesSliderComponent,
+    AddPostComponent,
+    AddRecipeIngredientComponent,
+    RecipeIngredientItemComponent,
+   SmallTabComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -189,14 +274,24 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
     UserDetailsComponent,
     UserAddComponent
   ],
+  
   imports: [
-    BrowserModule, FormsModule,
+    BrowserModule,
+     FormsModule, 
+     CarouselModule,
+     ModalModule,
+     NgxGalleryModule,
+     CarouselModule.forRoot(),
+      TabsModule.forRoot(),
+       ModalModule.forRoot(),
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+  
     RouterModule.forRoot([
+
       { path: 'home', component: ViewHomeComponent },
-      { path: 'UserListing', component: UserListingComponent },
-      { path: 'UserDetails/:id', component: UserDetailsComponent },
-      { path: 'UserListing/add', component: UserAddComponent},
-      { path: 'UserListing/edit/:id', component: UserAddComponent},
+      { path: 'community', component: PostListingComponent },
+
       { path: 'IngredientListing', component: IngredientListingComponent },
       { path: 'IngredientDetails/:id', component: IngredientDetailsComponent },
       { path: 'IngredientListing/add', component: IngredientAddComponent },
@@ -227,40 +322,57 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
       { path: 'ToolListing/add', component: ToolAddComponent },
       { path: 'ToolListing/edit/:id', component: ToolAddComponent },
       { path: 'recipe/details', component: RecipeDetailsComponent },
+      { path: 'recipeListing/add', component: RecipeAddComponent },
 
       { path: 'ToolListing/add', component: ToolAddComponent },
-      { path: 'community/details', component: DetailsComponent }
 
-    SearchPipe,
-    AddRecipeIngredientComponent,
+      { path: 'community/details', component: DetailsComponent },
 
+      { path: 'ToolListing/add', component: ToolAddComponent },
+      { path: 'shopcategory', component: ShopIngrediantComponent },
+      { path: 'ShoppingCart', component: ShoppingCartComponent },
+      { path: 'community/details/:id', component: DetailsComponent },
 
-    PostListingComponent,
+      { path: 'home', component: ViewHomeComponent },
+      { path: 'community', component: PostListingComponent },
 
-    SearchPipe,
-    SmallTabComponent,
-    AddPostComponent
+      { path: 'IngredientListing', component: IngredientListingComponent },
+      { path: 'IngredientDetails/:id', component: IngredientDetailsComponent },
+      { path: 'IngredientListing/add', component: IngredientAddComponent },
+      { path: 'IngredientListing/edit/:id', component: IngredientAddComponent },
+      { path: 'microOrganismListing', component: MicroOrganismListingComponent },
+      { path: 'ToolItem', component: ToolItemComponent },
+      { path: 'ToolListing', component: ToolListingComponent },
+      { path: 'microOrganismListing', component: MicroOrganismListingComponent },
+      { path: 'cookingMethodListing', component: CookingMethodListingComponent },
+      { path: 'cuttingMethodListing', component: CuttingMethodListingComponent },
+      { path: 'recipeListing', component: RecipeListingComponent },
+      { path: 'CuttingMethodDetails', component: CuttingMethodDetailsComponent },
+      { path: 'microOrganismListing/edit/:id', component: MicroOrganismAddComponent },
+      { path: 'microOrganismListing/add', component: MicroOrganismAddComponent },
+      { path: 'cookingMethodListing/edit/:id', component: CookingMethodAddComponent },
+      { path: 'cookingMethodListing/details', component: CookingMethodDetailsComponent },
+      { path: 'cuttingMethodListing/details/:id', component: CuttingMethodDetailsComponent },
+      { path: 'microOrganismListing/details/:id', component: MicroOrganismDetailsComponent },
+      { path: 'cookingMethodListing/details/:id', component: CookingMethodDetailsComponent },
+      { path: 'cookingMethodListing/details', component: CookingMethodDetailsComponent },
+      { path: 'microOrganismListing/details/:id', component: MicroOrganismDetailsComponent },
+      { path: 'cookingMethodListing/details/:id', component: CookingMethodDetailsComponent },
+      { path: 'ToolListing/details/:id', component: ToolDetailesComponent },
+      { path: 'cookingMethodListing/Add', component: CookingMethodAddComponent },
+      { path: 'recipeListing/details/:id', component: RecipeDetailsComponent },
+      { path: 'ToolListing/add', component: ToolAddComponent },
+      { path: 'cuttingMethodListing/add', component: CuttingMethodAddComponent },
+      { path: 'ToolListing/add', component: ToolAddComponent },
+      { path: 'ToolListing/edit/:id', component: ToolAddComponent },
+      { path: 'recipe/details', component: RecipeDetailsComponent },
+      { path: 'recipeListing/add', component: RecipeAddComponent },
 
+      { path: 'ToolListing/add', component: ToolAddComponent },
 
+      { path: 'ToolListing/add', component: ToolAddComponent },
+      { path: 'community/details/:id', component: DetailsComponent },
 
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-
-    CarouselModule.forRoot(),
-    ModalModule.forRoot(),
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    MatSelectModule,
-    OwlModule,
-
-    TabsModule.forRoot(),
-    CarouselModule.forRoot(),
-    ModalModule.forRoot(),
-    NgxGalleryModule,
-   
-    RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},     
      
      {path:'home', component:ViewHomeComponent},
