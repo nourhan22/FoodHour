@@ -3,11 +3,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-
 import{CommunityModule} from './community/community.module';
 import{PostListingComponent} from './community/post-listing/post-listing.component';
-
-
 import { OtherToolsComponent } from './tools/other-tools/other-tools.component';
 import { IngredientDescriptionComponent } from './ingredients/ingredient-details/ingredient-description/ingredient-description.component';
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
