@@ -30,7 +30,7 @@ export class CuttingService {
       height:3/4,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
     },
     {
       imageUrl:'../../../assets/images/cutting/Medium dice.jpg',
@@ -42,7 +42,7 @@ export class CuttingService {
       height:1/2,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
       
     },
     {
@@ -55,7 +55,7 @@ export class CuttingService {
       height:1/4,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
       
     },
     {
@@ -68,7 +68,7 @@ export class CuttingService {
       height:1/8,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
       
     },
     {
@@ -81,7 +81,7 @@ export class CuttingService {
       height:1/16,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"}]
       
     },
     {
@@ -94,7 +94,7 @@ export class CuttingService {
       height:2.5,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/TourneKnife.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/TourneKnife.jpg"}]
       
     },
     {
@@ -107,7 +107,7 @@ export class CuttingService {
       height: 2.5,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/cutting/julienne2.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/cutting/julienne2.jpg"}]
       
     },
     {
@@ -120,7 +120,7 @@ export class CuttingService {
       height:2,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/cutting/Fine julienne2.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/Fine julienne1.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/cutting/Fine julienne2.jpg"}]
       
     },
     {
@@ -133,7 +133,7 @@ export class CuttingService {
       height:1,
       unitType:'us',
       units:'inch',
-      tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/TourneEquipment.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/cutting/TourneKnife.jpg"}]
+      // tools:[{title:"Knife",imgUrl:"../../../assets/images/cutting/TourneEquipment.jpg"},{title:"Equipment",imgUrl:"../../../assets/images/cutting/TourneKnife.jpg"}]
       
     }
   ]
