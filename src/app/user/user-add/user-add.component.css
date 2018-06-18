@@ -1,4 +1,5 @@
 
+
 form{
     border:1px solid #dddddd;
     padding: 20px;
@@ -64,10 +65,6 @@ input:focus{
     background-color: #ff530a;
 }
 
-
-
-
-
 .btn{
     border-radius: 2%;
     padding: 10px;
@@ -86,15 +83,54 @@ input:focus{
     border-color: #ff530a;
     outline: 0;
 }
+/*table-------------------------*/
 
-#plus {
-    color: white;
-    background-color: #ff530a;
-   
-    font-size: 30px;
+        table {
+            table-layout: fixed;
+            word-break: break-all;
+        }
+
+        table td {
+            overflow: hidden;
+        }
+
+        .fa-times {
+            /* color: #0088cc; */
+            color: maroon;
+            font-size: 15px;
+        }
+
+        table {
+            counter-reset: tableCount;
+        }
+
+        .counterCell:before {
+            content: counter(tableCount);
+            counter-increment: tableCount;
+        }
+
+        #myDiv {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+        
     
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 8px 10px;
-    border-radius: 100%;
-}
+
+        .social-icons li a {
+            color: #ff530a !important;
+        }
+        .text-muted {
+            color: #999 !important;
+            margin-left: 3%;
+        }
+        li:hover > a {
+            background-color: #fe7c26 !important;
+            color: white;
+        }
+        .social-icons{
+            margin-left: 2%;
+        }
+
