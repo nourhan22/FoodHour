@@ -8,20 +8,23 @@ import { Observable, of } from 'rxjs';
 export class ShopCategoryService {
 public categories:ICategory[]=[
   {
-    title:'Bread',
+    title:'All Categories',
     id:1
   }, {
     title:'Dairy',
     id:2
   }, {
-    title:'fruits',
+    title:'Fruits',
     id:3
   }, {
-    title:'seasonings & spices',
+    title:'Seasonings & Spices',
     id:4
   }, {
     title:'Vegetables',
     id:5
+  }, {
+    title:'Bread',
+    id:6
   }
 ]
 constructor() { }

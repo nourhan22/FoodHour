@@ -110,6 +110,8 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
 
 @NgModule({
   declarations: [
+
+    
     HeaderComponent,
     AppComponent,
     CuttingMethodItemComponent,
@@ -126,7 +128,8 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
-
+   
+    
     IngredientRecipesSliderComponent,
 
     RecipeIngredientItemComponent,
@@ -191,12 +194,94 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     UserItemComponent ,
     UserListingComponent,
     UserDetailsComponent,
+    UserAddComponent,
+    HeaderComponent,
+    AppComponent,
+    CuttingMethodItemComponent,
+    MicroOrganismListingComponent,
+    MicroOrganismItemComponent,
+    ToolItemComponent,
+    ToolListingComponent,
+    MicroOrganismListingComponent,
+    CookingMethodListingComponent,
+    IngredientListingComponent,
+    IngredientItemComponent,
+    IngredientDetailsComponent,
+    IngredientDescriptionComponent,
+    IngredientAddComponent,
+    IngredientNutiritionsComponent,
+    IngredientNutiritionItemComponent,
+     PostListingComponent,
+    IngredientRecipesSliderComponent,
+    AddPostComponent,
+    AddRecipeIngredientComponent,
+    RecipeIngredientItemComponent,
+   SmallTabComponent,
+    CookingMethodItemComponent,
+    FooterComponent,
+    CuttingMethodListingComponent,
+    CuttingMethodDetailsComponent,
+    CookingMethodDetailsComponent,
+    CookingMethodDetailsComponent,
+    ToolDetailesComponent,
+    SmallHeaderComponent,
+    TabsComponent,
+    MicroOrganismDetailsComponent,
+    MicroItemDescriptionComponent,
+    SearchComponent,
+    RelatedtopicComponent,
+    MicroOrganismAddComponent,
+    CookingMethodAddComponent,
+
+    ToolAddComponent,
+    CuttingMethodAddComponent,
+    CutToolComponent,
+    CuttingSliderComponent,
+    SliderComponent,
+    WhoWeAreComponent,
+    ServicesComponent,
+    ViewHomeComponent,
+
+    RecipeDetailsComponent,
+
+
+    ToolAddComponent,
+
+    RecipeListingComponent,
+    RecipeItemComponent,
+    MainInfoComponent,
+    MiniIngrediantComponent,
+    GallaryComponent,
+    NutritionComponent,
+    PieChartComponent,
+    BarChartComponent,
+    MiniItemComponent,
+
+    StepsComponent,
+    MiseEnPlaceComponent,
+    RecipeAddComponent,
+
+    DetailsComponent,
+    PostContentComponent,
+    AuthorComponent,
+    CommentComponent,
+    SmallPostComponent,
+    AddCommentComponent,
+
+    PostComponent,
+
+    UserItemComponent ,
+    UserListingComponent,
+    UserDetailsComponent,
     UserAddComponent
   ],
   
   imports: [
     BrowserModule,
      FormsModule, 
+     CarouselModule,
+     ModalModule,
+     NgxGalleryModule,
      CarouselModule.forRoot(),
       TabsModule.forRoot(),
        ModalModule.forRoot(),
