@@ -23,6 +23,7 @@ export class CuttingMethodDetailsComponent implements OnInit {
   }
     
   ngOnInit() {
+    console.log(this.item)
   }
 
 }

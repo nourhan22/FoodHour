@@ -21,11 +21,8 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
     PostListingComponent,
     DetailsComponent,
     PostContentComponent,
-    AuthorComponent,
-
     PostComponent,
     SearchPipe,
-
     DetailsComponent,
     PostContentComponent,
     SmallPostComponent

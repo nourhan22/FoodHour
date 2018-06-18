@@ -12,18 +12,21 @@ export class ToolService {
       name:'Cooker',
       img:'./assets/images/cooker3.jpg',
       id:1,
-      description:'ghjgjgjhghjgjh'
+      description:'ghjgjgjhghjgjh',
+      checked:false
     },
     {
       name:'Food Cutter',
       img:'./assets/images/tool/Food Cutter.jpg',
       id:2,
-      description:'ghjgjgjhghjgjh'
+      description:'ghjgjgjhghjgjh',
+      checked:false
     },
     {
       name:'Grill',
       img:'./assets/images/tool/grill.jpg',
       id:3,
+      checked:false,
       description:'ghjgjgjhghjgjh'
     },
     {
@@ -36,31 +39,41 @@ export class ToolService {
       name:'Oven',
       img:'./assets/images/tool/oven2.jpg',
       id:5,
-      description:'ghjgjgjhghjgjh'
+      description:'ghjgjgjhghjgjh',
+      checked:false
+      
     },
     {
       name:'Cooker',
       img:'./assets/images/cooker3.jpg',
       id:6,
-      description:'ghjgjgjhghjgjh'
+      description:'ghjgjgjhghjgjh',
+      checked:false
+      
     },
     {
       name:'Rangetop',
       img:'./assets/images/tool/rangetop.jpg',
       id:7,
-      description:'ghjgjgjhghjgjh'
+      description:'ghjgjgjhghjgjh',
+      checked:false
+      
     },
     {
       name:'Cooker',
       img:'./assets/images/cooker3.jpg',
       id:8,
-      description:'ghjgjgjhghjgjh'
+      description:'ghjgjgjhghjgjh',
+      checked:false
+      
     },
     {
       name:'Cooker',
       img:'./assets/images/cooker3.jpg',
       id:9,
-      description:'ghjgjgjhghjgjh'
+      description:'ghjgjgjhghjgjh',
+      checked:false
+      
     }
     
   ];

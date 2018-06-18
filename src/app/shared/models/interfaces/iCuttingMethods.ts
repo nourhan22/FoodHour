@@ -1,3 +1,5 @@
+import { ISmallTool } from "src/app/shared/models/interfaces/ISmallTool";
+
 export interface ICuttingMethods {
     title: string;
     imageUrl: string;
@@ -8,5 +10,6 @@ export interface ICuttingMethods {
     height:Number;
     unitType:string;
     units:string;
-    tools:{title:string,imgUrl:string}[];
+    // tools:{title:string,imgUrl:string}[];
+    tools?:ISmallTool[];
 }

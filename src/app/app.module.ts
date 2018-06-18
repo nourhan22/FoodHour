@@ -1,6 +1,8 @@
 import{HomeModule} from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import {MatSelectModule } from '@angular/material/select';
+
 
 import{CommunityModule} from './community/community.module';
 import{PostListingComponent} from './community/post-listing/post-listing.component';
@@ -44,7 +46,7 @@ import { SearchComponent } from 'src/app/shared/components/search/search.compone
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
 import {ActivatedRoute} from '@angular/router'
-import {FormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import {CookingMethodAddComponent}from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
@@ -83,9 +85,13 @@ import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/s
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MyComponentComponent } from 'src/app/cutting-methods/my-component/my-component.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 @NgModule({
   declarations: [
+    MyComponentComponent,
     HeaderComponent,
     AppComponent,
     CuttingMethodItemComponent,
@@ -162,7 +168,14 @@ import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
   ],
   imports: [
-    BrowserModule,FormsModule,CarouselModule.forRoot(),ModalModule.forRoot(),
+    BrowserModule,
+    FormsModule,
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatSelectModule,
+    OwlModule,
 
     RouterModule.forRoot([
      {path:'home', component:ViewHomeComponent},
