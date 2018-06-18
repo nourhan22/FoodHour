@@ -76,14 +76,6 @@ export class ToolService {
     ,
       checked:false
       
-    },
-    {
-      name:'Cooker',
-      img:'./assets/images/cooker3.jpg',
-      id:9,
-      description:'ghjgjgjhghjgjh',
-      checked:false
-      
     }
     
   ];

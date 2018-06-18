@@ -100,7 +100,6 @@ import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MyComponentComponent } from 'src/app/cutting-methods/my-component/my-component.component';
 import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
 import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
@@ -115,7 +114,6 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
 
 @NgModule({
   declarations: [
-    MyComponentComponent,
     HeaderComponent,
     AppComponent,
     CuttingMethodItemComponent,
@@ -284,8 +282,6 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     BrowserModule,
      FormsModule, 
      CarouselModule,
-     ActivatedRoute,
-     ActivatedRoute,
      ModalModule,
      NgxGalleryModule,
      CarouselModule.forRoot(),
