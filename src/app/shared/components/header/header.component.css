@@ -1,8 +1,9 @@
 /* theme style */
 /* Header */
 #header {
-	position: relative;
+	 position: relative; 
 	z-index: 100;
+
 }
 #header .header-body {
 	background: #FFF;
@@ -12,6 +13,7 @@
 	width: 100%;
 	z-index: 1001;
 	min-height: 125px;
+	/* margin-top: -690px !important; */
 }
 #header .header-container {
 	position: relative;
@@ -311,7 +313,7 @@
 
 	#header .header-nav-main a:hover > .thumb-info-preview {
 		transform: translate3d(0, 0, 0);
-		top: 0;
+		top: 0; 
 		opacity: 1;
 		margin-top: -5px;
 	}
