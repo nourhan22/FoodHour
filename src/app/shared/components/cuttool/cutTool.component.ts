@@ -9,6 +9,8 @@ export class CutToolComponent implements OnInit {
   @Input() public cut:any;
   constructor(){}
   ngOnInit(){
+    debugger;
+    console.log(this.cut);
     
   }
 }

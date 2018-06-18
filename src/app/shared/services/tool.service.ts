@@ -12,20 +12,31 @@ export class ToolService {
       name:'Hand Mixer',
       img:'./assets/images/tool/hand mixer.jpg',
       id:1,
+
       description:'Combine ingredients at speed one for slowly stirring in chunky ingredients, speed four for mashing potatoes, speed seven for beating egg whites and whipping meringue.'
+,
+      checked:false
+
     },
     {
       name:'Coffee Machine',
       img:'./assets/images/tool/coffee machine.jpg',
       id:2,
+
       description:'Enjoy fresh filter coffee at home with our range of filter coffee machines at Tesco direct. From family-sized coffee pots that brew fresh coffee on a timer to personal travel-mug filter machines perfect for one, you never need start your day without a fresh cup to hand again.'
+,
+      checked:false
+
     },
     {
       name:'Food Processor',
       img:'./assets/images/tool/mini_chopper.jpg',
       id:3,
+
       description:'Food processors are similar to blenders in many forms. The primary difference is that food processors use interchangeable blades and disks (attachments) rather than a fixed blade. Also, their bowls are wider and shorter, a more appropriate shape for the solid or semi-solid foods usually worked in a food processor. Usually, little or no liquid is required in the operation of the food processor, unlike a blender, which requires a certain amount of liquid for the particles to move around the blade.'
-    },
+,
+      checked:false
+     },
     {
       name:'Microwave',
       img:'./assets/images/tool/oven.jpg',
@@ -37,25 +48,42 @@ export class ToolService {
       img:'./assets/images/tool/cooker3.jpg',
       id:5,
       description:'Range: This combination of a cooktop and oven is the most common built-in cooking appliance, usually sized between 20 inches and 48 inches, with options for style and placement.'
+,
+      checked:false
+      
     },
     {
       name:'Rice Cooker',
       img:'./assets/images/tool/rice maker.jpeg',
       id:6,
       description:'A rice cooker or rice steamer is an automated kitchen appliance designed to boil or steam rice. It consists of a heat source, a cooking bowl, and a thermostat. The thermostat measures the temperature of the cooking bowl and controls the heat. Complex rice cookers may have many more sensors and other components, and may be multipurpose.'
+,      checked:false
+      
     },
     {
       name:'Gas-Range',
       img:'./assets/images/tool/Gas-Range.jpg',
       id:7,
       description:'Many stoves use natural gas to provide heat,In cooking, a gas stove is a cooker/stove which uses syngas, natural gas, propane, butane, liquefied petroleum gas or other flammable gas as a fuel source.'
+,      checked:false
+      
     },
     {
       name:'Garlic Peeler ',
       img:'./assets/images/tool/scroll-garlic.gif',
       id:8,
       description:'Peeling garlic can be done quickly and without the mess. Just insert garlic cloves into the soft, flexible scroll and roll it against the countertop. When the garlic peel stops crackling, it is off! The polished silicone surface of the Scroll removes the garlic peel perfectly, leaving it ready to be sliced, crushed or minced.'
-    
+    ,
+      checked:false
+      
+    },
+    {
+      name:'Cooker',
+      img:'./assets/images/cooker3.jpg',
+      id:9,
+      description:'ghjgjgjhghjgjh',
+      checked:false
+      
     }
     
   ];

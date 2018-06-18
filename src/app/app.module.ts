@@ -46,8 +46,9 @@ import { MicroItemDescriptionComponent } from 'src/app/micro-organisms/micro-ite
 import { SearchComponent } from 'src/app/shared/components/search/search.component';
 import { RelatedtopicComponent } from 'src/app/micro-organisms/relatedtopic/relatedtopic.component';
 import { MicroService } from 'src/app/shared/services/Micro.service';
-import { ActivatedRoute } from '@angular/router'
-import { FormsModule } from '@angular/forms'
+
+import {ActivatedRoute} from '@angular/router';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MicroOrganismAddComponent } from 'src/app/micro-organisms/micro-organism-add/micro-organism-add.component';
 import { CookingMethodService } from 'src/app/shared/services/cookingMethod.service';
 import { CookingMethodAddComponent } from 'src/app/cooking-methods/cooking-method-add/cooking-method-add.component';
@@ -97,10 +98,14 @@ import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/s
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
 import { SearchPipe } from 'src/app/shared/pipes/search.pipe';
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MyComponentComponent } from 'src/app/cutting-methods/my-component/my-component.component';
 import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient/AddRecipeIngredient.component';
 import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
 import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
+
 import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
 import { ShoppingCartService } from './shared/services/ShoppingCart.service';
 import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
@@ -110,8 +115,7 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
 
 @NgModule({
   declarations: [
-
-    
+    MyComponentComponent,
     HeaderComponent,
     AppComponent,
     CuttingMethodItemComponent,
@@ -280,12 +284,16 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     BrowserModule,
      FormsModule, 
      CarouselModule,
+     ActivatedRoute,
+     ActivatedRoute,
      ModalModule,
      NgxGalleryModule,
      CarouselModule.forRoot(),
       TabsModule.forRoot(),
        ModalModule.forRoot(),
-
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+  
     RouterModule.forRoot([
 
       { path: 'home', component: ViewHomeComponent },
