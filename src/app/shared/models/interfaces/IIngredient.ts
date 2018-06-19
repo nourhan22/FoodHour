@@ -5,5 +5,6 @@ export interface IIngredient{
     desc?:string;
     img?:string;
     nutiritions?:IIngredientNutiritions[];
+    weight?:string;
 
   }
