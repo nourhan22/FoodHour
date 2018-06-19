@@ -7,5 +7,5 @@ export interface IUser {
     Email:string;
     passWord:string;
     age:number;
-    
+  
 }

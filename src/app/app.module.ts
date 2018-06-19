@@ -80,6 +80,7 @@ import { UserItemComponent } from './user/user-item/user-item.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserAddComponent } from './user/user-add/user-add.component';
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -149,6 +150,7 @@ import { UserAddComponent } from './user/user-add/user-add.component';
     UserListingComponent,
     UserDetailsComponent,
     UserAddComponent
+    
   ],
   imports: [
     BrowserModule, FormsModule,
