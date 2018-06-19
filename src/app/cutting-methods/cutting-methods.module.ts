@@ -3,19 +3,25 @@ import { CommonModule } from '@angular/common';
 import { CuttingMethodAddComponent } from './cutting-method-add/cutting-method-add.component';
 import { CuttingMethodItemComponent } from './cutting-method-item/cutting-method-item.component';
 import { CuttingMethodListingComponent } from './cutting-method-listing/cutting-method-listing.component';
+import { FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 
 import { CuttingMethodDetailsComponent } from './cutting-method-details/cutting-method-details.component';
 import { CuttingSliderComponent } from './cutting-slider/cutting-slider.component';
 
 @NgModule({
-  imports: [
-    CommonModule
+  imports: [  
+     CommonModule,
+     FormsModule,    
+     ReactiveFormsModule
   ],
-  declarations: [CuttingMethodAddComponent, CuttingMethodItemComponent, CuttingMethodListingComponent,
-,
-    CuttingMethodDetailsComponent
-,
+  declarations: [
+      CuttingMethodAddComponent, 
+      CuttingMethodItemComponent, 
+      CuttingMethodListingComponent,
+    CuttingMethodDetailsComponent,
     CuttingSliderComponent
+
 ],
     
     exports:[CuttingSliderComponent]

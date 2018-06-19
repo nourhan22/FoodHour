@@ -22,7 +22,7 @@
               </button>
               <ul class="header-social-icons social-icons hidden-xs">
                 <li>
-                  <a href="shopping-cart.html" target="_blank" title="Shopping Cart">
+                  <a routerLink="/shopcategory"  title="Shopping Category">
                     <i class="fa fa-cart-plus icons"></i>
                   </a>
                 </li>
@@ -42,46 +42,46 @@
               <div class="header-nav-main collapse">
                 <nav>
                   <ul class="nav nav-pills" id="mainNav">
-                    <li class="dropdown active">
-                      <a class="dropdown-toggle" href="home.html">
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" routerLink="/home">
                         Home
                       </a>
                     </li>
                     <li class="">
-                      <a href="demos.html">
+                      <a routerLink="/recipeListing">
                         Recipes
                       </a>
                     </li>
                     <li class="dropdown ">
-                      <a class="dropdown-toggle" href="#">
+                      <a class="dropdown-toggle" >
                         Features
                       </a>
 
                       <ul class="dropdown-menu">
                         <li class="">
-                          <a href="#">Add Recipe</a>
+                          <a routerLink="/recipeListing/add" >Add Recipe</a>
                         </li>
                         <li class="">
-                          <a href="#">Tools</a>
+                          <a routerLink="/ToolListing">Tools</a>
                         </li>
                         <li class="">
-                          <a href="#">Micro-organisms</a>
+                          <a routerLink="/microOrganismListing">Micro-organisms</a>
                         </li>
                         <li class="">
-                          <a href="#">Cooking Methods</a>
+                          <a routerLink="/cookingMethodListing">Cooking Methods</a>
                         </li>
                         <li class="">
-                          <a href="#">Cutting Methods
+                          <a routerLink="/cuttingMethodListing">Cutting Methods
                           </a>       
                         </li>
                         <li class="">
-                          <a href="#">Ingredients</a>
+                          <a routerLink="/IngredientListing">Ingredients</a>
                         </li>
                       </ul>
                     </li>
                     <li class="">
-                      <a  href="#">
-                        Contact Us
+                      <a  routerLink="/community">
+                          community
                       </a>
                     </li>
                     <li>

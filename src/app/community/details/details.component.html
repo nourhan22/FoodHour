@@ -15,18 +15,18 @@
 								<div class="post-content">
 
 								
-									<app-post-content></app-post-content>
-									<app-author></app-author>
+									<app-post-content [postContent] = "postItem"></app-post-content>
+									<app-author [author] = "postItem.author"></app-author>
 
 									<div class="post-block post-comments clearfix">
 										<h3 class="heading-primary">
-											<i class="fa fa-comments"></i>Comments (3)</h3>
+											<i class="fa fa-comments"></i>Comments ({{postItem.comments.length}})</h3>
 
 										<ul class="comments">
 
 
 											
-										<app-comment></app-comment>
+										<app-comment  [comment] = "x" *ngFor = " let x of postItem.comments"></app-comment>
 											
 										</ul>
 
@@ -42,11 +42,23 @@
 					<div class="col-md-3">
 						<aside class="sidebar">
 
-							<app-search></app-search>
+							<!-- <app-search></app-search> -->
+							<!-- <form>
+								<div class="input-group input-group-lg">
+									<input class="form-control" placeholder="Search..." 
+									name="s" id="s" type="text" [(ngModel)]='txtsearch' (change)="search($event)">
+									<span class="input-group-btn" >
+										<button type="submit" class="btn btn-primary btn-lg" id="btnsearch">
+											<i class="fa fa-search"></i>
+										</button>
+									</span>
+								</div>
+							  </form> -->
 
 							<hr>
 
-							<div class="tabs mb-xlg">
+						<app-small-tab [popularPosts] = "popularPosts" [recentPosts]="recentPosts" ></app-small-tab>
+							<!-- <div class="tabs mb-xlg">
 								<ul class="nav nav-tabs">
 									<li class="active">
 										<a href="#popularPosts" data-toggle="tab">
@@ -59,20 +71,17 @@
 								<div class="tab-content">
 									<div class="tab-pane active" id="popularPosts">
 										<ul class="simple-post-list">
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>		
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of popularPosts'></app-small-post>
+														
 										</ul>
 									</div>
 									<div class="tab-pane" id="recentPosts">
 										<ul class="simple-post-list">
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>
-												<app-small-post></app-small-post>
+												<app-small-post [smallpost]='post'  *ngFor = 'let post of recentPosts'></app-small-post>
 										</ul>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 							<hr>
 

@@ -31,14 +31,14 @@
       <ul class="portfolio-details">
         <li>
           <h4 class="mt-sm mb-xs">Size</h4>
-          <p>{{item.height}}*{{item.width}}*{{item.Length}}{{item.units}}
+          <p>({{item.Length}})*({{item.width}})*({{item.height}}) {{item.units}}
           </p>
         </li>
         <li>
           <h4 class="mt-sm mb-xs ">Tools</h4>
 
-          <app-cut-tool style="display:inline-block;"></app-cut-tool>
-          <app-cut-tool style="display:inline-block;"></app-cut-tool>
+          <app-cut-tool [cut]='x' *ngFor="let x of item.tools" style="display:inline-block; width:206px;height:137px; "></app-cut-tool>
+          <!-- <app-cut-tool style="display:inline-block;"></app-cut-tool> -->
 
 
           <!-- <div class="col-md-4  pl-xs ">
@@ -82,7 +82,7 @@
       </h3>
     </div>
   </div>
-  <app-cutting-slider></app-cutting-slider>  
+  <app-cutting-slider ></app-cutting-slider>  
 </div>
 
 

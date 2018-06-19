@@ -1,0 +1,10 @@
+.fa, .title, .post-date .day{
+    color: #ff530a;
+}
+.post-date .month{
+    background-color:  #ff530a;
+}
+
+p{
+    font-size: 16px;
+}

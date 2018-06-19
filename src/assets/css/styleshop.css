@@ -1,0 +1,94 @@
+
+.form-control {
+    display: inline-block;
+    background-image: none;
+    border: 1px solid #ff530a;
+    border-radius: 5px !important;  
+  
+}
+
+/* .form-control.ingredient{
+    height: 30% !important;
+    width: 30% !important;
+} */
+select {
+    -webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre ;
+    -webkit-rtl-ordering: logical;
+    color:#ff530a !important;
+    font-size: 75% !important;
+    
+}
+ul.nav-pills > li.active > a:hover, ul.nav-pills > li.active > a:focus {
+     background-color:#ff530a !important; 
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff !important;
+    background-color:#ff530a !important;
+}
+.nav-pills>li>a {
+    border-radius:5px !important;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.sidebar h4 {
+
+    color: #ff530a !important;
+}
+.owl-carousel .owl-nav .owl-prev:before{
+
+    color: #ff530a !important;
+}
+
+.owl-carousel .owl-nav .owl-next:before {
+ 
+    color:#ff530a !important;
+}
+
+.sidebar.shop-sidebar .panel.panel-default .panel-heading a:before {
+    border: 1px solid #ff530a;
+    color: #ff530a;
+    background-color: #fff0;
+    font-size: 13px;
+}
+
+.sidebar.shop-sidebar .panel.panel-default .panel-heading a {
+    color: #ff530a;
+    border: 1px solid #ddd;
+}
+.sidebar.shop-sidebar .panel.panel-default .panel-heading a:hover:before {
+    background-color: #ff530a!important;
+    border-color: #ff530a!important;
+    color: #fff;
+}
+html .btn-secondary {
+    color: #ffffff;
+    background-color: #ff530a;
+    border-color: #ff530a #ff530a #ff530a;
+}
+html .btn-secondary:hover {
+    color: #ff530a;
+    border-color: #ff530a #ff530a #ff530a;
+    background-color: #ff4f0a00;
+}
+html .btn-secondary:active, html .btn-secondary:focus, html .btn-secondary:active:hover, html .btn-secondary:active:focus {
+    border-color: #ff530a #ff530a #ff530a !important;
+    background-color: #ff530a !important;
+}
+.product.product-sm {
+    padding: 6px 0 8px;
+    max-width: 320px;
+}
+
+.product .product-label span.discount {
+    background-color: #ff530aad;
+}
+.slider-title {
+    font-size: 150% !important;
+    color: #ff530a;
+    text-transform: uppercase;
+}
