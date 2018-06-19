@@ -75,8 +75,7 @@ html .toggle-primary.toggle-simple .toggle > label:after {
     margin-top: 9px;
 }
 
-/*image gallery---------------------------*/
-.thumb-info .thumb-info-wrapper:after {
-    content: "";
-    background: rgba(172, 167, 167, 0.5);
+.img-responsive{
+width: 210px;
+height: 240px;
 }
