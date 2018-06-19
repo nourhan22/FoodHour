@@ -7,12 +7,13 @@
 
 <li class="col-sm-4  isotope-item p-md ">
     <article class="our-blog-item">
-        <a href="demo-photography-3-blog-post.html" class="text-decoration-none">
+        <a class="text-decoration-none">
             <span class="image-wrapper">
                 <img src="{{item.img}}" alt="" class="img-responsive" />
             </span>
-            <span class="category text-uppercase background-color-quaternary" id="fav">
-                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            <span class="category text-uppercase background-color-quaternary" id="fav" (click)="added=!added">
+                <i class="fas fa-cart-arrow-down" *ngIf="added"></i>
+                <i class="fas fa-shopping-cart" *ngIf="!added"></i>
             </span>
         </a>
 

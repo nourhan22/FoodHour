@@ -199,3 +199,6 @@ html .toggle-primary.toggle-simple .toggle > label:after {
     margin-right: 8px;
     margin-top: 9px;
 }
+.listing{
+    list-style: none;
+}

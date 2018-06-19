@@ -3,4 +3,5 @@ export interface ISmallTool{
     img:string;
     id:number;
   description:string;
+  checked?:boolean;
   }

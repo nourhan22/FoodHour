@@ -25,11 +25,8 @@ import { AddPostComponent } from './addPost/addPost.component';
     PostListingComponent,
     DetailsComponent,
     PostContentComponent,
-  
-
     PostComponent,
     SearchPipe,
-
     DetailsComponent,
     PostContentComponent,
 
