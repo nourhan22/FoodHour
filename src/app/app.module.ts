@@ -1,8 +1,14 @@
-import { HomeModule } from './home/home.module';
+
+
+import { BrowserModule } from '@angular/platform-browser';
+import{HomeModule} from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxGalleryModule } from 'ngx-gallery';
+
 import { TabsModule } from 'ngx-bootstrap/tabs';
+
+
 import{CommunityModule} from './community/community.module';
 import{PostListingComponent} from './community/post-listing/post-listing.component';
 import { OtherToolsComponent } from './tools/other-tools/other-tools.component';
@@ -10,7 +16,7 @@ import { IngredientDescriptionComponent } from './ingredients/ingredient-details
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
 import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
 import { IngredientListingComponent } from './ingredients/ingredient-listing/ingredient-listing.component';
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
@@ -91,8 +97,8 @@ import { UserItemComponent } from './user/user-item/user-item.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserAddComponent } from './user/user-add/user-add.component';
 
-<<<<<<< HEAD
-=======
+
+
 import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
@@ -107,10 +113,6 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
 import { ShoppingCartService } from './shared/services/ShoppingCart.service';
 import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
-
-
-
->>>>>>> 4ba39bc4788874a1b82056ccb4b289d57b561bbd
 
 @NgModule({
   declarations: [
@@ -130,12 +132,13 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
-   
-    
+
+     PostListingComponent,
     IngredientRecipesSliderComponent,
-
+    AddPostComponent,
+    AddRecipeIngredientComponent,
     RecipeIngredientItemComponent,
-
+   SmallTabComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -281,6 +284,14 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
   
   imports: [
     BrowserModule,
+    FormsModule,
+    TabsModule.forRoot(),
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
+    NgxGalleryModule,
+
+    RouterModule.forRoot([
+
      FormsModule, 
      CarouselModule,
      ModalModule,
@@ -377,7 +388,6 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
       { path: 'ToolListing/add', component: ToolAddComponent },
       { path: 'community/details/:id', component: DetailsComponent },
 
-     {path:'home', component:ViewHomeComponent},     
      
      {path:'home', component:ViewHomeComponent},
      {path:'community', component:PostListingComponent},

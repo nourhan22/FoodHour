@@ -22,13 +22,13 @@
 <h5>vitamins :</h5>
 <div class="row">
   <ul>
-    <app-pie-chart [RecipeItem]='item' *ngFor='let item of RecipeItem.nutritions.VITAMINS'></app-pie-chart>
+    <app-bar-chart  [RecipeItem]='item' *ngFor='let item of RecipeItem.nutritions.VITAMINS'></app-bar-chart>
   </ul>
 </div>
 <h5>minerals :</h5>
 <div class="row">
   <ul>
-    <app-pie-chart [RecipeItem]='item' *ngFor='let item of RecipeItem.nutritions.MINERALS'></app-pie-chart>
+    <app-bar-chart [RecipeItem]='item' *ngFor='let item of RecipeItem.nutritions.MINERALS'></app-bar-chart>
   </ul>
 </div>
 <hr>

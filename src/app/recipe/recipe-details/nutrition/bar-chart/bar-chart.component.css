@@ -1,3 +1,9 @@
 li{
     display:inline-block;
 }
+.progress-bar {
+    background-color:#ff503a;
+}
+.progress {
+    
+    border-radius: 8px;}

@@ -3,6 +3,8 @@
         <div class="row">
             <div class="col-md-7">
                 <app-gallary [item]='RecipeItem'></app-gallary>
+                <hr>
+                <app-miniIngrediant [RecipeItem]='RecipeItem'></app-miniIngrediant>
             </div>
             <div class="col-md-5">
                 <aside class="sidebar">
@@ -11,8 +13,7 @@
                 </aside>
             </div>
         </div>
-        <hr>
-        <app-miniIngrediant [RecipeItem]='RecipeItem'></app-miniIngrediant>
+        
         <app-miseEnPlace [RecipeItem]='RecipeItem'></app-miseEnPlace>
         <div class="row">
             <div class="col-md-12">
