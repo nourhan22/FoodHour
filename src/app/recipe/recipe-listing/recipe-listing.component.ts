@@ -17,5 +17,9 @@ export class RecipeListingComponent implements OnInit {
       (data)=>{ this.recipes = data}
      );
   }
-
+  onDelete()
+  {
+    
+    this.RecipeService.DeleteAll();
+  }
 }

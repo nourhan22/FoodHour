@@ -91,6 +91,8 @@ import { UserItemComponent } from './user/user-item/user-item.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserAddComponent } from './user/user-add/user-add.component';
 
+<<<<<<< HEAD
+=======
 import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
@@ -108,6 +110,7 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
 
 
 
+>>>>>>> 4ba39bc4788874a1b82056ccb4b289d57b561bbd
 
 @NgModule({
   declarations: [
@@ -273,6 +276,7 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     UserListingComponent,
     UserDetailsComponent,
     UserAddComponent
+    
   ],
   
   imports: [
