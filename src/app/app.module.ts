@@ -28,7 +28,6 @@ import { ToolsModule } from './tools/tools.module';
 import { ToolItemComponent } from './tools/tool-item/tool-item.component';
 import { ToolListingComponent } from './tools/tool-listing/tool-listing.component';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
 import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 import { from } from 'rxjs/internal/observable/from';
 import { MicroOrganismsModule } from './micro-organisms/micro-organisms.module';
@@ -113,6 +112,7 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
 import { ShoppingCartService } from './shared/services/ShoppingCart.service';
 import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -289,19 +289,6 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     NgxGalleryModule,
-
-    RouterModule.forRoot([
-
-     FormsModule, 
-     CarouselModule,
-     ModalModule,
-     NgxGalleryModule,
-     CarouselModule.forRoot(),
-      TabsModule.forRoot(),
-       ModalModule.forRoot(),
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-  
     RouterModule.forRoot([
 
       { path: 'home', component: ViewHomeComponent },
