@@ -12,14 +12,16 @@ import { MicroService } from 'src/app/shared/services/Micro.service';
 })
 export class MicroOrganismItemComponent implements OnInit {
 
-  @Input() public item:IMicroItem;
+  @Input() public item:any;
   //@Input() public item:ISmallMicro;
   constructor(private microService: MicroService) { }
   ngOnInit() {
   }
   onDelete(id:number)
     {
-       this.microService.onDelete(id);
-    }
+      debugger;
+      let microId = this.item.MicroId;
+      this.microService.onDelete(microId);
    
+}
 }

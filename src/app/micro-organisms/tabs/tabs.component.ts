@@ -12,7 +12,7 @@ export class TabsComponent implements OnInit {
   sources: string[];
   currentIndex = 0;
   constructor() {
-    this.sources = ['FoodUsualyInvolved', 'Source', 'Prevention'];
+    this.sources = ['FoodUsualyInvolved', 'Source', 'Prevension'];
    }
    public onTabClicked(i: number) {
     this.currentIndex = i;

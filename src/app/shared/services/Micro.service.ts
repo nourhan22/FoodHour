@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 import { IMicroType } from 'src/app/shared/models/interfaces/IMicroType ';
 import { Observable, of } from 'rxjs';
+import { Http } from '@angular/http';
+
 
 
 @Injectable({
@@ -9,9 +11,10 @@ import { Observable, of } from 'rxjs';
 })
 export class MicroService {
 
+  public allMicros:any[] = [];  
+  public lengthOfMicros : number;  
   private allTopics:IMicroItem[];
-  private MicroTypes:IMicroType[]=[
-      {
+  private MicroTypes:any[]=  [{
         id:1,
         title:'Virus'
       },
@@ -28,91 +31,28 @@ export class MicroService {
         title:'Parasites'
       },
     ];
-  private allMicros:IMicroItem[] = [
-    {
-      id:1,
-      name:'AAAAAA',
-      type:'bacteria',
-      img:'./assets/images/micro/bacteria4.jpg',
-      description:'description description description1',
-      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved1',
-      Source:'Source Source Source',
-      Prevention:'Prevention Prevention Prevention',
-    },
-    {
-      id:2,      
-      name:'mmmvirus',
-      type:'virus',
-      img:'./assets/images/micro/bacteria2.jpg',
-      description:'description description description2',
-      FoodUsualyInvolved:'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved2',
-      Source:'Source Source Source',
-      Prevention:'Prevention Prevention Prevention',
-    },
-    {
-      id:3,
-      name:'CCCCCCC',
-      type:'Fungi',
-      img:'./assets/images/micro/bacteria1.jpg',
-      description:'description description description3',
-      FoodUsualyInvolved:'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved3',
-      Source:'Source Source Source',
-      Prevention:'Prevention Prevention Prevention',
-    },
-    {
-      id:4,
-      name:'BacteriaName',
-      type:'bacteria',
-      img:'./assets/images/micro/bacteria5.jpg',
-      description:'description description description1',
-      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved4',
-      Source:'Source Source Source',
-      Prevention:'Prevention Prevention Prevention',
-    },
-    {
-      id:5,
-      name:'virusName',
-      type:'virus',
-      img:'./assets/images/micro/bacteria1.jpg',
-      description:'description description description1',
-      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved5',
-      Source:'Source Source Source',
-      Prevention:'Prevention Prevention Prevention',
-    },
-    {
-      id:6,
-      name:'bacteriaaaaa',
-      type:'bacteria',
-      img:'./assets/images/micro/bacteria4.jpg',
-      description:'description description description1',
-      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved6',
-      Source:'Source Source Source',
-      Prevention:'Prevention Prevention Prevention',
-    },
-    {
-      id:7,
-      name:'bac',
-      type:'Parasites',
-      img:'./assets/images/micro/bacteria4.jpg',
-      description:'description description description7',
-      FoodUsualyInvolved: 'FoodUsualyInvolved FoodUsualyInvolved FoodUsualyInvolved6',
-      Source:'Source Source Source',
-      Prevention:'Prevention Prevention Prevention',
-    }
-  ] ;
-  public lengthOfMicros : number = this.allMicros.length;
-constructor() { 
+  
+constructor(private http :Http) { 
+ 
 }
 
-GetAllMicros():Observable<IMicroItem[]>
+GetAllMicros():Observable<any>
 {
-  return of (this.allMicros);
+  debugger;
+  this.http.get("http://localhost:38630/api/MicroOrganismInfoes").subscribe(
+    (data)=>{
+      this.allMicros = data.json();
+    }
+  )
+ return  this.http.get("http://localhost:38630/api/MicroOrganismInfoes")
+  
 }
 GetbyId(id : number)
 {
-
+debugger;
   return this.allMicros.find(function(element){
-    return element.id == id;
+    debugger;
+    return element.$id == id;
   })
 }
 
@@ -121,7 +61,7 @@ GetRelatedTopics(id:number,no)
    let item = this.GetbyId(id);
    
    this.allTopics =  this.allMicros.filter(function(ele){
-     return ele.type == item.type && ele.id != item.id;
+     return ele.Type == item.Type && ele.$id != item.$id;
    })
 
    return this.allTopics.slice(0,no);
@@ -129,9 +69,10 @@ GetRelatedTopics(id:number,no)
 
  SearchInMicros(txtSearch:string)
  {
+
     let filteredArr = this.allMicros.filter(function(ele){
-      return ele.type.toLowerCase().includes(txtSearch.toLowerCase()) || 
-         ele.name.toLowerCase().includes(txtSearch.toLowerCase());
+      return ele.Type.toLowerCase().includes(txtSearch.toLowerCase()) || 
+         ele.Name.toLowerCase().includes(txtSearch.toLowerCase());
     })
 
     return filteredArr;
@@ -153,19 +94,36 @@ GetRelatedTopics(id:number,no)
  AddNewMicro(item:IMicroItem)
  {
    debugger;
- this.allMicros.push(item);
+   this.http.post("http://localhost:38630/api/MicroOrganismInfoes",item).subscribe(
+     (data)=>{console.log(data)}
+   );
+   this.allMicros.push(item);
  }
 
 
 
  onDelete(id:number)
  {
+   let url = "http://localhost:38630/api/MicroOrganismInfoes";
+   url = `${url}/${id}`;
+
+  this.http.delete(url).subscribe(
+   (res)=>{
+   console.log(res);
+
+   
+   },
+
+   (error)=>{console.log("error happened");}
+ );
    debugger;
-   const index= this.allMicros.findIndex(a=>a.id === id);
-   if(index >-1)
-   {
-     this.allMicros.splice(index,1);
-   }
+  
+    const index= this.allMicros.findIndex(a=>a.MicroId === id);
+    if(index >-1)
+    {
+      this.allMicros.splice(index,1);
+    }
+
  }
 
  DeleteAll()
@@ -174,20 +132,17 @@ GetRelatedTopics(id:number,no)
   this.allMicros.splice(0,len);
  }
 
- Edit(item:IMicroItem)
+ Edit(item:any)
  {
-  //  debugger;
-  //  let item = this.GetbyId(id);
 
-  const index= this.allMicros.findIndex(a=>a.id === item.id);
-  if(index >-1)
-  {
-    this.allMicros[index] = item;
-    return item;
-  }
+  this.http.post("http://localhost:38630/api/MicroOrganismInfoes",item).subscribe(
+    (data)=>{console.log(data)}
+  );
+
  }
  GetMicroTypes()
  {
+   debugger;
    return this.MicroTypes;
  }
 

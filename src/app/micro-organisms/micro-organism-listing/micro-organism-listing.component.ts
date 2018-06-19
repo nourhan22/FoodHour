@@ -10,17 +10,32 @@ import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 })
 export class MicroOrganismListingComponent implements OnInit {
   public headertitle:string;
-  public Micros:IMicroItem[];
+  public Micros:any[];
   
-  constructor(private MicroService:MicroService) { }
+  constructor(private MicroService:MicroService) {
+    // this.MicroService.GetAllMicros().subscribe(
+    //   (data)=>{debugger;console.log(data.json());
+        
+    //     this.MicroService.allMicros = data.json();
+    //     this.Micros = this.MicroService.allMicros ;
+    //     this.MicroService.lengthOfMicros = this.MicroService.allMicros.length;
+    //   });
+   }
 
   ngOnInit() {
    
     this.headertitle = 'MicroOrganisms';
     
-        this.MicroService.GetAllMicros().subscribe(
-        (data)=>{ this.Micros = data}
-       );
+      //   this.MicroService.GetAllMicros().subscribe(
+      //   (data)=>{ this.Micros = data}
+      //  );
+
+      this.MicroService.GetAllMicros().subscribe(
+        (data)=>{debugger;console.log(data.json());
+          this.Micros = data.json();
+          this.MicroService.allMicros = data.json();
+          this.MicroService.lengthOfMicros = this.MicroService.allMicros.length;
+        });
   }
 
   onMicroSearch(txtSearch:string)

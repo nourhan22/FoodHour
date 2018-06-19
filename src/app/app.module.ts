@@ -89,7 +89,9 @@ import { AddRecipeIngredientComponent } from 'src/app/recipe/AddRecipeIngredient
 import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingredient-item/recipe-ingredient-item.component';
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
 import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
-
+import { HttpModule } from '@angular/http';
+import { HttpClient } from 'selenium-webdriver/http';
+// import{HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -173,6 +175,8 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 
   ],
   imports: [
+    HttpModule,
+    // HttpClientModule,
     BrowserModule,
     FormsModule,
     TabsModule.forRoot(),
