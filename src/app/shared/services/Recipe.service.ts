@@ -27,8 +27,8 @@ export class RecipeService {
       date:{day:2,month:'jan'},
       author:{username:'Hana',state:'i love cooking',image:"../../../assets/images/comunity/avatar.jpg"},
       UserName:"Mo salah",
-      nutritions:{'VITAMINS':[{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'o','percent':'25'}],
-      'MINERALS':[{title:'A','percent':'25%'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'},{title:'A','percent':'25'}],'Cal':[{title:'calories','percent':'25'},{title:'fat','percent':'25'},{title:'saturation','percent':'25'},{title:'sugars','percent':'25'},{title:'salt','percent':'25'}]},
+      nutritions:{'VITAMINS':[{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'o','percent':'25%'}],
+      'MINERALS':[{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'},{title:'A','percent':'25%'}],'Cal':[{title:'calories','percent':'25%'},{title:'fat','percent':'25%'},{title:'saturation','percent':'25%'},{title:'sugars','percent':'25%'},{title:'salt','percent':'25%'}]},
       ingredients:[{ingredient:{name:"TOMATOO",weight:"17 g"}},{ingredient:{name:"TOMATOO",weight:"17 g"}}],//[{'title':'TOMATOO','weight':'17 g'}],
       comments:[
         {
