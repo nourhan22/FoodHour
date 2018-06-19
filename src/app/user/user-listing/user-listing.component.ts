@@ -21,6 +21,7 @@ export class UserListingComponent implements OnInit {
   }
   onUserSearch(txtSearch:string)
   {
+    debugger;
     if( txtSearch!=null)
     {
       this.users = this.userService.SearchInUsers(txtSearch);

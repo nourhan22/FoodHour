@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeService } from '../../shared/services/Recipe.service';
+import { IRecipe } from '../../shared/models/interfaces/IRecipe';
 
 @Component({
   selector: 'app-view-home',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-home.component.css']
 })
 export class ViewHomeComponent implements OnInit {
+  
+  
 
   constructor() { }
 

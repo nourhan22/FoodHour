@@ -1,0 +1,22 @@
+ul.listing{
+    list-style: none;
+    
+    
+}
+#plus {
+    color: white;
+    background-color: #ff530a;
+   
+    font-size: 30px;
+    
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 100%;
+}
+.fa.pull-right {
+    margin-left: .3em;
+}
+.pull-right {
+    float: right !important;
+}

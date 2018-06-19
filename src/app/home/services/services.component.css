@@ -13,3 +13,10 @@ p {
 .appear-animation {
 	opacity: 0;
 }
+h2 {
+	font-size: 1.9em;
+	font-weight: 900;
+	line-height: 28px;
+	margin: 0;
+	
+}

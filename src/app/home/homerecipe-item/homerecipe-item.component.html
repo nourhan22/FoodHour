@@ -17,8 +17,7 @@
      
             </span>
         </a>
-        <!-- (click)="delete(item)" -->
-        <!-- (click)="addToFavs(item.id)" -->
+        
         <div class="post-infos">
                 
             <div class="share">
@@ -47,7 +46,7 @@
                         <i class="fas fa-pencil-alt"></i>
                 <h1 class="font-weight-normal">
                         <!-- <a [routerLink]="['/IngredientDetails',item.id]" class="text-decoration-none">{{item.name}}</a> -->
-                        <a [routerLink] = "['details',item.id]" class="text-decoration-none">{{item.title}}</a>
+                        <a [routerLink] = "['../recipeListing/details',item.id]" class="text-decoration-none">{{item.title}}</a>
                     </h1>
                     
           </div>

@@ -91,8 +91,6 @@ import { UserItemComponent } from './user/user-item/user-item.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserAddComponent } from './user/user-add/user-add.component';
 
-<<<<<<< HEAD
-=======
 import {StepsComponent} from 'src/app/recipe/recipe-details//miseEnPlace/steps/steps.component';
 import {MiseEnPlaceComponent} from 'src/app/recipe/recipe-details/miseEnPlace/miseEnPlace.component';
 import {RecipeAddComponent} from 'src/app/recipe/recipe-add/recipe-add.component';
@@ -107,10 +105,11 @@ import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
 import { ShoppingCartService } from './shared/services/ShoppingCart.service';
 import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
+import { HomerecipeItemComponent } from './home/homerecipe-item/homerecipe-item.component';
+import { HomeRecipeComponent } from './home/home-recipe/home-recipe.component';
 
 
 
->>>>>>> 4ba39bc4788874a1b82056ccb4b289d57b561bbd
 
 @NgModule({
   declarations: [
@@ -169,7 +168,8 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
 
 
     ToolAddComponent,
-
+    HomeRecipeComponent,
+    HomerecipeItemComponent,
     RecipeListingComponent,
     RecipeItemComponent,
     MainInfoComponent,
@@ -327,7 +327,7 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
       { path: 'ToolListing/edit/:id', component: ToolAddComponent },
       { path: 'recipe/details', component: RecipeDetailsComponent },
       { path: 'recipeListing/add', component: RecipeAddComponent },
-
+   
       { path: 'ToolListing/add', component: ToolAddComponent },
 
       { path: 'community/details', component: DetailsComponent },
@@ -417,7 +417,11 @@ import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-in
      {path:'ToolListing/add' , component:ToolAddComponent},
 
      {path:'ToolListing/add' , component:ToolAddComponent},
-     {path:'community/details/:id' , component:DetailsComponent}
+     {path:'community/details/:id' , component:DetailsComponent},
+     {path:'user',component:UserListingComponent},
+     {path:"UserDetails/:id",component:UserDetailsComponent},
+     { path: 'user/add', component: UserAddComponent },
+     { path: 'user/edit/:id', component:UserAddComponent }
     ])
   ],
   providers: [MicroService, CookingMethodService],

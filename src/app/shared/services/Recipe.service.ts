@@ -8,23 +8,13 @@ import { IRecipeIngredient } from 'src/app/shared/models/interfaces/IRecipeIngre
   providedIn: 'root'
 })
 export class RecipeService {
-<<<<<<< HEAD
   favourites:IRecipe[];
   public Recipes: IRecipe[] = [
     {
       id: 1,
       imageUrl: '../../assets/images/dd.jpg',
-      title: 'Panee',
-=======
-  public onRecipeIngredientAdded = new Subject<IRecipeIngredient>();
-  public Recipes: IRecipe[] = [
-    {
-      id: 1,
-      imageUrl: '../../../../assets/images/cooking method/grill.jpg',
-      unit:"us",
-      title: 'pasta',
->>>>>>> 4ba39bc4788874a1b82056ccb4b289d57b561bbd
-      description: '" The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes',
+      title: 'Panne',
+      description: ' chicken recipe using Zatarain’s Crispy Southern Chicken Frying Mix, sprinkled with Parmesan cheese. Serve as is, on a bed of salad',
       imageArr:[ {small: '../../../../assets/images/cooking method/steam.jpg',
       medium: '../../../../assets/images/cooking method/steam.jpg',
       big: '../../../../assets/images/cooking method/steam.jpg'},
@@ -78,15 +68,9 @@ export class RecipeService {
     },
     {
       id: 2,
-<<<<<<< HEAD
       imageUrl: '../../../assets/images/blog-img-5.jpg',
       title: 'Pan cake',
-=======
-      imageUrl: '../../../assets/images/cooking method/grill.jpg',
-      unit:"us",
-      title: 'pasta',
->>>>>>> 4ba39bc4788874a1b82056ccb4b289d57b561bbd
-      description: '" The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes',
+      description: ' This is the perfect pancake recipe. They are light, fluffy, and only require simple ingredients that you probably already have on hand in your kitchen.',
       imageArr:[ {small: '../../../../assets/images/cooking method/steam.jpg',
       medium: '../../../../assets/images/cooking method/steam.jpg',
       big: '../../../../assets/images/cooking method/steam.jpg'},{
@@ -138,10 +122,9 @@ export class RecipeService {
 
     {
       id: 3,
-<<<<<<< HEAD
       imageUrl: '../../../assets/images/blog-img-4.jpg',
       title: 'Shish tawook',
-      description: '" The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes',
+      description: 'These are served in every restaurant in the Middle East.You can easily make them at home and make them taste just as good.',
       date:{day:1,month:'jan'},
       UserName:"mo salah",
       nutritions:{'VITAMINS':[{title:'A','percent':'25%'}],'MINERALS':[{title:'A','percent':'25%'}],'Cal':[{title:'calories','percent':'25%'},{title:'fat','percent':'25%'},{title:'saturation','percent':'25%'},{title:'sugars','percent':'25%'},{title:'salt','percent':'25%'}]},
@@ -149,20 +132,15 @@ export class RecipeService {
       comments:{'imgOfUser':'nnnn','userName':'salah','desc':'hhhhhtttttrrrr','replay':[{'imgOfUser':'lllllllll','userName':'kkkkkk','desc':'kkkkk'}]},
     },  {
       id: 4,
-      imageUrl: '../../../assets/images/blog-img-1.jpg',
+      imageUrl: '../../../assets/images/colslaw.jpg',
       title: 'Coleslaw',
-=======
-      imageUrl: '../../../assets/images/cooking method/grill.jpg',
-      unit:"us",
-      title: 'pasta',
->>>>>>> 4ba39bc4788874a1b82056ccb4b289d57b561bbd
-      description: '" The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes',
-      imageArr:[ {small: '../../../../assets/images/cooking method/grill.jpg',
-      medium: '../../../../assets/images/cooking method/grill.jpg',
-      big: '../../../../assets/images/cooking method/grill.jpg'},{
-        small: '../../../../assets/images/cooking method/grill.jpg',
-        medium: '../../../../assets/images/cooking method/grill.jpg',
-        big: '../../../../assets/images/cooking method/grill.jpg'
+      description: 'A creamy coleslaw dressing that can be made with ingredients you already have! You can pour it immediately over coleslaw or refrigerate until needed.',
+      imageArr:[ {small: '../../../../assets/images/cooking method/colslaw.jpg',
+      medium: '../../../../assets/images/cooking method/colslaw.jpg',
+      big: '../../../../assets/images/cooking method/colslaw.jpg'},{
+        small: '../../../../assets/images/cooking method/colslaw.jpg',
+        medium: '../../../../assets/images/cooking method/colslaw.jpg',
+        big: '../../../../assets/images/cooking method/colslaw.jpg'
     },],
       date:{day:1,month:'jan'},
       author:{username:'Hana',state:'i love cooking',image:"../../../assets/images/comunity/avatar.jpg"},
@@ -219,7 +197,6 @@ export class RecipeService {
       return element.id == id;
     })
   }
-<<<<<<< HEAD
   public DeleteItem(id:number) {
     const index = this. Recipes.findIndex(a => a.id === id);
     if (index > -1) {
@@ -229,12 +206,6 @@ export class RecipeService {
   DeleteAll() {
     let len = this.Recipes.length;
     this.Recipes.splice(0, len);
-=======
-
-  AddRecipe(recipe:IRecipe)
-  {
-    this.Recipes.push(recipe);
->>>>>>> 4ba39bc4788874a1b82056ccb4b289d57b561bbd
   }
 }
 
