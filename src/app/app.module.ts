@@ -1,8 +1,14 @@
-import { HomeModule } from './home/home.module';
+
+
+import { BrowserModule } from '@angular/platform-browser';
+import{HomeModule} from './home/home.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxGalleryModule } from 'ngx-gallery';
+
 import { TabsModule } from 'ngx-bootstrap/tabs';
+
+
 import{CommunityModule} from './community/community.module';
 import{PostListingComponent} from './community/post-listing/post-listing.component';
 import { OtherToolsComponent } from './tools/other-tools/other-tools.component';
@@ -10,7 +16,7 @@ import { IngredientDescriptionComponent } from './ingredients/ingredient-details
 import { IngredientDetailsComponent } from './ingredients/ingredient-details/ingredient-details.component';
 import { IngredientItemComponent } from './ingredients/ingredient-item/ingredient-item.component';
 import { IngredientListingComponent } from './ingredients/ingredient-listing/ingredient-listing.component';
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
@@ -22,7 +28,6 @@ import { ToolsModule } from './tools/tools.module';
 import { ToolItemComponent } from './tools/tool-item/tool-item.component';
 import { ToolListingComponent } from './tools/tool-listing/tool-listing.component';
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
 import { MicroOrganismItemComponent } from 'src/app/micro-organisms/micro-organism-item/micro-organism-item.component';
 import { from } from 'rxjs/internal/observable/from';
 import { MicroOrganismsModule } from './micro-organisms/micro-organisms.module';
@@ -110,6 +115,7 @@ import { HomeRecipeComponent } from './home/home-recipe/home-recipe.component';
 
 
 
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -129,12 +135,13 @@ import { HomeRecipeComponent } from './home/home-recipe/home-recipe.component';
     IngredientAddComponent,
     IngredientNutiritionsComponent,
     IngredientNutiritionItemComponent,
-   
-    
+
+     PostListingComponent,
     IngredientRecipesSliderComponent,
-
+    AddPostComponent,
+    AddRecipeIngredientComponent,
     RecipeIngredientItemComponent,
-
+   SmallTabComponent,
     CookingMethodItemComponent,
     FooterComponent,
     CuttingMethodListingComponent,
@@ -281,16 +288,11 @@ import { HomeRecipeComponent } from './home/home-recipe/home-recipe.component';
   
   imports: [
     BrowserModule,
-     FormsModule, 
-     CarouselModule,
-     ModalModule,
-     NgxGalleryModule,
-     CarouselModule.forRoot(),
-      TabsModule.forRoot(),
-       ModalModule.forRoot(),
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-  
+    FormsModule,
+    TabsModule.forRoot(),
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
+    NgxGalleryModule,
     RouterModule.forRoot([
 
       { path: 'home', component: ViewHomeComponent },
@@ -377,7 +379,6 @@ import { HomeRecipeComponent } from './home/home-recipe/home-recipe.component';
       { path: 'ToolListing/add', component: ToolAddComponent },
       { path: 'community/details/:id', component: DetailsComponent },
 
-     {path:'home', component:ViewHomeComponent},     
      
      {path:'home', component:ViewHomeComponent},
      {path:'community', component:PostListingComponent},
