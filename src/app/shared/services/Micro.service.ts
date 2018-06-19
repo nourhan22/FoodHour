@@ -31,9 +31,11 @@ export class MicroService {
         title:'Parasites'
       },
     ];
+
   
 constructor(private http :Http) { 
  
+
 }
 
 GetAllMicros():Observable<any>

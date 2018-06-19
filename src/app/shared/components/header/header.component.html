@@ -9,7 +9,7 @@
       <div class="header-row">
         <div class="header-column">
           <div class="header-logo">
-            <a href="index.html">
+            <a routerLink="/home">
               <img alt="Porto" height="60" src="../../../assets/images/food hour2.png">
             </a>
           </div>
@@ -22,18 +22,18 @@
               </button>
               <ul class="header-social-icons social-icons hidden-xs">
                 <li>
-                  <a href="shopping-cart.html" target="_blank" title="Shopping Cart">
+                  <a routerLink="/shopcategory"  title="Shopping Category">
                     <i class="fa fa-cart-plus icons"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" target="_blank" title="User Profile">
-                    <i class="fa fa-group icons"></i>
+                  <a routerLink="/user" title="User Profile">
+                    <i class="fas fa-user icons"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" title="notification">
+                  <a title="notification">
                     <i class="fa fa-bell icons"></i>
                   </a>
                 </li>
@@ -42,60 +42,51 @@
               <div class="header-nav-main collapse">
                 <nav>
                   <ul class="nav nav-pills" id="mainNav">
-                    <li class="dropdown active">
-                      <a class="dropdown-toggle" href="home.html">
+                    <li>
+                      <a routerLink="/home">
                         Home
                       </a>
                     </li>
                     <li class="">
-                      <a href="demos.html">
+                      <a routerLink="/recipeListing">
                         Recipes
                       </a>
                     </li>
                     <li class="dropdown ">
-                      <a class="dropdown-toggle" href="#">
+                      <a class="dropdown-toggle" >
                         Features
                       </a>
 
                       <ul class="dropdown-menu">
                         <li class="">
-                          <a href="#">Add Recipe</a>
+                          <a routerLink="/recipeListing/add" >Add Recipe</a>
                         </li>
                         <li class="">
-                          <a href="#">Tools</a>
+                          <a routerLink="/ToolListing">Tools</a>
                         </li>
                         <li class="">
-                          <a href="#">Micro-organisms</a>
+                          <a routerLink="/microOrganismListing">Micro-organisms</a>
                         </li>
                         <li class="">
-                          <a href="#">Cooking Methods</a>
+                          <a routerLink="/cookingMethodListing">Cooking Methods</a>
                         </li>
                         <li class="">
-                          <a href="#">Cutting Methods
+                          <a routerLink="/cuttingMethodListing">Cutting Methods
                           </a>       
                         </li>
                         <li class="">
-                          <a href="#">Ingredients</a>
+                          <a routerLink="/IngredientListing">Ingredients</a>
                         </li>
                       </ul>
                     </li>
                     <li class="">
-                      <a  href="#">
-                        Contact Us
+                      <a  routerLink="/community">
+                          community
                       </a>
                     </li>
                     <li>
                       <div class="header-search hidden-xs">
-                        <form id="searchForm" action="page-search-results.html" method="get">
-                          <div class="input-group">
-                            <input type="text" class="form-control" name="q" id="q" placeholder="Search..." required>
-                            <span class="input-group-btn">
-                              <button class="btn btn-default" type="submit">
-                                <i class="fa fa-search"></i>
-                              </button>
-                            </span>
-                          </div>
-                        </form>
+            
                       </div>
                     </li>
                   </ul>

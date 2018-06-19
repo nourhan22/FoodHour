@@ -1,0 +1,87 @@
+/* Paragraphs */
+p {
+	color: #777;
+	line-height: 24px;
+	margin: 0 0 20px;
+}
+/* Miscellaneous */
+.align-center, .center {
+	text-align: center !important;
+}
+/* theme-elements */
+/* demo one page agency */
+h1, h2, h3, h4, h5, h6, p, a, span, input, strong, label {
+	font-family: "Poppins", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #2e353e;
+}
+h2 {
+	font-size: 1.9em;
+	font-weight: 900;
+	line-height: 28px;
+	margin: 0;
+	color:#2e353e;
+}
+p {
+	line-height: 32px;
+}
+section {
+	position: relative;
+	padding: 80px 0 !important;
+}
+/*
+* Demo Custom Styles
+*/
+.custom-section-sub-title {
+	font-size: 12px;
+	letter-spacing: 0.5px;
+}
+/*
+* Who We Are
+*/
+.custom-image-style-1 {
+	position: relative;
+	border-radius: 100%;
+	border: 7px solid #FFF;
+	box-shadow: 0px 7px 60px -15px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+@media (min-width: 767px) {
+	.custom-image-style-1:not(._middle) {
+		position: absolute;
+		top: 7%;
+		z-index: 1;
+	}
+	.custom-image-style-1._left {
+		left: 6%;
+	}
+}
+@media (min-width: 767px) and (min-width: 992px) and (max-width: 1199px) {
+	.custom-image-style-1._left {
+		left: 0%;
+	}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+	.custom-image-style-1._left {
+		left: 11.2%;
+	}
+}
+@media (min-width: 767px) {
+	.custom-image-style-1._right {
+		left: 65%;
+	}
+}
+svg#curved-line-1 {
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	width: 100%;
+	height: 180%;
+}
+svg#curved-line-1 .path, svg#curved-line-1 .circle {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	opacity: 0.3;
+}
+/* demo one page agency */
