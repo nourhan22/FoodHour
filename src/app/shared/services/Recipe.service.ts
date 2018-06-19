@@ -62,17 +62,6 @@ export class RecipeService {
       steps: [{ 'id': 1, 'title': 'tomato', 'description': 'nnnnnnn', 'imageUrl': '../../assets/images/cooking method/grill.jpg' }, { 'id': 2, 'title': 'tttttttt', 'description': 'nnnnnnn', 'imageUrl': '../../assets/images/cooking method/grill.jpg' }, { 'id': 3, 'title': 'gggggggggg', 'description': 'nnnnnnn', 'imageUrl': '../../assets/images/cooking method/grill.jpg' }]
     },
     {
-<<<<<<< HEAD
-      id: 1,
-      imageUrl:'../../../../assets/images/cooking method/steam.jpg',
-      title: 'Panee',
-      description: '" The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes',
-      imageArr: [{
-        small: '../../../../assets/images/cooking method/steam.jpg',
-        medium: '../../../../assets/images/cooking method/steam.jpg',
-        big: '../../../../assets/images/cooking method/steam.jpg'
-      }, {
-=======
       id: 2,
       imageUrl: '../../../assets/images/blog-img-5.jpg',
       title: 'Pan cake',
@@ -80,7 +69,6 @@ export class RecipeService {
       imageArr:[ {small: '../../../../assets/images/cooking method/steam.jpg',
       medium: '../../../../assets/images/cooking method/steam.jpg',
       big: '../../../../assets/images/cooking method/steam.jpg'},{
->>>>>>> d9662902f9234bb061a766a7a8887af748f2ac0b
         small: '../../../../assets/images/cooking method/grill.jpg',
         medium: '../../../../assets/images/cooking method/grill.jpg',
         big: '../../../../assets/images/cooking method/grill.jpg'
