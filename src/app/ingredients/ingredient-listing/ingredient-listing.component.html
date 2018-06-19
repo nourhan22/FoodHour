@@ -1,18 +1,17 @@
-<app-smallHeader [title] = 'headertitle' (IngredientSearch)='onIngredientSearch($event)'></app-smallHeader>
+<app-smallHeader [title]='headertitle' (IngredientSearch)='onIngredientSearch($event)'></app-smallHeader>
 <div class='container'>
     <div class="row">
-        <a routerLink = 'add'><i class="fa fa-plus pull-right" id="plus"></i></a>
+        <a routerLink='add'>
+            <i class="fa fa-plus pull-right" id="plus"></i>
+        </a>
         <i class="fa fa-trash pull-right" id="plus" (click)="onDelete()"></i>
     </div>
- 
-    
 
-<!--listing items========-->
-<ul class="container listing">
-<app-ingredient-item  [item]='item' *ngFor='let item of ingredients'></app-ingredient-item>
-</ul>
+
+
+    <!--listing items========-->
+    <ul class="container listing">
+        <app-ingredient-item [item]='item' *ngFor='let item of ingredients'></app-ingredient-item>
+    </ul>
 
 </div>
-
-
-

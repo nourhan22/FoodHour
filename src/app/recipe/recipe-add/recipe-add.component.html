@@ -1,62 +1,118 @@
 <div class="container">
   <form (ngSubmit)="onSave(myform)" #myform="ngForm">
-
     <div class='row header'>
       <span class="text-muted">Add a New Recipe</span>
       <hr>
     </div>
     <div class="row img">
-
-      <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
-
-
-      <img src="../assets/images/default.png" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
-      />
-
+      <input name="img" style="display: none" type="file" [(ngModel)]="recipeItem.imageUrl" (change)="onFileChanged($event)" #fileInput>
+      <img src="../assets/images/default.png" (click)="fileInput.click()"   alt="Scott Stevens" class="img-responsive img-circle"/>
       <span class="text-muted">Add Photo</span>
     </div>
-
     <div class="input-group col-xs-12">
-      <input type="text" class="form-control" name='name' [(ngModel)]='newMicro.name' placeholder="Name" aria-describedby="basic-addon1"
+      <input type="text" class="form-control" name='name' [(ngModel)]='recipeItem.title' placeholder="Recipe Name" aria-describedby="basic-addon1"
         required>
     </div>
     <div class="input-group col-xs-12">
-      <select class="form-control" name='type' required>
+      <select class="form-control"[(ngModel)]="recipeItem.unit" name='type' required>
         <option value='Choose Type' required>Choose Type</option>
-        <option value='Choose Type' required>metric</option>
-        <option value='Choose Type' required>us</option>
+        <option value='metric' required>metric</option>
+        <option value='us' required>us</option>
         <!-- <option [value]="type.title" *ngFor='let type of microTypes'>{{type.title}}</option> -->
       </select>
     </div>
     <div class="row">
       <div class=" col-md-6">
-        <input type="text" class="form-control" name='name' placeholder="Ingrediant Name" aria-describedby="basic-addon1" required>
+        <app-recipe-ingredient-item [ingredient]="ingredient" *ngFor="let ingredient of ingredients"></app-recipe-ingredient-item>
       </div>
       <div class=" col-md-6">
-        <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+          <button type="button" class="btn  addbtn" (click)="openModal(template)">Add Ingredaint</button>
+          <ng-template #template>
+           <app-AddRecipeIngredient></app-AddRecipeIngredient>
+          </ng-template>
+        <!-- <button type="button" class="btn  addbtn" (click)="openModal(template)">Add Ingredaint</button>
         <ng-template #template>
           <div class="modal-header">
-            <h4 class="modal-title pull-left">Ingrediant Name</h4>
+            <h4 class="modal-title pull-left">Add Ingrediants </h4>
             <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="col-md-9">
-              <label> Count : </label>
-              <input type="number" value="nnnn" name="nnn" class="form-control">
+            <div class="row">
+                <div class=" col-md-6">
+                    <input type="text" class="form-control" name='name' placeholder="Ingrediant Name" aria-describedby="basic-addon1" required>
+                  </div>
+              <div class="col-md-3">
+                <input type="number" value="nnnn" name="nnn" placeholder="Count" class="form-control">
+              </div>
+              <div class="col-md-3">
+                <select class="form-control">
+                  <option selected>Choose Unit...</option>
+                  <option value="1">gram</option>
+                  <option value="2">ouns</option>
+                  <option value="3">kg</option>
+                </select>
+              </div>
             </div>
-           
-              <label> by : </label>
-              <select class="form-control">
-                <option selected>Choose...</option>
-                <option value="1">gram</option>
-                <option value="2">ouns</option>
-                <option value="3">kg</option>
-              </select>
-            
+
+            <div class="row ">
+              <div class="col-md-12">
+                <select class="form-control ">
+                  <option selected>Choose Cutting Method ...</option>
+                  <option value="1">tornee</option>
+                  <option value="2">sharp</option>
+                  <option value="3">xxxxx</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="row ">
+              <div class="col-md-12">
+                <select class="form-control ">
+                  <option selected>Choose Cooking Method ...</option>
+                  <option value="1">tornee</option>
+                  <option value="2">sharp</option>
+                  <option value="3">xxxxx</option>
+                </select>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-xs-8">
+                <textarea class="form-control txtArea" name='description' placeholder="Procedure" rows="7"></textarea>
+              </div>
+              <div class="col-xs-4">
+                <input style="display: none" type="file" (change)="onFileChanged($event)" #fileInput>
+                <img src="../assets/images/default.png" class="img" (click)="fileInput.click()" alt="Scott Stevens" class="img-responsive img-circle"
+                  width="50%" />
+                <span class="text-muted">Add procedure Photo</span>
+              </div>
+            </div>
+
+
+            <div class="row ">
+              <div class="col-xs-7">
+               
+                <input type="number" class="form-control" placeholder="time">
+              </div>
+              <div class="col-xs-5">
+                <select class="form-control ">
+                  <option selected>Choose time unit ...</option>
+                  <option value="1">min</option>
+                  <option value="2">xxxx</option>
+                  <option value="3">xxxxx</option>
+                </select>
+              </div>
+            </div>
+
+            <div class='row'>
+                <button type="button" class="btn  addbtn col-xs-6" >save ingredaint</button>
+                <button type="button" class="btn addbtn col-xs-6" >add new  ingredaint</button>
+              </div>
+
+
           </div>
-        </ng-template>
+        </ng-template> -->
       </div>
     </div>
     <div class="row">
