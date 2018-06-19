@@ -10,6 +10,6 @@ export interface ICuttingMethods {
     height:Number;
     unitType:string;
     units:string;
-    // tools:{title:string,imgUrl:string}[];
+    //tool:{name:string,img:string}[];
     tools?:ISmallTool[];
 }
