@@ -64,7 +64,7 @@ export class RecipeService {
     },
     {
       id: 1,
-      imageUrl: '../../assets/images/dd.jpg',
+      imageUrl:'../../../../assets/images/cooking method/steam.jpg',
       title: 'Panee',
       description: '" The term refers to a method of cutting and peeling root vegetables into oblong, seven-sided football-like shapes',
       imageArr: [{
