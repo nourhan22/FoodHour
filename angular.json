@@ -23,14 +23,12 @@
               "src/assets"
             ],
             "styles": [
-
-              "src/assets/css/bootstrap.css"
-              
+              "src/assets/css/bootstrap.css"                          
             ],
 
             "scripts": [
-
-            ]   
+ 
+            ]  
           },
           "configurations": {
             "production": {

@@ -1,0 +1,15 @@
+p {
+	color: #777;
+	line-height: 24px;
+	margin: 0 0 20px;
+}
+.align-center, .center {
+	text-align: center !important;
+}
+.feature-box.feature-box-style-4 h4 {
+	color: #1d2127;
+}
+/* Animations */
+.appear-animation {
+	opacity: 0;
+}

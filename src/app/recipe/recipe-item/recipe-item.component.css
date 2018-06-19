@@ -65,12 +65,12 @@ html .toggle-primary.toggle-simple .toggle > label:after {
 .thumb-info .thumb-info-type {
     background-color: #ff530a;
 }
-.delete{
+.fa-minus, .fa-pencil-alt{
     background-color: #ff530a;
     margin-bottom: 18px;
     border-radius: 100%;
     color: white;
-    padding: 0.1px 4px;
+    padding: 7px ;
     margin-right: 8px;
     margin-top: 9px;
 }
@@ -80,3 +80,4 @@ html .toggle-primary.toggle-simple .toggle > label:after {
     content: "";
     background: rgba(172, 167, 167, 0.5);
 }
+
