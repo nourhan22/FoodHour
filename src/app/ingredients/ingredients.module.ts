@@ -5,7 +5,6 @@ import { IngredientItemComponent } from './ingredient-item/ingredient-item.compo
 import { IngredientListingComponent } from './ingredient-listing/ingredient-listing.component';
 import { IngredientDetailsComponent } from './ingredient-details/ingredient-details.component';
 import { RouterLink } from '@angular/router';
-
 import { RecipeIngredientItemComponent } from './recipe-ingredient-item/recipe-ingredient-item.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +14,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     RouterLink,
     FormsModule,
+    RouterLink,
     RouterModule.forChild([
       {path:'IngredientListing', component:IngredientListingComponent},
       {path:'IngredientDetails/:id' , component:IngredientDetailsComponent},

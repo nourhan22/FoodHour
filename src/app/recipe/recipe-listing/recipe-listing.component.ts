@@ -22,4 +22,12 @@ export class RecipeListingComponent implements OnInit {
     
     this.RecipeService.DeleteAll();
   }
+  onRecipeSearch(txtSearch:string)
+  {
+    if( txtSearch!=null)
+    {
+      this.recipes = this.RecipeService.SearchInRecipes(txtSearch);
+    }
+    
+  }
 }

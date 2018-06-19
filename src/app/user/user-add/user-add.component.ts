@@ -52,13 +52,13 @@ public id:number;
     {
       this.userService.Edit(this.newUser);
     }
-    this.router.navigate(['UserListing']) ; 
+    this.router.navigate(['user']) ; 
 
   }
 
   onCancel()
   {
-    this.router.navigate(['UserListing']) ;      
+    this.router.navigate(['user']) ;      
   }
 
 }
