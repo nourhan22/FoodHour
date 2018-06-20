@@ -21,7 +21,6 @@ export class RecipeAddComponent implements OnInit {
     this.recipeItem = {};
 
     this.ingredients= [
-      
     ];
 
     this.recipeService.onRecipeIngredientAdded.subscribe(
@@ -34,6 +33,16 @@ export class RecipeAddComponent implements OnInit {
   }
   onSave()
   {
+    this.recipeItem.id = this.recipeService.Recipes.length + 1;
+    this.recipeItem.ingredients = this.ingredients;
+    this.recipeItem.imageUrl = "../../../assets/images/cooking method/grill.jpg";
+    this.recipeItem.imageArr = [{small:"../../../assets/images/cooking method/grill.jpg",
+                                 medium:"../../../assets/images/cooking method/grill.jpg",
+                                 big:"../../../assets/images/cooking method/grill.jpg"}];
+    this.recipeItem.comments = [];
+    this.recipeItem.date = {day:20,month:"JUN"} ;
+    this.recipeItem.nutritions ={VITAMINS:[],MINERALS:[],Cal:[]};
+    this.recipeItem.author = {image:"../assets/images/default.png",username:"USER"}                            
     this.recipeService.AddRecipe(this.recipeItem);
     this.router.navigate(['recipeListing']);
   }

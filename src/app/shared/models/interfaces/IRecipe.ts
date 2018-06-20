@@ -19,5 +19,5 @@ export interface IRecipe {
         nutritions?:{'VITAMINS':{'title':string,'percent':string}[],'MINERALS':{'title':string,'percent':string}[],'Cal':{'title':string,'percent':string}[]};
         ingredients?:IRecipeIngredient[]//{'title':string,'weight':string}[];
         comments?:IComment[];
-        steps?:{'id':number,'title':string,'description':string,'imageUrl':string}[];
+        steps?:{'id'?:number,'title'?:string,'description'?:string,'imageUrl'?:string}[];
 }

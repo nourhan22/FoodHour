@@ -19,18 +19,13 @@
     </div>
 
     <div class="input-group col-xs-12">
-      <input type="text" class="form-control" name='name' [(ngModel)]='newMicro.name'
+      <input type="text" class="form-control" name='name' [(ngModel)]='newMicro.Name'
        placeholder="Name" aria-describedby="basic-addon1" required>
     </div>
 
-    
-
-    <!-- <div class="input-group col-xs-12">
-      <input type="text" class="form-control" name='type' [(ngModel)]='newMicro.type'
-      placeholder="Type" aria-describedby="basic-addon1">
-    </div> -->
+  
     <div class="input-group col-xs-12">
-                <select  class="form-control" name='type' [(ngModel)]="newMicro.type" required>
+                <select  class="form-control" name='type' [(ngModel)]="newMicro.Type" required>
                    <option  value='Choose Type' required>Choose Type</option>
                    <option [value]="type.title" *ngFor='let type of microTypes'>{{type.title}}</option>
              </select>
@@ -42,12 +37,12 @@
     </div>
 
     <div class="input-group col-xs-12">
-      <textarea class="form-control txtArea"name='prevention' [(ngModel)]='newMicro.Prevention'
+      <textarea class="form-control txtArea"name='prevention' [(ngModel)]='newMicro.Prevension'
       placeholder="Prevention"></textarea>
     </div>
 
     <div class="input-group col-xs-12">
-      <textarea class="form-control txtArea"name='description' [(ngModel)]='newMicro.description'
+      <textarea class="form-control txtArea"name='description' [(ngModel)]='newMicro.Characteristic'
       placeholder="Description"></textarea>
     </div>
 
