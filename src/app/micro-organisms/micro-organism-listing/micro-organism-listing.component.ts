@@ -10,7 +10,7 @@ import { IMicroItem } from 'src/app/shared/models/interfaces/IMicroItem';
 })
 export class MicroOrganismListingComponent implements OnInit {
   public headertitle:string;
-  public Micros:any[];
+  public Micros:any[]=[];
   
   constructor(private MicroService:MicroService) {
     // this.MicroService.GetAllMicros().subscribe(
@@ -29,13 +29,18 @@ export class MicroOrganismListingComponent implements OnInit {
       //   this.MicroService.GetAllMicros().subscribe(
       //   (data)=>{ this.Micros = data}
       //  );
-
-      this.MicroService.GetAllMicros().subscribe(
+      if(this.Micros.length != this.MicroService.allMicros.length && this.Micros.length!=0)
+      {
+         this.Micros = this.MicroService.allMicros;
+      }
+else
+     { this.MicroService.GetAllMicros().subscribe(
         (data)=>{debugger;console.log(data.json());
           this.Micros = data.json();
           this.MicroService.allMicros = data.json();
           this.MicroService.lengthOfMicros = this.MicroService.allMicros.length;
         });
+      }
   }
 
   onMicroSearch(txtSearch:string)

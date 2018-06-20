@@ -191,6 +191,7 @@ export class RecipeService {
 
   AddRecipe(recipe:IRecipe)
   {
+    debugger;
     this.Recipes.push(recipe);
   }
 }

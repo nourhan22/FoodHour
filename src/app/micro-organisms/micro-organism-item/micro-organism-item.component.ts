@@ -22,6 +22,10 @@ export class MicroOrganismItemComponent implements OnInit {
       debugger;
       let microId = this.item.MicroId;
       this.microService.onDelete(microId);
-   
+      const index= this.microService.allMicros.findIndex(a=>a.MicroId === id);
+      if(index >-1)
+      {
+        this.microService.allMicros.splice(index,1);
+      }
 }
 }

@@ -181,7 +181,11 @@ import { HttpClient } from 'selenium-webdriver/http';
     UserItemComponent ,
     UserListingComponent,
     UserDetailsComponent,
-    UserAddComponent
+    UserAddComponent,
+    PostListingComponent,
+    AddRecipeIngredientComponent,
+    SmallTabComponent,
+    AddPostComponent
   ],
   
   imports: [
