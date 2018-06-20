@@ -20,7 +20,7 @@ ul.nav-pills > li.active > a:hover, ul.nav-pills > li.active > a:focus {
     color: #e66646 !important;
 } 
 html .progress-bar-primary {
-    background-color: #fd5e24;
+    background-color: #fd5e24 !important;
 }
 .owl-carousel .owl-nav [class*="owl-"] {
     color: #ffffff;
@@ -50,4 +50,7 @@ html .toggle-primary.toggle-simple .toggle > label:after {
 }
 .thumb-info .thumb-info-type {
     background-color: #ff530a;
+}
+.progress-bar{
+    background-color: rgb(38, 248, 10) !important;
 }

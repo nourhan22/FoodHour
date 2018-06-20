@@ -1,22 +1,36 @@
 <div class="container">
   <div class="row" style="padding-top:5%">
-    <div class="col-md-5">
+    <div class="col-md-4">
       <div class="owl-carousel owl-theme" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': false, 'autoplayTimeout': 3000}">
         <div>
           <span class="thumb-info">
             <span class="thumb-info-wrapper">
               <span>
-                <img alt="" class="img-responsive" src="../../../assets/images/cooking method/grill.jpg">
+                <img alt="" class="img-responsive" src="{{item.img}}">
               </span>
             </span>
           </span>
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-md-5">
       <h2 class="mt-sm h2">{{item.name}}</h2>
       <p class="">{{item.description}}
       </p>
+    </div>
+    <div class="col-md-3">
+      <aside class="sidebar">
+        <!-- <app-search (TxtChange) = 'onTxtChange($event)'></app-search>
+        <hr> -->
+        <h5 class="" style="color:#ff530a;">Other Tools</h5>
+         <ul class="simple-post-list">
+            <!-- <app-other-tools [item]='item' *ngFor='let item of Tools'></app-other-tools> -->
+            <app-other-tools  [item] = "Tools[rnd1]"></app-other-tools>
+            <app-other-tools  [item] = "Tools[rnd2]"></app-other-tools>
+            <app-other-tools  [item] = "Tools[rnd3]"></app-other-tools>
+        </ul> 
+
+      </aside>
     </div>
   </div>
 <hr>

@@ -1,11 +1,10 @@
-<!-- <app-smallHeader [title] = 'headertitle' (IngredientSearch)='onIngredientSearch($event)'></app-smallHeader> -->
+<app-smallHeader [title] = 'headertitle' (RecipeSearch)='onRecipeSearch($event)'></app-smallHeader>
 <div class='container'>
   <div class="row">
     <a routerLink='./add'>
       <i class="fa fa-plus pull-right" id="plus"></i>
     </a>
-    <i class="fas fa-pencil-alt pull-right" id="plus"></i>
-    <i class="fa fa-trash pull-right" id="plus"></i>
+    <i class="fa fa-trash pull-right" id="plus" (click)="onDelete()"></i>
   </div>
   <ul class="container listing">
     <app-recipe-item [item]='item' *ngFor='let item of recipes'></app-recipe-item>
