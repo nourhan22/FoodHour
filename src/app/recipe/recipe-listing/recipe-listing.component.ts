@@ -26,7 +26,9 @@ export class RecipeListingComponent implements OnInit {
   {
     if( txtSearch!=null)
     {
-     // this.recipes = this.RecipeService.SearchInRecipes(txtSearch);
+
+      this.recipes = this.RecipeService.SearchInRecipes(txtSearch);
+
     }
     
   }
