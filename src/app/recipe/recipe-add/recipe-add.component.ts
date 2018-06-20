@@ -21,8 +21,7 @@ export class RecipeAddComponent implements OnInit {
     this.recipeItem = {};
 
     this.ingredients= [
-      {ingredient:{name:'aaaa'}},
-      {ingredient:{name:'bbbb'}}
+      
     ];
 
     this.recipeService.onRecipeIngredientAdded.subscribe(
