@@ -20,3 +20,6 @@ ul.listing{
 .pull-right {
     float: right !important;
 }
+/* .our-blog-item .image-wrapper img {
+    transition:none;
+    height: 200px;} */

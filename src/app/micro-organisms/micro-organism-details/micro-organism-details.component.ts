@@ -12,7 +12,7 @@ export class MicroOrganismDetailsComponent implements OnInit {
 
 //public MicroDetail:IMicroItem;
 public MicroItem : IMicroItem;
-public relatedTopics:IMicroItem[];
+public relatedTopics:any[];
 private id :number;
   constructor(private ActivatedRoute:ActivatedRoute, private microService:MicroService) {
 

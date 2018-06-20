@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./micro-organism-add.component.css']
 })
 export class MicroOrganismAddComponent implements OnInit {
-public newMicro : IMicroItem;
+public newMicro : any = {};
 public microTypes:IMicroType[];
 public id:number;
 public isEdit :boolean = false;
@@ -49,12 +49,12 @@ public isEdit :boolean = false;
 
   onSave(myform:NgForm)
   {
-    
+    debugger;
 
     if(this.newMicro!=null && myform.valid && this.isEdit== false)
     {
       this.newMicro.id = this.microService.lengthOfMicros+1;
-      this.newMicro.img = '../assets/images/default.png';
+      this.newMicro.ImageURL = '../assets/images/default.png';
       this.microService.AddNewMicro(this.newMicro);   
            
     }
