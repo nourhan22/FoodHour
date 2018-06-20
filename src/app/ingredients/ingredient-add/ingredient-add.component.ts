@@ -44,7 +44,7 @@ export class IngredientAddComponent implements OnInit {
           this.isEdit = true;
         }
       }
-    )
+    );
 
   }
 

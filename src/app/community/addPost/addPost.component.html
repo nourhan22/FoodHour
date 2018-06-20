@@ -1,5 +1,5 @@
 <div id="addpost">
-  <button type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
+  <button id="btn-create" type="button" class="btn btn-primary" (click)="openModal(template)">Create template modal</button>
   
   <ng-template #template>
       <form (ngSubmit)="onSave(template)" #myform="ngForm">

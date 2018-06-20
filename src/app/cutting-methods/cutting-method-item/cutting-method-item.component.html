@@ -16,6 +16,7 @@
         <span class="thumb-info-action">
           <span class="thumb-info-action-icon">
             <i class="fa fa-trash" (click)="onDelete(item.id)"></i>
+            <i class="fas fa-edit" [routerLink] = "['edit',item.id]"></i>
           </span>
         </span>
       </span>

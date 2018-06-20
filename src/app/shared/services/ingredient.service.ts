@@ -39,21 +39,21 @@ export class IngredientService {
     {
       id: 1,
       name: 'Tomato',
-      desc: 'tomato is very useful',
+      desc: 'Tomato is consumed in diverse ways, including raw, as an ingredient in many dishes, sauces, salads, and drinks. While tomatoes are botanically berry-type fruits, they are considered culinary vegetables as an ingredient or side dish for savory meals. Numerous varieties of tomato are widely grown in temperate climates across the world, with greenhouses allowing its production throughout the year. The plants typically grow to 1–3 meters (3–10 ft) in height and have a weak stem that sprawls. It is a perennial in its native habitat, and cultivated as an annual. Fruit size varies according to cultivar',
       img: '../../assets/images/tomato.jpg',
       nutiritions:[ {nutiritionName:'Mineral', nutiritionType:' ',percentage:24}]
     },
     {
       id: 2,
       name: 'Potato',
-      desc: 'potato is very useful',
+      desc: 'The potato is a starchy, tuberous crop from the perennial nightshade Solanum tuberosum. Potato may be applied to both the plant and the edible tuber.[2] Potatoes have become a staple food in many parts of the world and an integral part of much of the world food supply. Potatoes are the world fourth-largest food crop, following maize (corn), wheat, and rice.Tubers produce glycoalkaloids in small amounts. If green sections (sprouts and skins) of the plant are exposed to light the tuber can produce a high enough concentration of glycoalkaloids to affect human health',
       img: '../../assets/images/potato3.jpg',
       nutiritions:[ {nutiritionName:'Vitamin', nutiritionType:'C',percentage:24}]
     },
     {
       id: 3,
       name: 'Carrot',
-      desc: 'Carrot is very useful',
+      desc: 'The carrot (Daucus carota subsp. sativus) is a root vegetable, usually orange in colour, though purple, black, red, white, and yellow cultivars exist. Carrots are a domesticated form of the wild carrot, Daucus carota, native to Europe and southwestern Asia. The plant probably originated in Persia and was originally cultivated for its leaves and seeds. The most commonly eaten part of the plant is the taproot, although the stems and leaves are eaten as well. The domestic carrot has been selectively bred for its greatly enlarged, more palatable, less woody-textured taproot.',
       img: '../../assets/images/storecarrots.jpg',
       nutiritions:[ {nutiritionName:'Mineral', nutiritionType:'',percentage:24}]
     }

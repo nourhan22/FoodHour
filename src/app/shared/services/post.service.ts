@@ -11,36 +11,24 @@ export class PostService {
 posts:IPost[]=[
   {
     id:1,
-    author:{username:'Hana',state:'i love cooking',image:"../../../assets/images/comunity/avatar.jpg"},
-    title:"great food",
-    image:"../../../assets/images/comunity/blog-image-1.jpg",
-    content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum
-    nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec
-    tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
-    non tristique enim sapien vel nisl.`,
+    author:{username:'Hana',state:'i love cooking',image:"../../../assets/images/comunity/userg.png"},
+    title:"Chinese food",
+    image:"../../../assets/images/comunity/chinees.jpg",
+    content:`Chinese food is famous all over the world, but you may be shocked by its surprising range and variety of ingredients if you’ve only eaten in Chinese restaurants abroad. Chinese food has countless delicious and fantastic dishes. And people from different areas have different cuisine types, which can be bland, sweet, salty, spicy, or sour.`,
     day:10,
     month:"Jun",
    
     comments:[
       {
         id:1,
-        user:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/avatar.jpg"},
-        comment:`John Doe Reply
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-         gravida pellentesque urna varius vitae, gravida 
-        pellentesque urna varius vitae. Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Nam viverra euismod odio`,
+        user:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/userb.png"},
+        comment:`great!!!`,
         date:"November 12, 2016 at 1:38 pm",
         replys:[
           {
           id:1,
-          user:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/avatar.jpg"},
-          comment:`John Doe Reply
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-           gravida pellentesque urna varius vitae, gravida 
-          pellentesque urna varius vitae. Lorem ipsum dolor sit amet, 
-          consectetur adipiscing elit. Nam viverra euismod odio`,
+          user:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/userb.png"},
+          comment:`So yummy`,
           date:"November 12, 2016 at 1:38 pm",
           replys:[]
           }
@@ -48,9 +36,8 @@ posts:IPost[]=[
       },
      {
       id:1,
-      user:{username:'Hana',state:"Let's cook",image:"../../../assets/images/comunity/avatar.jpg"},
-      comment:`John Doe Reply
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio`,
+      user:{username:'Hana',state:"Let's cook",image:"../../../assets/images/comunity/userg.png"},
+      comment:`thanks`,
       date:"November 12, 2016 at 1:38 pm",
       replys:[]
      }
@@ -59,25 +46,19 @@ posts:IPost[]=[
   },
   {
     id:2,
-    author:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/avatar.jpg"},    
-    title:"tasty recipes",
-    image:"../../../assets/images/comunity/blog-image-1.jpg",
-    content:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus lacus, rutrum sit amet placerat et, bibendum
-    nec mauris. Duis molestie, purus eget placerat viverra, nisi odio gravida sapien, congue tincidunt nisl ante nec
-    tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor
-    sit amet, consectetur adipiscing elit. Fusce sagittis, massa fringilla consequat blandit, mauris ligula porta nisi,
-    non tristique enim sapien vel nisl..`,
+    author:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/userb.png"},    
+    title:"Italy food",
+    image:"../../../assets/images/comunity/italy.jpg",
+    content:`Gorgeous Italy draws travelers keen on exploring her stunning scenery, unique culture, and gastronomical delights. With its rich cuisine, this beautiful Mediterranean land offers countless famous and traditional must-eat foods.
+
+    A multitude of popular Italian delicacies and dishes, sweet and savory, await your discovery during your sojourns when you are in Italy. These traditional Italian dishes are deeply rooted in the Italian culture, and recipes are often passed down between generations and are cherished for their authentic origins...`,
     day:24,
     month:"May",
     comments:[
       {
         id:1,
-        user:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/avatar.jpg"},
-        comment:`John Doe Reply
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
-         gravida pellentesque urna varius vitae, gravida 
-        pellentesque urna varius vitae. Lorem ipsum dolor sit amet, 
-        consectetur adipiscing elit. Nam viverra euismod odio`,
+        user:{username:'John',state:"Let's cook",image:"../../../assets/images/comunity/userb.png"},
+        comment:`Nice ...`,
         date:"November 12, 2016 at 1:38 pm",
         replys:[]
       }
@@ -88,34 +69,34 @@ posts:IPost[]=[
 popularPots:ISmallPost[]=[
   {
     id:1,
-    title:"Nullam Vitae Nibh Un Odiosters",
-    image:"../../../assets/images/comunity/blog-thumb-1.jpg",
+    title:"Sweets",
+    image:"../../../assets/images/comunity/sweet.jpg",
     date:"Jan 10, 2016"
   },
   {
     id:2,
-    title:"how to cook fish?",
-    image:"../../../assets/images/comunity/blog-thumb-1.jpg",
+    title:"How to make chocolate sauce?",
+    image:"../../../assets/images/comunity/choco.jpg",
     date:"Feb 15, 2014"
   },
   {
     id:3,
     title:"how to cook meat?",
-    image:"../../../assets/images/comunity/blog-thumb-1.jpg",
+    image:"../../../assets/images/comunity/meat.jpeg",
     date:"Aug 20, 2016"
   }
 ];
 recentPosts:ISmallPost[]=[
   {
     id:1,
-    title:"Nullam Vitae Nibh Un Odiosters",
-    image:"../../../assets/images/comunity/blog-thumb-1.jpg",
+    title:"fruit salad",
+    image:"../../../assets/images/comunity/fruit.jpg",
     date:"Nov 6, 2013"
   },
   {
     id:2,
-    title:"How to make chocolate sauce?",
-    image:"../../../assets/images/comunity/blog-thumb-1.jpg",
+    title:"how to cook fish?",
+    image:"../../../assets/images/comunity/fish.jpg",
     date:"Aug 2, 2012"
   }
 ];

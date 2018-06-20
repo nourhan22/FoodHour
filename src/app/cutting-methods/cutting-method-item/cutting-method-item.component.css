@@ -40,7 +40,7 @@ li {
     line-height: 50px;
     position: absolute;
     text-align: center;
-    width: 50px;
+    width: 80px;
     z-index: 2;
     background-color: #ff530a;
 }
@@ -121,5 +121,8 @@ li {
 }
 ul.image-gallery .image-gallery-item {
 	margin-bottom: 35px;
+}
+.fa, .fas{
+    padding: 5%;
 }
 

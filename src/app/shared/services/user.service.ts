@@ -37,8 +37,16 @@ export class UserService {
     },
     {
       id: 4,
-      name: 'soso soso',
+      name: 'esraa ezzat',
       img: '../../assets/images/user4.jpg',
+      Email: 'nayerasaad@yahoo.com',
+      passWord: 'hello123',
+      age:21
+    },
+    {
+      id: 5,
+      name: 'Nour adlo',
+      img: '../../assets/images/usera.jpg',
       Email: 'nayerasaad@yahoo.com',
       passWord: 'hello123',
       age:21
