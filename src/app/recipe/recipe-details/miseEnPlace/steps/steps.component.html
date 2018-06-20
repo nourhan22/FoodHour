@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-6">
       <h4 class="mb-none">{{item.title}}</h4>
-      <p class="mb-none">{{item.description}}</p>
+      <p class="mb-none" *ngFor="let x of item.ingredients">x.procedure</p>
     </div>
     <div class="col-md-2">
       <img class="img-responsive img-circle mb-lg pull-right" src="{{item.imageUrl}}" alt="Project Image">

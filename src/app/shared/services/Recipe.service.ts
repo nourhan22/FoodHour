@@ -174,18 +174,22 @@ export class RecipeService {
       return element.id == id;
     })
   }
+
+  AddRecipe(recipe:IRecipe)
+  {
+    debugger;
+    this.Recipes.push(recipe);
+  }
   public DeleteItem(id: number) {
     const index = this.Recipes.findIndex(a => a.id === id);
     if (index > -1) {
       this.Recipes.splice(index, 1);
     }
   }
+  
   DeleteAll() {
     let len = this.Recipes.length;
     this.Recipes.splice(0, len);
   }
-    AddRecipe(recipe: IRecipe)
-    {
-      this.Recipes.push(recipe);
-    }
+   
   }

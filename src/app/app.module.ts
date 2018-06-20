@@ -107,6 +107,11 @@ import { RecipeIngredientItemComponent } from 'src/app/ingredients/recipe-ingred
 import { SmallTabComponent } from 'src/app/community/small-tab/small-tab.component';
 import { AddPostComponent } from 'src/app/community/addPost/addPost.component';
 
+import { HttpModule } from '@angular/http';
+import { HttpClient } from 'selenium-webdriver/http';
+// import{HttpClientModule} from '@angular/common/http';
+
+
 import { ShoppingCartComponent } from './shopping-list/shopping-cart/shopping-cart.component';
 import { ShoppingCartService } from './shared/services/ShoppingCart.service';
 import { ShopIngrediantComponent } from './shopping-list/shop-ingrediant/shop-ingrediant.component';
@@ -116,6 +121,7 @@ import { HomeRecipeComponent } from './home/home-recipe/home-recipe.component';
 
 
 import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -282,17 +288,26 @@ import { RouterModule } from '@angular/router';
     UserItemComponent ,
     UserListingComponent,
     UserDetailsComponent,
-    UserAddComponent
+    UserAddComponent,
+    PostListingComponent,
+    AddRecipeIngredientComponent,
+    SmallTabComponent,
+    AddPostComponent
+
     
   ],
   
   imports: [
+
+    HttpModule,
+
     BrowserModule,
     FormsModule,
     TabsModule.forRoot(),
     CarouselModule.forRoot(),
     ModalModule.forRoot(),
     NgxGalleryModule,
+
     RouterModule.forRoot([
 
       { path: 'home', component: ViewHomeComponent },
