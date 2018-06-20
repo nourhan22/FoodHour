@@ -1,6 +1,7 @@
 import { ISmallTool } from "src/app/shared/models/interfaces/ISmallTool";
 
 export interface ICuttingMethods {
+
     // tools:{title:string,imgUrl:string}[];
 
     title?: string;

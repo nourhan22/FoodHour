@@ -15,6 +15,7 @@ export class MiseEnPlaceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
     if(this.RecipeItem.steps.length==0)
     {
       this.RecipeItem.steps = this.RecipeItem.ingredients.map(function(r){return {title:r.ingredient.name,
