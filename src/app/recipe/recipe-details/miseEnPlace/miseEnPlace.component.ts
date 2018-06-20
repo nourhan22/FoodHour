@@ -15,13 +15,12 @@ export class MiseEnPlaceComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    debugger;
+
     if(this.RecipeItem.steps.length==0)
     {
       this.RecipeItem.steps = this.RecipeItem.ingredients.map(function(r){return {title:r.ingredient.name,
         description:r.procedure , imageUrl:r.image}})
     }
-  
     this.item=this.RecipeItem.steps[this.currentIndex];
     this.end=this.RecipeItem.steps.length-1;
   }
@@ -44,5 +43,4 @@ export class MiseEnPlaceComponent implements OnInit {
     this.item=this.RecipeItem.steps[this.currentIndex];
 
   }
-
 }

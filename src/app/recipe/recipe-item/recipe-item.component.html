@@ -9,6 +9,8 @@
     <article class="our-blog-item">
         <a class="text-decoration-none">
             <span class="image-wrapper">
+              <!-- <a [routerLink] = "['../recipeListing/details',item.id]">  <img src="{{item.imageUrl}}" alt="" class="img-responsive" /></a> -->
+                
                 <img src="{{item.imageArr[0].medium}}" alt="" class="img-responsive" />
             </span>
             <span class="category text-uppercase background-color-quaternary" id="fav" (click)="liked=!liked">

@@ -15,7 +15,7 @@ export class ToolService {
 
       description:'Combine ingredients at speed one for slowly stirring in chunky ingredients, speed four for mashing potatoes, speed seven for beating egg whites and whipping meringue.'
 ,
-      checked:false
+      checked:true
 
     },
     {

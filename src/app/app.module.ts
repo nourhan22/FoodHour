@@ -340,6 +340,7 @@ import { RouterModule } from '@angular/router';
       { path: 'recipeListing/details/:id', component: RecipeDetailsComponent },
       { path: 'ToolListing/add', component: ToolAddComponent },
       { path: 'cuttingMethodListing/add', component: CuttingMethodAddComponent },
+      { path: 'cuttingMethodListing/edit/:id', component: CuttingMethodAddComponent  },
       { path: 'ToolListing/add', component: ToolAddComponent },
       { path: 'ToolListing/edit/:id', component: ToolAddComponent },
       { path: 'recipe/details', component: RecipeDetailsComponent },

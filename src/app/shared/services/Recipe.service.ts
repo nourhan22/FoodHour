@@ -265,8 +265,7 @@ export class RecipeService {
     })
   }
 
-  AddRecipe(recipe:IRecipe)
-  {
+  AddRecipe(recipe: IRecipe) {
     debugger;
     this.Recipes.push(recipe);
   }
@@ -276,11 +275,19 @@ export class RecipeService {
       this.Recipes.splice(index, 1);
     }
   }
-  
+
   DeleteAll() {
     let len = this.Recipes.length;
     this.Recipes.splice(0, len);
   }
 
+
+  SearchInRecipes(txtSearch: string) {
+    let filteredArr = this.Recipes.filter(function (ele) {
+      return ele.title.toLowerCase().includes(txtSearch.toLowerCase());
+    })
+
+    return filteredArr;
   }
 }
+

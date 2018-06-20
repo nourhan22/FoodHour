@@ -176,5 +176,16 @@ public AddCuttingMethod(item:ICuttingMethods){
   this.cuttingMethods.push(item);
 }
 public lengthOfCookingMethod :number=this.cuttingMethods.length;
+DeleteAll() {
+  let len = this.cuttingMethods.length;
+  this.cuttingMethods.splice(0, len);
+}
+Edit(item:  ICuttingMethods){
+  const index= this.cuttingMethods .findIndex(a=>a.id===item.id);
+   if(index >-1){
+       this.cuttingMethods [index]=item;
+       return item;
+   }
+ }
 }
 

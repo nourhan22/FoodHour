@@ -1,5 +1,13 @@
 
 <app-smallHeader [title]='title' (CuttingMethodSearch)="onCuttingMethodsSearch($event)"></app-smallHeader>
+<div class='container'>
+        <div class="row">
+            <a routerLink='add'>
+                <i class="fa fa-plus pull-right" id="plus"></i>
+            </a>
+            <i class="fa fa-trash pull-right" id="plus" (click)="onDelete()"></i>
+        </div> 
 <ul class="container" >
     <app-cutting-method-item [item]='x' *ngFor='let x of cut'></app-cutting-method-item>
 </ul>
+</div>

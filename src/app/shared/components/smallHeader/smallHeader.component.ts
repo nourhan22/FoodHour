@@ -53,11 +53,12 @@ public txtSearch : string;
           this.ToolSearch.emit(this.txtSearch);
         }
         else if(segmentUrl == 'user')
-        {
+        {debugger;
           this.UserSearch.emit(this.txtSearch);
         }
         else if(segmentUrl == 'recipeListing')
         {
+          debugger;
           this.RecipeSearch.emit(this.txtSearch);
         }
       });

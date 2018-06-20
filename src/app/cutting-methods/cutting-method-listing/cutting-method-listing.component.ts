@@ -27,5 +27,10 @@ export class CuttingMethodListingComponent implements OnInit {
     }
     
   }
+  onDelete()
+  {
+    
+    this.cuttingServices.DeleteAll();
+  }
 
 }

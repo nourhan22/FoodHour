@@ -21,6 +21,8 @@ export class CuttingMethodAddComponent implements OnInit {
   public units:string[];
   public tool:ISmallTool[];
   public checked;
+  public isEdit: boolean = false;
+  public id: number;
   // toppings = new FormControl();
   // toppingList = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
   
@@ -45,12 +47,24 @@ export class CuttingMethodAddComponent implements OnInit {
       tools:[]
     }
     this.checked = false;
+    this.ActivatedRoute.params.subscribe(
+
+      (params) => {
+        debugger;
+        this.id = params['id'];
+        if (this.id != null) {
+          debugger;
+          this.addCutting = this.cutService.getByIndex(this.id);
+          this.isEdit = true;
+        }
+      }
+    );
   }
   onSave(myform:NgForm)
   {
     
 
-    if(this.addCutting!=null && myform.valid )
+    if(this.addCutting!=null && myform.valid && this.isEdit == false )
     {
       this.addCutting.id = this.cutService.cuttingMethods.length+1;
       this.addCutting.imageUrl = '../assets/images/default.png'
@@ -59,11 +73,11 @@ export class CuttingMethodAddComponent implements OnInit {
 
            
     }
-    // else if(this.isEdit == true)
-    // {
-    //   debugger;
-    //   this.microService.Edit(this.newMicro);
-    // }
+     else if(this.isEdit == true)
+     {
+      
+      this.cutService.Edit(this.addCutting);
+     }
 
     this.router.navigate(['cuttingMethodListing']) ; 
   }
