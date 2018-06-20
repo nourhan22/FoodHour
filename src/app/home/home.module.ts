@@ -5,7 +5,7 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { ServicesComponent } from './services/services.component';
 import { ViewHomeComponent } from './view-home/view-home.component';
 import { HomeRecipeComponent } from './home-recipe/home-recipe.component';
-import { RecipeItemComponent } from './recipe-item/recipe-item.component';
+//import { RecipeItemComponent } from './recipe-item/recipe-item.component';
 import { HomerecipeItemComponent } from './homerecipe-item/homerecipe-item.component';
 
 @NgModule({
@@ -16,9 +16,10 @@ import { HomerecipeItemComponent } from './homerecipe-item/homerecipe-item.compo
     SliderComponent,
     WhoWeAreComponent,
     ServicesComponent,
-    ViewHomeComponent,
+    ViewHomeComponent
+,
     HomeRecipeComponent,
-    RecipeItemComponent,
+    //RecipeItemComponent,
     HomerecipeItemComponent
 ]
 })

@@ -42,6 +42,7 @@ export class RecipeAddComponent implements OnInit {
                                  medium:"../../../assets/images/cooking method/grill.jpg",
                                  big:"../../../assets/images/cooking method/grill.jpg"}];
     this.recipeItem.comments = [];
+    this.recipeItem.steps = [];
     this.recipeItem.date = {day:20,month:"JUN"} ;
     this.recipeItem.nutritions ={VITAMINS:[],MINERALS:[],Cal:[]};
     this.recipeItem.author = {image:"../assets/images/default.png",username:"USER"}                            
